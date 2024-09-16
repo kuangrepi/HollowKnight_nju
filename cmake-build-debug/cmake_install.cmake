@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/guyu/Desktop/Hollowknight_demo
+# Install script for directory: D:/Git/HollowKnight_nju
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Hollownight_demo")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Hollowknight_demo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/guyu/Desktop/Hollowknight_demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Git/HollowKnight_nju/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
