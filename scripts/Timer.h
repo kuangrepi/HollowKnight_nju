@@ -1,6 +1,3 @@
-#ifndef HOLLOWKNIGHT_DEMO_TIMER_H
-#define HOLLOWKNIGHT_DEMO_TIMER_H
-
 #include <functional>
 
 
@@ -17,34 +14,19 @@ public:
     Timer() = default;
     ~Timer() = default;
 
-    void restart(){
-        pass_time = 0;
-        shotted = false;
-    }
+    void restart();
 
-    void set_wait_time(int val){
-        wait_time = val;
-    }
+    void set_wait_time(int val);
 
-    void set_one_shoot(bool flag){
-        one_shot = flag;
-    }
+    void set_one_shoot(bool flag);
 
-    void set_callback(std::function<void()> callback){
-        this->callback = callback;
-    }
+    void set_callback(std::function<void()> callback);
 
-    void pause(){
-        paused = true;
-    }
+    void pause();
 
-    void resume(){
-        paused = false;
-    }
+    void resume();
 
     void on_update(int delta);
 
 };
 
-
-#endif //HOLLOWKNIGHT_DEMO_TIMER_H
