@@ -23,4 +23,5 @@
 
 1. 写了Atlas类（图集类）
 2. 优化了Timer类的格式
+3. 写了Animation类
 

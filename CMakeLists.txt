@@ -7,4 +7,9 @@ link_libraries(libeasyx.a)
 add_executable(Hollowknight_demo scripts/main.cpp
         scripts/define.h
         scripts/Timer.cpp
-        scripts/Timer.h)
+        scripts/Timer.h
+        scripts/Atlas.cpp
+        scripts/Atlas.h
+        scripts/Animation.cpp
+        scripts/Animation.h
+        scripts/util.h)
