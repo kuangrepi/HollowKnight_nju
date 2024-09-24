@@ -1,5 +1,4 @@
 #include <graphics.h>
-#pragma comment(lib, "MSIMG32.LIB")
 
 inline void putimage_alpha(int dst_x, int dst_y, IMAGE* img)
 {
