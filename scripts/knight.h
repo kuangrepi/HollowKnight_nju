@@ -1,26 +1,35 @@
-//
-// Created by yzzhhy on 24-10-10.
-//
-
 #ifndef HOLLOWKNIGHT_DEMO_KNIGHT_H
 #define HOLLOWKNIGHT_DEMO_KNIGHT_H
 
 
 #include "player.h"
+#include "Vector2.h"
+#include "Animation.h"
 
-class knight:public Player
+class Knight:public Player
 {
 public:
-    knight() = default;
-    ~knight() = default;
+    Knight() = default;
+    ~Knight() = default;
 
-    void on_update(int delta)
-    {
-        std::cout << "小骑士正在更新" << std::endl;
+    void on_update(int delta);
 
-    }
+    void on_input(const ExMessage& msg);
+
+    void on_draw(const Camera& camera);
 private:
+    Vector2 position;
+    Animation animation_idle_left;
+    Animation animation_idle_right;
+
+    Animation* current_animation = nullptr;
+
+    bool is_left_key_down = false;
+    bool is_right_key_down = false;
+
+    bool is_facing_right = true;
 };
 
 
 #endif //HOLLOWKNIGHT_DEMO_KNIGHT_H
+

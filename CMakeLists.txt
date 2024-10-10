@@ -19,7 +19,8 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/Camera.h
         scripts/player.h
         scripts/Hornet.h
-        scripts/knight.h)
+        scripts/Knight.cpp
+        scripts/Knight.h)
 
 target_link_libraries(Hollowknight_demo msimg32)
 

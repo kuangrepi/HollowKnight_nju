@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hollownight_demo.iml" filepath="$PROJECT_DIR$/.idea/Hollownight_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hollow knight.iml" filepath="$PROJECT_DIR$/.idea/hollow knight.iml" />
     </modules>
   </component>
