@@ -39,4 +39,8 @@
 
 1. 对Knight类进行了一些更新
 
-2. 
+2. 对于Timer类，Atlas类，Vector2类，Animation类的重复调用bug进行了修复
+
+3. 添加了resourses.cpp
+
+4. 写了一个资源加载函数

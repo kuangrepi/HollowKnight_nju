@@ -1,3 +1,6 @@
+#ifndef HOLLOWKNIGHT_DEMO_ATLAS_H
+#define HOLLOWKNIGHT_DEMO_ATLAS_H
+
 #include <vector>
 #include <graphics.h>
 #include <cstdio>
@@ -22,5 +25,7 @@ public:
     void add_image(const IMAGE& img);
 
 };
+
+#endif //HOLLOWKNIGHT_DEMO_ATLAS_H
 
 

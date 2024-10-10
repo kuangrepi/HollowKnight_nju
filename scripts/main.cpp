@@ -1,5 +1,11 @@
 #include <graphics.h>
+#include "Knight.h"
 #include "define.h"
+
+void load_game_resourses(){
+    atlas_knight_idle_left.load_from_file(_T("images/Idle/%d.PNG"), 9);
+    atlas_knight_idle_right.load_from_file(_T("images/IdleR/%d.PNG"), 9);
+}
 
 int main()
 {

@@ -5,18 +5,22 @@
 #include "player.h"
 #include "Vector2.h"
 #include "Animation.h"
+#include "define.h"
+
+extern Atlas atlas_knight_idle_left;
+extern Atlas atlas_knight_idle_right;
 
 class Knight:public Player
 {
 public:
-    Knight() = default;
+    Knight();
     ~Knight() = default;
 
-    void on_update(int delta);
+    void on_update(int delta) override;
 
-    void on_input(const ExMessage& msg);
+    void on_input(const ExMessage& msg) override;
 
-    void on_draw(const Camera& camera);
+    void on_draw(const Camera& camera) override;
 private:
     Vector2 position;
     Animation animation_idle_left;

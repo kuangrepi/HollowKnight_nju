@@ -1,3 +1,6 @@
+#ifndef HOLLOWKNIGHT_DEMO_TIMER_H
+#define HOLLOWKNIGHT_DEMO_TIMER_H
+
 #include <functional>
 
 
@@ -29,4 +32,6 @@ public:
     void on_update(int delta);
 
 };
+
+#endif //HOLLOWKNIGHT_DEMO_TIMER_H
 

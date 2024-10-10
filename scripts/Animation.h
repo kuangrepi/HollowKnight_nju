@@ -1,3 +1,5 @@
+#ifndef HOLLOWKNIGHT_DEMO_ANIMATION_H
+#define HOLLOWKNIGHT_DEMO_ANIMATION_H
 #include "Atlas.h"
 #include "util.h"
 #include <functional>
@@ -38,5 +40,6 @@ public:
 
 };
 
+#endif //HOLLOWKNIGHT_DEMO_ANIMATION_H
 
 

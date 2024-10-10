@@ -1,3 +1,6 @@
+#ifndef HOLLOWKNIGHT_DEMO_VECTOR2_H
+#define HOLLOWKNIGHT_DEMO_VECTOR2_H
+
 #include <cmath>
 
 class Vector2 {
@@ -44,3 +47,5 @@ public:
 
 
 };
+
+#endif //HOLLOWKNIGHT_DEMO_VECTOR2_H

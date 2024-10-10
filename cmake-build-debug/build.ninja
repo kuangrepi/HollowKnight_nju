@@ -91,6 +91,12 @@ build CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj: CXX_COMPILER__Hol
   OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
   OBJECT_FILE_DIR = CMakeFiles\Hollowknight_demo.dir\scripts
 
+build CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj: CXX_COMPILER__Hollowknight_demo_unscanned_Debug C$:/Users/guyu/Desktop/Hollowknight_demo/scripts/resourses.cpp || cmake_object_order_depends_target_Hollowknight_demo
+  DEP_FILE = CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hollowknight_demo.dir\scripts
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Hollowknight_demo
@@ -99,7 +105,7 @@ build CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj: CXX_COMPILER__Hol
 #############################################
 # Link the executable Hollowknight_demo.exe
 
-build Hollowknight_demo.exe: CXX_EXECUTABLE_LINKER__Hollowknight_demo_Debug CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj
+build Hollowknight_demo.exe: CXX_EXECUTABLE_LINKER__Hollowknight_demo_Debug CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  -Wl,-Bdynamic  -lmsimg32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
