@@ -5,7 +5,7 @@
 #ifndef HOLLOWKNIGHT_DEMO_HORNET_H
 #define HOLLOWKNIGHT_DEMO_HORNET_H
 
-#include "player/player.h"
+#include "player.h"
 
 class knight:public Player
 {

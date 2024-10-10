@@ -6,7 +6,7 @@
 #define HOLLOWKNIGHT_DEMO_KNIGHT_H
 
 
-#include "player/player.h"
+#include "player.h"
 
 class knight:public Player
 {
