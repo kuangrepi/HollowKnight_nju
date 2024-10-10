@@ -1,0 +1,5 @@
+ToolSet: 7.0 w64 (local)@D:\C Language\TDM-GCC-64
+Ninja: 1.12.0@D:\C Language\CLion 2023.2.1\bin\ninja\win\x64\ninja.exe
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=D:/C Language/CLion 2023.2.1/bin/ninja/win/x64/ninja.exe

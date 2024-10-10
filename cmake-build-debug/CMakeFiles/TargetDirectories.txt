@@ -1,0 +1,3 @@
+D:/projects/hollow knight/cmake-build-debug/CMakeFiles/Hollowknight_demo.dir
+D:/projects/hollow knight/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/projects/hollow knight/cmake-build-debug/CMakeFiles/rebuild_cache.dir
