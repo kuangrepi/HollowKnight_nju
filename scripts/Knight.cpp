@@ -23,10 +23,10 @@ void Knight::on_input(const ExMessage& msg){
             break;
         case WM_KEYUP:
             switch (msg.vkcode) {
-                case VK_LEFT: // A
+                case 0x41: // A
                     is_left_key_down = false;
                     break;
-                case VK_RIGHT: // D
+                case 0x44: // D
                     is_right_key_down = false;
                     break;
             }
