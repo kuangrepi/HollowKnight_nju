@@ -17,20 +17,19 @@ void Knight::on_input(const ExMessage& msg){
                     is_left_key_down = true;
                     break;
                 case 0x44: // D
-                    is_left_key_down = true;
+                    is_right_key_down = true;
                     break;
             }
             break;
         case WM_KEYUP:
             switch (msg.vkcode) {
-                case VK_LEFT: // A
-                    is_left_key_down = true;
+                case 0x41: // A
+                    is_left_key_down = false;
                     break;
-                case VK_RIGHT: // D
-                    is_left_key_down = true;
+                case 0x44: // D
+                    is_right_key_down = false;
                     break;
             }
-            break;
             break;
         default:
             break;
@@ -39,7 +38,6 @@ void Knight::on_input(const ExMessage& msg){
 
 void Knight::on_update(int delta) {
     int direction = is_right_key_down - is_left_key_down;
-
     if(direction != 0){
         is_facing_right = direction > 0;
     }
