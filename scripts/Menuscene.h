@@ -31,7 +31,7 @@ public:
 
     }
 
-    void on_update() {
+    void on_update(int delta) {
 
     }
 

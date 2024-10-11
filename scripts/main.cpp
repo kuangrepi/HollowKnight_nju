@@ -10,6 +10,8 @@ IMAGE img_gamescene_background;         //游戏背景图片
 Scene* game_scene = nullptr;
 Scene* menu_scene = nullptr;
 
+Knight* knight_1 = nullptr;
+
 SceneManager scene_manager;
 
 void load_game_resourses(){
@@ -41,7 +43,7 @@ int main()
             scene_manager.on_input(msg);
         }
 
-        scene_manager.on_update();
+        scene_manager.on_update(FRAME);
 
         cleardevice();
         scene_manager.on_draw();

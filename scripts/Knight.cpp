@@ -5,6 +5,9 @@
 Knight::Knight() {
     animation_idle_left.set_atlas(&atlas_knight_idle_left);
     animation_idle_right.set_atlas(&atlas_knight_idle_right);
+
+    animation_idle_left.set_interval(INTERVAL);
+    animation_idle_right.set_interval(INTERVAL);
 }
 void Knight::on_input(const ExMessage& msg){
     switch (msg.message) {
