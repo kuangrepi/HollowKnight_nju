@@ -1,14 +1,26 @@
 #include <graphics.h>
 #include "Knight.h"
 #include "define.h"
+#include "GameScene.h"
+#include "MenuScene.h"
+#include "SceneManager.h"
+
+IMAGE img_gamescene_background;         //游戏背景图片
+
+Scene* game_scene = nullptr;
+Scene* menu_scene = nullptr;
+
+SceneManager scene_manager;
 
 void load_game_resourses(){
     atlas_knight_idle_left.load_from_file(_T("images/Idle/%d.PNG"), 9);
     atlas_knight_idle_right.load_from_file(_T("images/IdleR/%d.PNG"), 9);
+    loadimage(&img_gamescene_background, _T("images/background.png"));
 }
 
 int main()
 {
+    load_game_resourses();
     initgraph(1280, 720);
 
     bool running = true;
@@ -17,14 +29,22 @@ int main()
 
     BeginBatchDraw();
 
+    game_scene = new Gamescene();
+    menu_scene = new Menuscene();
+
+    scene_manager.set_current_scene(game_scene);
+
     while (running){
         DWORD start_time = GetTickCount();
 
         while (peekmessage(&msg)){
-
+            scene_manager.on_input(msg);
         }
 
+        scene_manager.on_update();
+
         cleardevice();
+        scene_manager.on_draw();
         FlushBatchDraw();
 
         DWORD end_time = GetTickCount();
@@ -37,3 +57,4 @@ int main()
     EndBatchDraw();
     return 0;
 }
+

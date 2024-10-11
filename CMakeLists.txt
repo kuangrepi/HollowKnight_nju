@@ -21,7 +21,15 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/Hornet.h
         scripts/Knight.cpp
         scripts/Knight.h
-        scripts/resourses.cpp)
+        scripts/resourses.cpp
+        scripts/Scene.cpp
+        scripts/Scene.h
+        scripts/Gamescene.cpp
+        scripts/Gamescene.h
+        scripts/SceneManager.cpp
+        scripts/SceneManager.h
+        scripts/Menuscene.cpp
+        scripts/Menuscene.h)
 
 target_link_libraries(Hollowknight_demo msimg32)
 
