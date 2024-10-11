@@ -5,9 +5,13 @@
 Knight::Knight() {
     animation_idle_left.set_atlas(&atlas_knight_idle_left);
     animation_idle_right.set_atlas(&atlas_knight_idle_right);
+    animation_run_left.set_atlas(&atlas_knight_run_left);
+    animation_run_right.set_atlas(&atlas_knight_run_right);
 
     animation_idle_left.set_interval(INTERVAL);
     animation_idle_right.set_interval(INTERVAL);
+    animation_run_left.set_interval(INTERVAL);
+    animation_run_right.set_interval(INTERVAL);
 }
 void Knight::on_input(const ExMessage& msg){
     switch (msg.message) {
@@ -40,8 +44,14 @@ void Knight::on_update(int delta) {
     int direction = is_right_key_down - is_left_key_down;
     if(direction != 0){
         is_facing_right = direction > 0;
+        current_animation = is_facing_right ? &animation_run_right : &animation_run_left;
+        float distance = direction * run_velocity * delta;
+        on_run(distance);
     }
-    current_animation = is_facing_right ? &animation_idle_right : &animation_idle_left;
+    else{
+        current_animation = is_facing_right ? &animation_idle_right : &animation_idle_left;
+    }
+
     current_animation->on_update(delta);
 }
 

@@ -9,6 +9,8 @@
 
 extern Atlas atlas_knight_idle_left;
 extern Atlas atlas_knight_idle_right;
+extern Atlas atlas_knight_run_left;
+extern Atlas atlas_knight_run_right;
 
 class Knight:public Player
 {
@@ -21,10 +23,22 @@ public:
     void on_input(const ExMessage& msg) override;
 
     void on_draw(const Camera& camera) override;
+
+    void set_position(float x, float y){
+        position.x = x;
+        position.y = y;
+    }
+
+    void on_run(float distance){
+        position.x += distance;
+    }
+
 private:
     Vector2 position;
     Animation animation_idle_left;
     Animation animation_idle_right;
+    Animation animation_run_left;
+    Animation animation_run_right;
 
     Animation* current_animation = nullptr;
 
@@ -32,6 +46,8 @@ private:
     bool is_right_key_down = false;
 
     bool is_facing_right = true;
+
+    const float run_velocity = 0.15f;
 };
 
 

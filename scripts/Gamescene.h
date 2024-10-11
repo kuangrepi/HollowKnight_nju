@@ -24,6 +24,7 @@ public:
 
     void on_enter() {
         knight_1 = new Knight();
+        knight_1->set_position(600, 520);
     }
 
     void on_exit() {

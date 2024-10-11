@@ -27,10 +27,14 @@ public:
 
     }
 
-
+    void set_position(float x, float y){
+        position.x = x;
+        position.y = y;
+    }
 
 
 private:
+    Vector2 position;
 };
 
 
