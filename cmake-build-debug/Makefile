@@ -128,6 +128,43 @@ Hollowknight_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/build
 .PHONY : Hollowknight_demo/fast
 
+#=============================================================================
+# Target rules for targets named 1
+
+# Build rule for target.
+1 : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 1
+.PHONY : 1
+
+# fast build rule for target.
+1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/build
+.PHONY : 1/fast
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 scripts/Animation.obj: scripts/Animation.cpp.obj
 .PHONY : scripts/Animation.obj
 
@@ -424,7 +461,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... 1
 	@echo ... Hollowknight_demo
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 	@echo ... scripts/Animation.obj
 	@echo ... scripts/Animation.i
 	@echo ... scripts/Animation.s

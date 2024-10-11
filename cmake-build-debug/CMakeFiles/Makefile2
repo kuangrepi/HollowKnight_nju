@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build
 
 # The main recursive "all" target.
 all: CMakeFiles/Hollowknight_demo.dir/all
+all: CMakeFiles/1.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,6 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Hollowknight_demo.dir/clean
+clean: CMakeFiles/1.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -80,7 +82,7 @@ clean: CMakeFiles/Hollowknight_demo.dir/clean
 CMakeFiles/Hollowknight_demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Hollowknight_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target Hollowknight_demo"
 .PHONY : CMakeFiles/Hollowknight_demo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -98,6 +100,32 @@ Hollowknight_demo: CMakeFiles/Hollowknight_demo.dir/rule
 CMakeFiles/Hollowknight_demo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/clean
 .PHONY : CMakeFiles/Hollowknight_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1.dir
+
+# All Build rule for target.
+CMakeFiles/1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target 1"
+.PHONY : CMakeFiles/1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/1.dir/rule
+
+# Convenience name for target.
+1 : CMakeFiles/1.dir/rule
+.PHONY : 1
+
+# clean rule for target.
+CMakeFiles/1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make CMakeFiles/1.dir/clean
+.PHONY : CMakeFiles/1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

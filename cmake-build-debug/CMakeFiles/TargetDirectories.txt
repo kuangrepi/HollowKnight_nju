@@ -1,3 +1,4 @@
-C:/Users/guyu/Desktop/Hollowknight_demo/cmake-build-debug/CMakeFiles/Hollowknight_demo.dir
-C:/Users/guyu/Desktop/Hollowknight_demo/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/guyu/Desktop/Hollowknight_demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/oyster/Documents/GitHub/HollowKnight_nju/cmake-build-debug/CMakeFiles/Hollowknight_demo.dir
+C:/Users/oyster/Documents/GitHub/HollowKnight_nju/cmake-build-debug/CMakeFiles/1.dir
+C:/Users/oyster/Documents/GitHub/HollowKnight_nju/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/oyster/Documents/GitHub/HollowKnight_nju/cmake-build-debug/CMakeFiles/rebuild_cache.dir

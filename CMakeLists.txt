@@ -30,6 +30,7 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/SceneManager.h
         scripts/Menuscene.cpp
         scripts/Menuscene.h)
+add_executable(1 main.cpp)
 
 target_link_libraries(Hollowknight_demo msimg32)
 
