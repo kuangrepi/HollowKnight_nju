@@ -10,8 +10,8 @@ Knight::Knight() {
 
     animation_idle_left.set_interval(INTERVAL);
     animation_idle_right.set_interval(INTERVAL);
-    animation_run_left.set_interval(INTERVAL);
-    animation_run_right.set_interval(INTERVAL);
+    animation_run_left.set_interval(INTERVAL*6);
+    animation_run_right.set_interval(INTERVAL*6);
 }
 void Knight::on_input(const ExMessage& msg){
     switch (msg.message) {
