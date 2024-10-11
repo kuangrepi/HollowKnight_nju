@@ -47,4 +47,3 @@
 1. 可以显示小骑士的idle动画了（但是会闪，待修复）
 2. 将images文件夹移到了cmakedebug下面，这样可以用相对路径了
 3. 将scene类的on_update方法全部加上了delta参数
-4. 小骑士可以正确转向了
