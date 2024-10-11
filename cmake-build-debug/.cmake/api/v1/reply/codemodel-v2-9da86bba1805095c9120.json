@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Hollowknight_demo",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1-Debug-a724691c29a74a178825.json",
+					"name" : "1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Hollowknight_demo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Hollowknight_demo-Debug-de42f94b626d72eb47f1.json",
+					"jsonFile" : "target-Hollowknight_demo-Debug-ea2aeb500b5a81c098fe.json",
 					"name" : "Hollowknight_demo",
 					"projectIndex" : 0
 				}
@@ -49,12 +58,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/oyster/Documents/GitHub/HollowKnight_nju/cmake-build-debug",
-		"source" : "C:/Users/oyster/Documents/GitHub/HollowKnight_nju"
+		"build" : "D:/Git/HollowKnight_nju/cmake-build-debug",
+		"source" : "D:/Git/HollowKnight_nju"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 7
+		"minor" : 6
 	}
 }

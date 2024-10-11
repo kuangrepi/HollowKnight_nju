@@ -1,3 +1,0 @@
-C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\Hollowknight_demo.dir/objects.a
-C:\toolbox\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\Hollowknight_demo.dir/objects.a @CMakeFiles\Hollowknight_demo.dir\objects1.rsp
-C:\toolbox\CLion\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Hollowknight_demo.dir/objects.a -Wl,--no-whole-archive -o Hollowknight_demo.exe -Wl,--out-implib,libHollowknight_demo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Hollowknight_demo.dir\linkLibs.rsp
