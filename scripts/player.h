@@ -8,35 +8,47 @@
 #include "Camera.h"
 #include <graphics.h>
 #include <iostream>
+#include <unordered_map>
+#include "collision_box.h"
+#include "animation.h"
+#include "timer.h"
 
-class Player {
+class Player
+{
 public:
-    Player() = default;
-    ~Player() = default;
+    Player();
+    ~Player();
 
-    virtual void on_update(int delta)
-    {
-    }
+    virtual void on_update(int delta);
 
-    virtual void on_draw(const Camera & camera)
-    {
-    }
+    virtual void on_draw(const Camera& camera);
 
-    virtual void on_input(const ExMessage& msg)
-    {
+    virtual void on_input(const ExMessage& msg) {
 
     }
 
-    void set_position(float x, float y){
+    void set_position(float x, float y) {
         position.x = x;
         position.y = y;
     }
 
+protected:
+    const float FLOOR_Y = 620; // 地板的竖直方向坐标
+    const float GRAVITY = 980 * 2; // 重力大小
+    int hp = 10; // 角色生命值
+    Vector2 position; // 角色脚底位置
+    Vector2 velocity; // 角色速度
+    float logic_height = 0; // 角色的逻辑高度
+    bool is_facing_left = true; // 当前角色是否朝向左
+    bool enable_gravity = true; // 启用重力模拟
+    bool is_invulnerable = false; // 当前是否无敌
+    Timer timer_invulnerable_blink; // 无敌闪烁状态定时器
+    Timer timer_invulnerable_status; // 无敌状态定时器
+    bool is_blink_invisible = false; // 当前是否处于闪烁的不可见帧
+    CollisionBox* hit_box = nullptr; // 攻击碰撞箱
+    CollisionBox* hurt_box = nullptr; // 受击碰撞箱
+    std::unordered_map<std::string, Animation> animation_pool; // 角色动画池
 
-private:
-    Vector2 position;
 };
-
-
 
 #endif //HOLLOWKNIGHT_DEMO_PLAYER_H

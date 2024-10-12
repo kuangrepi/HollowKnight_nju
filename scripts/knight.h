@@ -1,7 +1,6 @@
 #ifndef HOLLOWKNIGHT_DEMO_KNIGHT_H
 #define HOLLOWKNIGHT_DEMO_KNIGHT_H
 
-
 #include "player.h"
 #include "Vector2.h"
 #include "Animation.h"
@@ -14,7 +13,7 @@ extern Atlas atlas_knight_start_run_right;
 extern Atlas atlas_knight_run_left;
 extern Atlas atlas_knight_run_right;
 
-class Knight:public Player
+class Knight : public Player
 {
 public:
     Knight();
@@ -26,17 +25,17 @@ public:
 
     void on_draw(const Camera& camera) override;
 
-    void set_position(float x, float y){
+    void set_position(float x, float y) {
         position.x = x;
         position.y = y;
     }
 
-    void on_run(float distance){
+    void on_run(float distance) {
         position.x += distance;
     }
 
-    void on_jump(){
-        if(position.y < 515)
+    void on_jump() {
+        if (position.y < 515)
             return;
         velocity.y += jump_velocity;
     }
@@ -44,9 +43,6 @@ public:
     void move_and_collide(int delta);
 
 private:
-    Vector2 position;
-    Vector2 velocity;
-
     Animation animation_idle_left;
     Animation animation_idle_right;
     Animation animation_knight_start_run_left;
@@ -67,7 +63,6 @@ private:
     const float run_velocity = 8.0f / FRAME;
     const float jump_velocity = -25.0f / FRAME;
 };
-
 
 #endif //HOLLOWKNIGHT_DEMO_KNIGHT_H
 

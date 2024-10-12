@@ -14,7 +14,7 @@ Knight* knight_1 = nullptr;
 
 SceneManager scene_manager;
 
-void load_game_resourses(){
+void load_game_resourses() {
     // 小骑士资源
     atlas_knight_idle_left.load_from_file(_T("images/Idle/%d.PNG"), 9);
     atlas_knight_idle_right.load_from_file(_T("images/IdleR/%d.PNG"), 9);
@@ -26,8 +26,7 @@ void load_game_resourses(){
     loadimage(&img_gamescene_background, _T("images/background.png"));
 }
 
-int main()
-{
+int main() {
     load_game_resourses();
     initgraph(1280, 720);
 
@@ -42,10 +41,10 @@ int main()
 
     scene_manager.set_current_scene(game_scene);
 
-    while (running){
+    while (running) {
         DWORD start_time = GetTickCount();
 
-        while (peekmessage(&msg)){
+        while (peekmessage(&msg)) {
             scene_manager.on_input(msg);
         }
 
@@ -57,7 +56,7 @@ int main()
 
         DWORD end_time = GetTickCount();
         DWORD delte_time = end_time - start_time;
-        if (delte_time < 1000 / FRAME){
+        if (delte_time < 1000 / FRAME) {
             Sleep(1000 / FRAME - delte_time);
         }
     }

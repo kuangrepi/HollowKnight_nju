@@ -1,7 +1,5 @@
 #include "Knight.h"
 
-
-
 Knight::Knight() {
     animation_idle_left.set_atlas(&atlas_knight_idle_left);
     animation_idle_right.set_atlas(&atlas_knight_idle_right);
@@ -10,6 +8,28 @@ Knight::Knight() {
     animation_run_left.set_atlas(&atlas_knight_run_left);
     animation_run_right.set_atlas(&atlas_knight_run_right);
 
+    animation_idle_left.set_interval(INTERVAL);
+    animation_idle_right.set_interval(INTERVAL);
+    animation_run_left.set_interval(INTERVAL * 6);
+    animation_run_right.set_interval(INTERVAL * 6);
+
+    logic_height = 120;
+
+    hit_box->set_size({150, 150});
+    hurt_box->set_size({40, 80});
+
+    hit_box->set_layer_src(CollisionLayer::None);
+    hit_box->set_layer_dst(CollisionLayer::Enemy);
+
+    hurt_box->set_layer_src(CollisionLayer::Player);
+    hurt_box->set_layer_dst(CollisionLayer::None);
+
+    hit_box->set_enabled(false);
+
+    hurt_box->set_on_collide([&]() {
+        //TODO decrease_hp();
+    });
+
     animation_idle_left.set_interval(FRAME);
     animation_idle_right.set_interval(FRAME);
     animation_knight_start_run_left.set_interval(FRAME*4);
@@ -17,7 +37,7 @@ Knight::Knight() {
     animation_run_left.set_interval(FRAME*8);
     animation_run_right.set_interval(FRAME*8);
 }
-void Knight::on_input(const ExMessage& msg){
+void Knight::on_input(const ExMessage& msg) {
     switch (msg.message) {
         case WM_KEYDOWN:
             switch (msg.vkcode) {
@@ -42,14 +62,13 @@ void Knight::on_input(const ExMessage& msg){
                     break;
             }
             break;
-        default:
-            break;
+        default:break;
     }
 }
 
 void Knight::on_update(int delta) {
     int direction = is_right_key_down - is_left_key_down;
-    if(direction != 0){
+    if (direction != 0) {
         is_facing_right = direction > 0;
         if(start_run < FRAME / 3){
             current_animation = is_facing_right ? &animation_knight_start_run_right : &animation_knight_start_run_left;
@@ -65,19 +84,21 @@ void Knight::on_update(int delta) {
 
         float distance = direction * run_velocity * delta;
         on_run(distance);
-    }
-    else{
+    } else {
         current_animation = is_facing_right ? &animation_idle_right : &animation_idle_left;
         start_run = 0;
     }
 
     current_animation->on_update(delta);
 
+    Player::on_update(delta);
+
     move_and_collide(delta);
 }
 
-void Knight::on_draw(const Camera &camera) {
-    current_animation->on_draw((int)position.x, (int)position.y);
+void Knight::on_draw(const Camera& camera) {
+    current_animation->on_draw((int) position.x, (int) position.y);
+    Player::on_draw(camera);
 }
 
 void Knight::move_and_collide(int delta){

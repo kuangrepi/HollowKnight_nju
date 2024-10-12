@@ -7,6 +7,7 @@
 
 #include "Scene.h"
 #include "SceneManager.h"
+#include "collision_manager.h"
 #include "Knight.h"
 
 #include <iostream>
@@ -16,7 +17,8 @@ extern IMAGE img_gamescene_background;
 
 extern Knight* knight_1;
 
-class Gamescene : public Scene{
+class Gamescene : public Scene
+{
     Camera camera;
 public:
     Gamescene() = default;
@@ -42,11 +44,11 @@ public:
     void on_draw() {
         putimage(0, 0, &img_gamescene_background);
         knight_1->on_draw(camera);
+        CollisionManager* collision_manager = CollisionManager::instance();
+        collision_manager->on_debug_draw();
     }
 
 private:
 };
-
-
 
 #endif //GAMESCENE_H

@@ -29,7 +29,12 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/SceneManager.cpp
         scripts/SceneManager.h
         scripts/Menuscene.cpp
-        scripts/Menuscene.h)
+        scripts/Menuscene.h
+        scripts/collision_layer.h
+        scripts/collision_box.h
+        scripts/collision_manager.h
+        scripts/collision_manager.cpp
+        scripts/player.cpp)
 
 target_link_libraries(Hollowknight_demo msimg32)
 
