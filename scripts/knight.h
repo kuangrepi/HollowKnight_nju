@@ -52,7 +52,7 @@ private:
     bool is_facing_right = true;
 
     int start_run = 0;
-    const float run_velocity = 0.15f;
+    const float run_velocity = 8.0f / FRAME;
 };
 
 
