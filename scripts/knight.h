@@ -9,6 +9,8 @@
 
 extern Atlas atlas_knight_idle_left;
 extern Atlas atlas_knight_idle_right;
+extern Atlas atlas_knight_start_run_left;
+extern Atlas atlas_knight_start_run_right;
 extern Atlas atlas_knight_run_left;
 extern Atlas atlas_knight_run_right;
 
@@ -37,6 +39,8 @@ private:
     Vector2 position;
     Animation animation_idle_left;
     Animation animation_idle_right;
+    Animation animation_knight_start_run_left;
+    Animation animation_knight_start_run_right;
     Animation animation_run_left;
     Animation animation_run_right;
 
@@ -47,6 +51,7 @@ private:
 
     bool is_facing_right = true;
 
+    int start_run = 0;
     const float run_velocity = 0.15f;
 };
 
