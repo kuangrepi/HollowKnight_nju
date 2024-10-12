@@ -21,20 +21,23 @@ void Knight::on_input(const ExMessage& msg){
     switch (msg.message) {
         case WM_KEYDOWN:
             switch (msg.vkcode) {
-                case 0x41: // A
+                case VK_LEFT: // <-
                     is_left_key_down = true;
                     break;
-                case 0x44: // D
+                case VK_RIGHT: // ->
                     is_right_key_down = true;
+                    break;
+                case 0x5A: // Z
+                    on_jump();
                     break;
             }
             break;
         case WM_KEYUP:
             switch (msg.vkcode) {
-                case 0x41: // A
+                case VK_LEFT: // <-
                     is_left_key_down = false;
                     break;
-                case 0x44: // D
+                case VK_RIGHT: // ->
                     is_right_key_down = false;
                     break;
             }
@@ -69,8 +72,21 @@ void Knight::on_update(int delta) {
     }
 
     current_animation->on_update(delta);
+
+    move_and_collide(delta);
 }
 
 void Knight::on_draw(const Camera &camera) {
     current_animation->on_draw((int)position.x, (int)position.y);
+}
+
+void Knight::move_and_collide(int delta){
+    velocity.y += gravity * delta;
+    position += velocity * (float)delta;
+    if(velocity.y > 0){
+        if(position.y > 520){
+            velocity.y = 0;
+            position.y = 520;
+        }
+    }
 }

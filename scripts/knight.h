@@ -35,8 +35,18 @@ public:
         position.x += distance;
     }
 
+    void on_jump(){
+        if(position.y < 515)
+            return;
+        velocity.y += jump_velocity;
+    }
+
+    void move_and_collide(int delta);
+
 private:
     Vector2 position;
+    Vector2 velocity;
+
     Animation animation_idle_left;
     Animation animation_idle_right;
     Animation animation_knight_start_run_left;
@@ -52,7 +62,10 @@ private:
     bool is_facing_right = true;
 
     int start_run = 0;
+
+    const float gravity = 0.01f / FRAME;
     const float run_velocity = 8.0f / FRAME;
+    const float jump_velocity = -25.0f / FRAME;
 };
 
 
