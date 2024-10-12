@@ -18,8 +18,8 @@ void load_game_resourses() {
     // 小骑士资源
     atlas_knight_idle_left.load_from_file(_T("images/Idle/%d.PNG"), 9);
     atlas_knight_idle_right.load_from_file(_T("images/IdleR/%d.PNG"), 9);
-    atlas_knight_start_run_left.load_from_file(_T("images/Walk/%d.PNG"), 11);
-    atlas_knight_start_run_right.load_from_file(_T("images/WalkR/%d.PNG"), 11);
+    atlas_knight_start_run_left.load_from_file(_T("images/Start_run/%d.PNG"), 6);
+    atlas_knight_start_run_right.load_from_file(_T("images/Start_runR/%d.PNG"), 6);
     atlas_knight_run_left.load_from_file(_T("images/Walk/%d.PNG"), 5);
     atlas_knight_run_right.load_from_file(_T("images/WalkR/%d.PNG"), 5);
     //
@@ -68,4 +68,3 @@ int main() {
     EndBatchDraw();
     return 0;
 }
-

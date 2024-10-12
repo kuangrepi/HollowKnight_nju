@@ -17,7 +17,7 @@ void Player::on_update(int delta) {
     if (position.y < 0) position.y = 0;
     if (position.y > getheight()) position.y = (float) getheight();
 
-    hurt_box->set_position(position);
+
 }
 
 void Player::on_draw(const Camera& camera) {

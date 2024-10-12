@@ -35,14 +35,21 @@ public:
     }
 
     void on_jump() {
-        if (position.y < 515)
-            return;
-        velocity.y += jump_velocity;
+        if(start_jump <= 120 && velocity.y >= -0.1f){
+            if(start_jump == 1) velocity.y += jump_velocity;
+            else velocity.y += jump_velocity / 25;
+            start_jump++;
+        }
     }
 
     void move_and_collide(int delta);
 
 private:
+    int hp = 10; // 角色生命值
+    Vector2 position; // 角色脚底位置
+    Vector2 position_hurt_box; // 角色碰撞箱位置
+    Vector2 velocity; // 角色速度
+
     Animation animation_idle_left;
     Animation animation_idle_right;
     Animation animation_knight_start_run_left;
@@ -57,11 +64,14 @@ private:
 
     bool is_facing_right = true;
 
-    int start_run = 0;
+    bool is_jump = false;
 
-    const float gravity = 0.01f / FRAME;
-    const float run_velocity = 8.0f / FRAME;
-    const float jump_velocity = -25.0f / FRAME;
+    int start_run = 0;
+    int start_jump = 1;
+
+    const float gravity = 0.005f / FRAME;
+    const float run_velocity = 6.0f / FRAME;
+    const float jump_velocity = -10.0f / FRAME;
 };
 
 #endif //HOLLOWKNIGHT_DEMO_KNIGHT_H

@@ -8,15 +8,11 @@ Knight::Knight() {
     animation_run_left.set_atlas(&atlas_knight_run_left);
     animation_run_right.set_atlas(&atlas_knight_run_right);
 
-    animation_idle_left.set_interval(INTERVAL);
-    animation_idle_right.set_interval(INTERVAL);
-    animation_run_left.set_interval(INTERVAL * 6);
-    animation_run_right.set_interval(INTERVAL * 6);
 
     logic_height = 120;
 
     hit_box->set_size({150, 150});
-    hurt_box->set_size({40, 80});
+    hurt_box->set_size({40, 100});
 
     hit_box->set_layer_src(CollisionLayer::None);
     hit_box->set_layer_dst(CollisionLayer::Enemy);
@@ -30,12 +26,12 @@ Knight::Knight() {
         //TODO decrease_hp();
     });
 
-    animation_idle_left.set_interval(FRAME);
-    animation_idle_right.set_interval(FRAME);
-    animation_knight_start_run_left.set_interval(FRAME*4);
-    animation_knight_start_run_right.set_interval(FRAME*4);
-    animation_run_left.set_interval(FRAME*8);
-    animation_run_right.set_interval(FRAME*8);
+    animation_idle_left.set_interval(FRAME*2);
+    animation_idle_right.set_interval(FRAME*2);
+    animation_knight_start_run_left.set_interval(FRAME*6);
+    animation_knight_start_run_right.set_interval(FRAME*6);
+    animation_run_left.set_interval(FRAME*6);
+    animation_run_right.set_interval(FRAME*6);
 }
 void Knight::on_input(const ExMessage& msg) {
     switch (msg.message) {
@@ -48,7 +44,7 @@ void Knight::on_input(const ExMessage& msg) {
                     is_right_key_down = true;
                     break;
                 case 0x5A: // Z
-                    on_jump();
+                    is_jump = true;
                     break;
             }
             break;
@@ -60,6 +56,9 @@ void Knight::on_input(const ExMessage& msg) {
                 case VK_RIGHT: // ->
                     is_right_key_down = false;
                     break;
+                case 0x5A: // Z
+                    is_jump = false;
+                    break;
             }
             break;
         default:break;
@@ -70,7 +69,7 @@ void Knight::on_update(int delta) {
     int direction = is_right_key_down - is_left_key_down;
     if (direction != 0) {
         is_facing_right = direction > 0;
-        if(start_run < FRAME / 3){
+        if(start_run < FRAME / 6){
             current_animation = is_facing_right ? &animation_knight_start_run_right : &animation_knight_start_run_left;
             start_run++;
             animation_run_right.reset();
@@ -89,11 +88,19 @@ void Knight::on_update(int delta) {
         start_run = 0;
     }
 
-    current_animation->on_update(delta);
+    if (position.y > 518){
+        start_jump = 1;
+    }
+    if(is_jump) on_jump();
 
+    current_animation->on_update(delta);
+    position_hurt_box.x = position.x + 15;
+    position_hurt_box.y = position.y + 20;
+    hurt_box->set_position(position_hurt_box);
     Player::on_update(delta);
 
     move_and_collide(delta);
+
 }
 
 void Knight::on_draw(const Camera& camera) {

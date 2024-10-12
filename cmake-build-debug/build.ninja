@@ -145,6 +145,22 @@ build CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj: CXX_COMPILER__
   TARGET_COMPILE_PDB = CMakeFiles\Hollowknight_demo.dir\
   TARGET_PDB = Hollowknight_demo.pdb
 
+build CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj: CXX_COMPILER__Hollowknight_demo_unscanned_Debug C$:/Users/guyu/Desktop/Hollowknight_demo/scripts/collision_manager.cpp || cmake_object_order_depends_target_Hollowknight_demo
+  DEP_FILE = CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hollowknight_demo.dir\scripts
+  TARGET_COMPILE_PDB = CMakeFiles\Hollowknight_demo.dir\
+  TARGET_PDB = Hollowknight_demo.pdb
+
+build CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj: CXX_COMPILER__Hollowknight_demo_unscanned_Debug C$:/Users/guyu/Desktop/Hollowknight_demo/scripts/player.cpp || cmake_object_order_depends_target_Hollowknight_demo
+  DEP_FILE = CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hollowknight_demo.dir\scripts
+  TARGET_COMPILE_PDB = CMakeFiles\Hollowknight_demo.dir\
+  TARGET_PDB = Hollowknight_demo.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Hollowknight_demo
@@ -153,7 +169,7 @@ build CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable Hollowknight_demo.exe
 
-build Hollowknight_demo.exe: CXX_EXECUTABLE_LINKER__Hollowknight_demo_Debug CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj
+build Hollowknight_demo.exe: CXX_EXECUTABLE_LINKER__Hollowknight_demo_Debug CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  -Wl,-Bdynamic  -lmsimg32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
