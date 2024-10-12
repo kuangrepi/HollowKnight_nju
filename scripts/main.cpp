@@ -41,8 +41,12 @@ int main() {
 
     scene_manager.set_current_scene(game_scene);
 
+    LARGE_INTEGER frequency;
+    LARGE_INTEGER start_time, end_time;
+    QueryPerformanceFrequency(&frequency);
+
     while (running) {
-        DWORD start_time = GetTickCount();
+        QueryPerformanceCounter(&start_time);
 
         while (peekmessage(&msg)) {
             scene_manager.on_input(msg);
@@ -54,10 +58,10 @@ int main() {
         scene_manager.on_draw();
         FlushBatchDraw();
 
-        DWORD end_time = GetTickCount();
-        DWORD delte_time = end_time - start_time;
-        if (delte_time < 1000 / FRAME) {
-            Sleep(1000 / FRAME - delte_time);
+        QueryPerformanceCounter(&end_time);
+        double delta_time = static_cast<double>(end_time.QuadPart - start_time.QuadPart) / frequency.QuadPart;
+        if (delta_time < 1.0 / FRAME) {
+            Sleep(static_cast<DWORD>((1.0 / FRAME - delta_time) * 1000));
         }
     }
 
