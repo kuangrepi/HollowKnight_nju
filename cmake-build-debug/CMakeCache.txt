@@ -251,6 +251,15 @@ Hollowknight_demo_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Hollowknight_demo_SOURCE_DIR:STATIC=D:/Git/HollowKnight_nju
 
+//Value Computed by CMake
+Hollowknight_nju_BINARY_DIR:STATIC=D:/Git/HollowKnight_nju/cmake-build-debug
+
+//Value Computed by CMake
+Hollowknight_nju_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Hollowknight_nju_SOURCE_DIR:STATIC=D:/Git/HollowKnight_nju
+
 
 ########################
 # INTERNAL cache entries

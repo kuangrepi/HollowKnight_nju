@@ -78,6 +78,8 @@ private:
 
     bool is_jump = false;
 
+    bool is_land = false;
+
     int start_run = 0;
     int start_jump = 1;
 

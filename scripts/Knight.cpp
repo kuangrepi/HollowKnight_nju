@@ -101,26 +101,28 @@ void Knight::on_update(int delta) {
         current_animation = is_facing_right ? &animation_idle_right : &animation_idle_left;
         start_run = 0;
     }
-    if(position.y < 518) {
-        if (position.y > 450 && velocity.y < 0) {
+    if(position.y <= 518) {
+        if (position.y > 400 && velocity.y < 0 && (animation_jump_start_right.get_idx_frame() < 11 || animation_jump_start_left.get_idx_frame() < 11)) {
             current_animation = is_facing_right ? &animation_jump_start_right : &animation_jump_start_left;
-        } else if (position.y > 450 && velocity.y > 0) {
-            current_animation = is_facing_right ? &animation_jump_land_right : &animation_jump_land_left;
         } else {
             current_animation = is_facing_right ? &animation_jump_loop_right : &animation_jump_loop_left;
             if(velocity.y > 0) {
                 animation_jump_start_left.reset();
-                animation_jump_start_left.reset();
+                animation_jump_start_right.reset();
             }
-            else{
-                animation_jump_start_left.reset();
-                animation_jump_start_left.reset();
-            }
-
         }
     }
+    else if (is_land) {
+        current_animation = is_facing_right ? &animation_jump_land_right : &animation_jump_land_left;
+        if(animation_jump_land_right.get_idx_frame() == 2 || animation_jump_land_left.get_idx_frame() == 2){
+            animation_jump_land_left.reset();
+            animation_jump_land_right.reset();
+            is_land = false;
+        }
 
-    if (position.y > 518){
+    }
+
+    if (position.y >= 520){
         start_jump = 1;
     }
     if(is_jump) on_jump();
@@ -145,6 +147,7 @@ void Knight::move_and_collide(int delta){
     position += velocity * (float)delta;
     if(velocity.y > 0){
         if(position.y > 520){
+            if(velocity.y > 0.01) is_land = true;
             velocity.y = 0;
             position.y = 520;
         }
