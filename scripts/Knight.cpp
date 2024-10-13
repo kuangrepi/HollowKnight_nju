@@ -167,6 +167,15 @@ void Knight::on_update(int delta) {
     else{
         animation_attack_left_1.reset();
         animation_attack_right_1.reset();
+        move_0 = true;
+        move_1 = true;
+        move_2 = true;
+        move_3 = true;
+        move_4 = true;
+        move_5 = false;
+        move_6l = 0;
+        move_6 = false;
+        hurt_pre = 615;
     }
 
     if (position.y >= 520){
