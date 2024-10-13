@@ -1133,13 +1133,17 @@ CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj
  D:/Software/HollowKnight_nju/scripts/Knight.h
  D:/Software/HollowKnight_nju/scripts/Scene.h
  D:/Software/HollowKnight_nju/scripts/SceneManager.h
+ D:/Software/HollowKnight_nju/scripts/Timer.h
  D:/Software/HollowKnight_nju/scripts/Vector2.h
  D:/Software/HollowKnight_nju/scripts/Animation.h
+ D:/Software/HollowKnight_nju/scripts/barb.h
  D:/Software/HollowKnight_nju/scripts/collision_box.h
  D:/Software/HollowKnight_nju/scripts/collision_layer.h
  D:/Software/HollowKnight_nju/scripts/collision_manager.h
  D:/Software/HollowKnight_nju/scripts/define.h
+ D:/Software/HollowKnight_nju/scripts/enemy.h
  D:/Software/HollowKnight_nju/scripts/player.h
+ D:/Software/HollowKnight_nju/scripts/sword.h
  D:/Software/HollowKnight_nju/scripts/Timer.h
  D:/Software/HollowKnight_nju/scripts/util.h
 

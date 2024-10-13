@@ -119,6 +119,26 @@ void Enemy::on_update(int delta) {
         is_facing_left = false;
     }
 
+    // 本应在Player::on_update中处理的逻辑
+    if (hp <= 0)
+        velocity.x = 0;
+    if (enable_gravity)
+        velocity.y += GRAVITY * delta;
+
+    position += velocity * delta;
+
+    if (position.y >= FLOOR_Y) {
+        position.y = FLOOR_Y;
+        velocity.y = 0;
+    }
+
+    hurt_box->set_position(position);
+
+//    if (!current_animation)
+//        return;
+
+    current_animation->on_update(delta);
+
     Player::on_update(delta);
 
     hit_box->set_position(position);

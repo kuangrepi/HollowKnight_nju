@@ -14,7 +14,6 @@ Knight::Knight() {
     animation_jump_land_left.set_atlas(&atlas_knight_jump_land_left);
     animation_jump_land_right.set_atlas(&atlas_knight_jump_land_right);
 
-
     logic_height = 120;
 
     hit_box->set_size({150, 150});
@@ -32,18 +31,18 @@ Knight::Knight() {
         //TODO decrease_hp();
     });
 
-    animation_idle_left.set_interval(FRAME*2);
-    animation_idle_right.set_interval(FRAME*2);
-    animation_knight_start_run_left.set_interval(FRAME*6);
-    animation_knight_start_run_right.set_interval(FRAME*6);
-    animation_run_left.set_interval(FRAME*6);
-    animation_run_right.set_interval(FRAME*6);
-    animation_jump_start_left.set_interval(FRAME*3);
-    animation_jump_start_right.set_interval(FRAME*3);
-    animation_jump_loop_left.set_interval(FRAME*6);
-    animation_jump_loop_right.set_interval(FRAME*6);
-    animation_jump_land_left.set_interval(FRAME*6);
-    animation_jump_land_right.set_interval(FRAME*6);
+    animation_idle_left.set_interval(FRAME * 2);
+    animation_idle_right.set_interval(FRAME * 2);
+    animation_knight_start_run_left.set_interval(FRAME * 6);
+    animation_knight_start_run_right.set_interval(FRAME * 6);
+    animation_run_left.set_interval(FRAME * 6);
+    animation_run_right.set_interval(FRAME * 6);
+    animation_jump_start_left.set_interval(FRAME * 3);
+    animation_jump_start_right.set_interval(FRAME * 3);
+    animation_jump_loop_left.set_interval(FRAME * 6);
+    animation_jump_loop_right.set_interval(FRAME * 6);
+    animation_jump_land_left.set_interval(FRAME * 6);
+    animation_jump_land_right.set_interval(FRAME * 6);
 }
 void Knight::on_input(const ExMessage& msg) {
     switch (msg.message) {
@@ -82,18 +81,16 @@ void Knight::on_update(int delta) {
     if (direction != 0) {
         is_facing_right = direction > 0;
 
-            if(start_run < FRAME / 6){
-                current_animation = is_facing_right ? &animation_knight_start_run_right : &animation_knight_start_run_left;
-                start_run++;
-                animation_run_right.reset();
-                animation_run_left.reset();
-            }
-            else{
-                current_animation = is_facing_right ? &animation_run_right : &animation_run_left;
-                animation_knight_start_run_left.reset();
-                animation_knight_start_run_right.reset();
-            }
-
+        if (start_run < FRAME / 6) {
+            current_animation = is_facing_right ? &animation_knight_start_run_right : &animation_knight_start_run_left;
+            start_run++;
+            animation_run_right.reset();
+            animation_run_left.reset();
+        } else {
+            current_animation = is_facing_right ? &animation_run_right : &animation_run_left;
+            animation_knight_start_run_left.reset();
+            animation_knight_start_run_right.reset();
+        }
 
         float distance = direction * run_velocity * delta;
         on_run(distance);
@@ -101,20 +98,20 @@ void Knight::on_update(int delta) {
         current_animation = is_facing_right ? &animation_idle_right : &animation_idle_left;
         start_run = 0;
     }
-    if(position.y <= 518) {
-        if (position.y > 350 && velocity.y < 0 && (animation_jump_start_right.get_idx_frame() < 11 || animation_jump_start_left.get_idx_frame() < 11)) {
+    if (position.y <= 518) {
+        if (position.y > 350 && velocity.y < 0
+            && (animation_jump_start_right.get_idx_frame() < 11 || animation_jump_start_left.get_idx_frame() < 11)) {
             current_animation = is_facing_right ? &animation_jump_start_right : &animation_jump_start_left;
         } else {
             current_animation = is_facing_right ? &animation_jump_loop_right : &animation_jump_loop_left;
-            if(velocity.y > 0) {
+            if (velocity.y > 0) {
                 animation_jump_start_left.reset();
                 animation_jump_start_right.reset();
             }
         }
-    }
-    else if (is_land) {
+    } else if (is_land) {
         current_animation = is_facing_right ? &animation_jump_land_right : &animation_jump_land_left;
-        if(animation_jump_land_right.get_idx_frame() == 2 || animation_jump_land_left.get_idx_frame() == 2){
+        if (animation_jump_land_right.get_idx_frame() == 2 || animation_jump_land_left.get_idx_frame() == 2) {
             animation_jump_land_left.reset();
             animation_jump_land_right.reset();
             is_land = false;
@@ -122,10 +119,10 @@ void Knight::on_update(int delta) {
 
     }
 
-    if (position.y >= 520){
+    if (position.y >= 520) {
         start_jump = 1;
     }
-    if(is_jump){
+    if (is_jump) {
         on_jump();
         animation_knight_start_run_left.reset();
         animation_knight_start_run_right.reset();
@@ -143,15 +140,15 @@ void Knight::on_update(int delta) {
 
 void Knight::on_draw(const Camera& camera) {
     current_animation->on_draw((int) position.x, (int) position.y);
-    Player::on_draw(camera);
+    //Player::on_draw(camera);
 }
 
-void Knight::move_and_collide(int delta){
+void Knight::move_and_collide(int delta) {
     velocity.y += gravity * delta;
-    position += velocity * (float)delta;
-    if(velocity.y > 0){
-        if(position.y > 520){
-            if(velocity.y > 0.01) is_land = true;
+    position += velocity * (float) delta;
+    if (velocity.y > 0) {
+        if (position.y > 520) {
+            if (velocity.y > 0.01) is_land = true;
             velocity.y = 0;
             position.y = 520;
         }

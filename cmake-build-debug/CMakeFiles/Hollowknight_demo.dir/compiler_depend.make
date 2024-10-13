@@ -1129,13 +1129,17 @@ CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj: D:/Software/HollowKn
   D:/Software/HollowKnight_nju/scripts/Knight.h \
   D:/Software/HollowKnight_nju/scripts/Scene.h \
   D:/Software/HollowKnight_nju/scripts/SceneManager.h \
+  D:/Software/HollowKnight_nju/scripts/Timer.h \
   D:/Software/HollowKnight_nju/scripts/Vector2.h \
   D:/Software/HollowKnight_nju/scripts/Animation.h \
+  D:/Software/HollowKnight_nju/scripts/barb.h \
   D:/Software/HollowKnight_nju/scripts/collision_box.h \
   D:/Software/HollowKnight_nju/scripts/collision_layer.h \
   D:/Software/HollowKnight_nju/scripts/collision_manager.h \
   D:/Software/HollowKnight_nju/scripts/define.h \
+  D:/Software/HollowKnight_nju/scripts/enemy.h \
   D:/Software/HollowKnight_nju/scripts/player.h \
+  D:/Software/HollowKnight_nju/scripts/sword.h \
   D:/Software/HollowKnight_nju/scripts/Timer.h \
   D:/Software/HollowKnight_nju/scripts/util.h
 
@@ -6190,23 +6194,23 @@ C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include
 
 D:/Software/HollowKnight_nju/scripts/Knight.h:
 
+D:/Software/HollowKnight_nju/scripts/barb.h:
+
 D:/Software/HollowKnight_nju/scripts/collision_box.h:
 
 D:/Software/HollowKnight_nju/scripts/collision_layer.h:
 
-D:/Software/HollowKnight_nju/scripts/Menuscene.cpp:
+D:/Software/HollowKnight_nju/scripts/enemy.h:
 
-D:/Software/HollowKnight_nju/scripts/barb.h:
+D:/Software/HollowKnight_nju/scripts/sword.h:
+
+D:/Software/HollowKnight_nju/scripts/Menuscene.cpp:
 
 C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm:
 
 C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h:
 
 D:/Software/HollowKnight_nju/scripts/enemy.cpp:
-
-D:/Software/HollowKnight_nju/scripts/enemy.h:
-
-D:/Software/HollowKnight_nju/scripts/sword.h:
 
 D:/Software/HollowKnight_nju/scripts/main.cpp:
 

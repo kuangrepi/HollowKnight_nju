@@ -9,6 +9,7 @@
 #include "SceneManager.h"
 #include "collision_manager.h"
 #include "Knight.h"
+#include "enemy.h"
 
 #include <iostream>
 
@@ -16,6 +17,7 @@ extern SceneManager scene_manager;
 extern IMAGE img_gamescene_background;
 
 extern Knight* knight_1;
+extern Enemy* enemy;
 
 class Gamescene : public Scene
 {
@@ -39,6 +41,7 @@ public:
 
     void on_update(int delta) {
         knight_1->on_update(delta);
+        //  enemy->on_update(delta);
         CollisionManager* collision_manager = CollisionManager::instance();
         collision_manager->process_collision();
     }
@@ -46,6 +49,7 @@ public:
     void on_draw() {
         putimage(0, 0, &img_gamescene_background);
         knight_1->on_draw(camera);
+        enemy->on_draw(camera);
         CollisionManager* collision_manager = CollisionManager::instance();
         collision_manager->on_debug_draw();
     }

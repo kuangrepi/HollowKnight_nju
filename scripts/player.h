@@ -23,28 +23,56 @@ public:
 
     virtual void on_draw(const Camera& camera);
 
-    virtual void on_input(const ExMessage& msg) {
+    virtual void on_input(const ExMessage& msg);
 
-    }
+    virtual void on_hurt();
 
-    virtual void on_hurt() {
+    void decrease_hp();
 
-    }
-
-    void decrease_hp() {
-        if (!is_invulnerable) {
-            hp--;
-            is_invulnerable = true;
-            timer_invulnerable_status.restart();
-            timer_invulnerable_blink.restart();
-        }
-        std::cout << "hp: " << hp << std::endl;
+    int get_hp() const {
+        return hp;
     }
 
     void set_position(float x, float y) {
         position.x = x;
         position.y = y;
     }
+
+    const Vector2& get_position() const {
+        return position;
+    }
+
+    void set_velocity(float x, float y) {
+        velocity.x = x;
+        velocity.y = y;
+    }
+
+    const Vector2& get_velocity() const {
+        return velocity;
+    }
+
+    void set_gravity_enabled(bool flag) {
+        enable_gravity = flag;
+    }
+
+    CollisionBox* get_hit_box() const {
+        return hit_box;
+    }
+
+    CollisionBox* get_hurt_box() const {
+        return hurt_box;
+    }
+
+    bool is_on_floor() const {
+        return position.y >= FLOOR_Y;
+    }
+
+    void make_invulnerable() {
+        is_invulnerable = true;
+        timer_invulnerable_status.restart();
+    }
+
+    void set_animation(const std::string& name) {}
 
 protected:
     const float FLOOR_Y = 620; // 地板的竖直方向坐标
@@ -61,6 +89,7 @@ protected:
     bool is_blink_invisible = false; // 当前是否处于闪烁的不可见帧
     CollisionBox* hit_box = nullptr; // 攻击碰撞箱
     CollisionBox* hurt_box = nullptr; // 受击碰撞箱
+    Animation* current_animation = nullptr; // 当前动画
     std::unordered_map<std::string, Animation> animation_pool; // 角色动画池
 
 };

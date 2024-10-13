@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Git/HollowKnight_nju/cmake-build-debug",
-		"source" : "D:/Git/HollowKnight_nju"
+		"build" : "D:/Software/HollowKnight_nju/cmake-build-debug",
+		"source" : "D:/Software/HollowKnight_nju"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }
