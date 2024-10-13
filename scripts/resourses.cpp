@@ -39,6 +39,7 @@ Atlas animation_throw_silk_left;
 Atlas animation_throw_silk_right;
 Atlas animation_vfx_dash_in_air_left;
 Atlas animation_vfx_dash_in_air_right;
+
 Atlas atlas_knight_jump_start_left;
 Atlas atlas_knight_jump_start_right;
 Atlas atlas_knight_jump_loop_left;
