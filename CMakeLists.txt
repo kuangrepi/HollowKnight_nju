@@ -18,7 +18,6 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/Camera.cpp
         scripts/Camera.h
         scripts/player.h
-        scripts/Hornet.h
         scripts/Knight.cpp
         scripts/Knight.h
         scripts/resourses.cpp

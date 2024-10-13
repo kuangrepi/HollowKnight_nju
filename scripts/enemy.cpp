@@ -222,3 +222,12 @@ void Enemy::on_throw_silk() {
     //is_throwing_silk = true;
     animation_silk.reset();
 }
+
+void Enemy::switch_state(const std::string& id){
+    state_machine.switch_to(id);
+}
+
+void Enemy::set_animation(const std::string& id){
+    current_animation = &animation_pool[id];
+    is_facing_left = true;
+}

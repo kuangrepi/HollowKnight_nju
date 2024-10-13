@@ -7,6 +7,9 @@
 
 #include "timer.h"
 #include "statenode.h"
+#include "enemy.h"
+
+extern Enemy* enemy;
 
 class EnemyAimState : public StateNode
 {
@@ -155,8 +158,5 @@ private:
     Timer timer_throw;
     Timer timer_switch;
 };
-
-
-
 
 #endif //HOLLOWKNIGHT_DEMO_ENEMY_STATE_NODE_H
