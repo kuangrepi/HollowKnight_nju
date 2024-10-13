@@ -102,7 +102,7 @@ void Knight::on_update(int delta) {
         start_run = 0;
     }
     if(position.y <= 518) {
-        if (position.y > 400 && velocity.y < 0 && (animation_jump_start_right.get_idx_frame() < 11 || animation_jump_start_left.get_idx_frame() < 11)) {
+        if (position.y > 350 && velocity.y < 0 && (animation_jump_start_right.get_idx_frame() < 11 || animation_jump_start_left.get_idx_frame() < 11)) {
             current_animation = is_facing_right ? &animation_jump_start_right : &animation_jump_start_left;
         } else {
             current_animation = is_facing_right ? &animation_jump_loop_right : &animation_jump_loop_left;
@@ -125,7 +125,11 @@ void Knight::on_update(int delta) {
     if (position.y >= 520){
         start_jump = 1;
     }
-    if(is_jump) on_jump();
+    if(is_jump){
+        on_jump();
+        animation_knight_start_run_left.reset();
+        animation_knight_start_run_right.reset();
+    }
 
     current_animation->on_update(delta);
     position_hurt_box.x = position.x + 15;

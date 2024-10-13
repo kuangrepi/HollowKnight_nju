@@ -14,3 +14,9 @@
 64	1146	7505077576159675	CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj	b86ff3fdeaa59e7c
 71	1200	7505077576219681	CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj	c1f828a84bb43eb7
 77	1313	7505077576280077	CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj	cbff6d8eac8b141d
+3	830	7505093932347546	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	4a90f51b9af3fd69
+830	1148	7505093940614298	Hollowknight_demo.exe	76266c777ab1139b
+3	828	7505094248297692	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	4a90f51b9af3fd69
+828	1151	7505094256548477	Hollowknight_demo.exe	76266c777ab1139b
+24	853	7505095031145035	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	4a90f51b9af3fd69
+853	1179	7505095039436658	Hollowknight_demo.exe	76266c777ab1139b
