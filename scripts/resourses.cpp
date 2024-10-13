@@ -7,6 +7,18 @@ Atlas atlas_knight_start_run_left;
 Atlas atlas_knight_start_run_right;
 Atlas atlas_knight_run_left;
 Atlas atlas_knight_run_right;
+Atlas atlas_knight_jump_start_left;
+Atlas atlas_knight_jump_start_right;
+Atlas atlas_knight_jump_loop_left;
+Atlas atlas_knight_jump_loop_right;
+Atlas atlas_knight_jump_land_left;
+Atlas atlas_knight_jump_land_right;
+Atlas altas_knight_attack_left_1;
+Atlas altas_knight_attack_right_1;
+Atlas altas_knight_attack_left_effect_1;
+Atlas altas_knight_attack_right_effect_1;
+
+//上面是小骑士的资源
 
 Atlas atlas_sword;
 Atlas atlas_barb_loose;
@@ -37,9 +49,4 @@ Atlas atlas_throw_silk_left;
 Atlas atlas_throw_silk_right;
 Atlas atlas_vfx_dash_in_air_left;
 Atlas atlas_vfx_dash_in_air_right;
-Atlas atlas_knight_jump_start_left;
-Atlas atlas_knight_jump_start_right;
-Atlas atlas_knight_jump_loop_left;
-Atlas atlas_knight_jump_loop_right;
-Atlas atlas_knight_jump_land_left;
-Atlas atlas_knight_jump_land_right;
+
