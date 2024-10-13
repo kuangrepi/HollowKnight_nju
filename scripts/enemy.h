@@ -37,8 +37,8 @@ public:
     Enemy();
     ~Enemy();
 
-    void on_update(int delta) override {};
-    void on_draw(const Camera& camera) override {};
+    void on_update(int delta) override;
+    void on_draw(const Camera& camera) override;
     void on_hurt() override {};
 
     void set_facing_left(bool flag) {

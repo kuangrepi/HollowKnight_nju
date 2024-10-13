@@ -3,8 +3,8 @@
 
 #include <functional>
 
-
-class Timer {
+class Timer
+{
 private:
     int pass_time = 0;              // 已过时间
     int wait_time = 0;              // 等待时间
@@ -21,7 +21,7 @@ public:
 
     void set_wait_time(int val);
 
-    void set_one_shoot(bool flag);
+    void set_one_shot(bool flag);
 
     void set_callback(std::function<void()> callback);
 

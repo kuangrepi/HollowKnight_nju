@@ -14,6 +14,7 @@ Scene* game_scene = nullptr;
 Scene* menu_scene = nullptr;
 
 Knight* knight_1 = nullptr;
+Enemy* enemy = nullptr;
 
 SceneManager scene_manager;
 
