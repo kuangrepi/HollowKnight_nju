@@ -164,6 +164,10 @@ void Knight::on_update(int delta) {
             is_attack = false;
         }
     }
+    else{
+        animation_attack_left_1.reset();
+        animation_attack_right_1.reset();
+    }
 
     if (position.y >= 520){
         start_jump = 1;
