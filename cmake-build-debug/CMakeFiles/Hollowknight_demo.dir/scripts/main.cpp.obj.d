@@ -427,8 +427,8 @@ CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj: \
  D:\Software\HollowKnight_nju\scripts\Scene.h \
  D:\Software\HollowKnight_nju\scripts\SceneManager.h \
  D:\Software\HollowKnight_nju\scripts\collision_manager.h \
- D:\Software\HollowKnight_nju\scripts\MenuScene.h \
- D:\Software\HollowKnight_nju\scripts\sword.h \
+ D:\Software\HollowKnight_nju\scripts\enemy.h \
  D:\Software\HollowKnight_nju\scripts\barb.h \
  D:\Software\HollowKnight_nju\scripts\Timer.h \
- D:\Software\HollowKnight_nju\scripts\enemy.h
+ D:\Software\HollowKnight_nju\scripts\sword.h \
+ D:\Software\HollowKnight_nju\scripts\MenuScene.h
