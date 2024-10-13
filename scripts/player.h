@@ -12,7 +12,7 @@
 #include "collision_box.h"
 #include "animation.h"
 #include "timer.h"
-#include "StateMachine"
+#include "state_machine.h"
 
 class Player
 {
@@ -64,6 +64,7 @@ protected:
     CollisionBox* hit_box = nullptr; // 攻击碰撞箱
     CollisionBox* hurt_box = nullptr; // 受击碰撞箱
     std::unordered_map<std::string, Animation> animation_pool; // 角色动画池
+
 
 };
 
