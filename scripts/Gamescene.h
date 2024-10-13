@@ -1,7 +1,3 @@
-//
-// Created by oyster on 24-10-10.
-//
-
 #ifndef GAMESCENE_H
 #define GAMESCENE_H
 
