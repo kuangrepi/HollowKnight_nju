@@ -110,7 +110,9 @@ void Knight::on_update(int delta) {
                 break;
         }
     }
-    if(hurt_pre - position_hurt_box.x > 35 || hurt_pre - position_hurt_box.x < -35)
+    if((hurt_pre - position_hurt_box.x > 35 && hurt_pre - position_hurt_box.x < 60
+    || hurt_pre - position_hurt_box.x < -35 && hurt_pre - position_hurt_box.x > -60)
+    && is_attack && is_facing_right)
         position_hurt_box.x = hurt_pre;
     hurt_box->set_position(position_hurt_box);
     hurt_pre = position_hurt_box.x;
