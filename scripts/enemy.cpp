@@ -1,3 +1,4 @@
+#include <algorithm>
 #include "enemy.h"
 
 Enemy::Enemy() {
@@ -86,22 +87,118 @@ Enemy::Enemy() {
         animation_dash_on_floor_right.set_loop(true);
         animation_fall_left.set_loop(true);
         animation_fall_right.set_loop(true);
-        animation_idle_left.set_loop(false);
-        animation_idle_right.set_loop(false);
+        animation_idle_left.set_loop(true);
+        animation_idle_right.set_loop(true);
         animation_jump_left.set_loop(false);
         animation_jump_right.set_loop(false);
-        animation_run_left.set_loop(false);
-        animation_run_right.set_loop(false);
+        animation_run_left.set_loop(true);
+        animation_run_right.set_loop(true);
         animation_squat_left.set_loop(false);
         animation_squat_right.set_loop(false);
         animation_throw_barb_left.set_loop(false);
         animation_throw_barb_right.set_loop(false);
         animation_throw_sword_left.set_loop(false);
         animation_throw_sword_right.set_loop(false);
-        animation_throw_silk_left.set_loop(false);
-        animation_throw_silk_right.set_loop(false);
+        animation_throw_silk_left.set_loop(true);
+        animation_throw_silk_right.set_loop(true);
         animation_vfx_dash_in_air_left.set_loop(false);
         animation_vfx_dash_in_air_right.set_loop(false);
-
     }
+
+    {
+        // TODO: 状态机初始化
+    }
+}
+
+Enemy::~Enemy() {
+    CollisionManager::instance()->destroy_collision_box(collision_box_silk);
+}
+
+void Enemy::on_update(int delta) {
+    if (velocity.x >= 0) {
+        is_facing_left = false;
+    }
+
+    Player::on_update(delta);
+
+    hit_box->set_position(position);
+
+    if (is_throwing_silk) {
+        collision_box_silk->set_position(position);
+        // ?    collision_box_silk->set_enabled(true);
+        collision_box_silk->set_position(position);
+        animation_silk.on_update(delta);
+    }
+
+    if (is_dashing_in_air || is_dashing_on_floor) {
+        current_dash_animation->on_update(delta);
+    }
+
+//    for (Barb* barb : barb_list)
+//        barb->on_update(delta);
+    for (Sword* sword : sword_list)
+        sword->on_update(delta);
+
+//    barb_list.erase(std::remove_if(barb_list.begin(), barb_list.end(), [](Barb* barb) {
+//        bool can_remove = !barb->is_valid_barb();
+//        if (can_remove) delete barb;
+//        return can_remove;
+//    }), barb_list.end());
+
+    sword_list.erase(std::remove_if(sword_list.begin(), sword_list.end(), [](Sword* sword) {
+        bool can_remove = !sword->is_valid_sword();
+        if (can_remove) delete sword;
+        return can_remove;
+    }), sword_list.end());
+}
+
+void Enemy::on_draw(const Camera& camera) {
+    //    for (Barb* barb : barb_list)
+//        barb->on_draw(camera);
+
+    for (Sword* sword : sword_list)
+        sword->on_draw(camera);
+
+    Player::on_draw(camera);
+
+    if (is_throwing_silk) {
+        animation_silk.on_draw(position.x, position.y);
+    }
+
+    if (is_dashing_in_air || is_dashing_on_floor) {
+        current_dash_animation->on_draw(position.x, position.y);
+    }
+}
+
+void Enemy::throw_barbs() {
+//    int num_new_barb = generate_random_number(3, 6);
+//
+//    if (barb_list.size() >= 10) num_new_barb = 1;
+//    int width_grid = getwidth() / num_new_barb;
+//
+//    for (int i = 0; i < num_new_barb; i++) {
+//        Barb* barb = new Barb();
+//        int rand_x = generate_random_number(width_grid * i, width_grid * (i + 1));
+//        int rand_y = generate_random_number(250, 500);
+//        barb->set_position({(float) rand_x, (float) rand_y});
+//        barb_list.push_back(barb);
+//    }
+}
+
+void Enemy::throw_sword() {
+    Sword* sword = new Sword(position, is_facing_left);
+    sword_list.push_back(sword);
+}
+
+void Enemy::on_dash() {
+    if (is_dashing_in_air)
+        current_dash_animation = velocity.x < 0 ? &animation_dash_in_air_left : &animation_dash_in_air_right;
+    else
+        current_dash_animation = velocity.x < 0 ? &animation_dash_on_floor_left : &animation_dash_on_floor_right;
+    current_dash_animation->reset();
+}
+
+void Enemy::on_throw_silk() {
+    //is_throwing_silk = true;
+    animation_silk.reset();
 }
