@@ -49,7 +49,7 @@ public:
     void on_draw() {
         putimage(0, 0, &img_gamescene_background);
         knight_1->on_draw(camera);
-        enemy->on_draw(camera);
+        //enemy->on_draw(camera);
         CollisionManager* collision_manager = CollisionManager::instance();
         collision_manager->on_debug_draw();
     }

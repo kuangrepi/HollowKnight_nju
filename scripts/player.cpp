@@ -55,3 +55,6 @@ void Player::on_hurt() {};
 
 void Player::on_input(const ExMessage& msg) {};
 
+void Player::set_animation(Animation* animation) {
+    current_animation = animation;
+}

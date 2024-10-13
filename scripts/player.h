@@ -72,7 +72,7 @@ public:
         timer_invulnerable_status.restart();
     }
 
-    void set_animation(const std::string& name) {}
+    void set_animation(Animation* animation);
 
 protected:
     const float FLOOR_Y = 620; // 地板的竖直方向坐标
