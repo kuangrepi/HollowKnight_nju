@@ -12,6 +12,12 @@ extern Atlas atlas_knight_start_run_left;
 extern Atlas atlas_knight_start_run_right;
 extern Atlas atlas_knight_run_left;
 extern Atlas atlas_knight_run_right;
+extern Atlas atlas_knight_jump_start_left;
+extern Atlas atlas_knight_jump_start_right;
+extern Atlas atlas_knight_jump_loop_left;
+extern Atlas atlas_knight_jump_loop_right;
+extern Atlas atlas_knight_jump_land_left;
+extern Atlas atlas_knight_jump_land_right;
 
 class Knight : public Player
 {
@@ -56,6 +62,12 @@ private:
     Animation animation_knight_start_run_right;
     Animation animation_run_left;
     Animation animation_run_right;
+    Animation animation_jump_start_left;
+    Animation animation_jump_start_right;
+    Animation animation_jump_loop_left;
+    Animation animation_jump_loop_right;
+    Animation animation_jump_land_left;
+    Animation animation_jump_land_right;
 
     Animation* current_animation = nullptr;
 

@@ -7,6 +7,12 @@ Knight::Knight() {
     animation_knight_start_run_right.set_atlas(&atlas_knight_start_run_right);
     animation_run_left.set_atlas(&atlas_knight_run_left);
     animation_run_right.set_atlas(&atlas_knight_run_right);
+    animation_jump_start_left.set_atlas(&atlas_knight_jump_start_left);
+    animation_jump_start_right.set_atlas(&atlas_knight_jump_start_right);
+    animation_jump_loop_left.set_atlas(&atlas_knight_jump_loop_left);
+    animation_jump_loop_right.set_atlas(&atlas_knight_jump_loop_right);
+    animation_jump_land_left.set_atlas(&atlas_knight_jump_land_left);
+    animation_jump_land_right.set_atlas(&atlas_knight_jump_land_right);
 
 
     logic_height = 120;
@@ -32,6 +38,12 @@ Knight::Knight() {
     animation_knight_start_run_right.set_interval(FRAME*6);
     animation_run_left.set_interval(FRAME*6);
     animation_run_right.set_interval(FRAME*6);
+    animation_jump_start_left.set_interval(FRAME*3);
+    animation_jump_start_right.set_interval(FRAME*3);
+    animation_jump_loop_left.set_interval(FRAME*6);
+    animation_jump_loop_right.set_interval(FRAME*6);
+    animation_jump_land_left.set_interval(FRAME*6);
+    animation_jump_land_right.set_interval(FRAME*6);
 }
 void Knight::on_input(const ExMessage& msg) {
     switch (msg.message) {
@@ -69,23 +81,43 @@ void Knight::on_update(int delta) {
     int direction = is_right_key_down - is_left_key_down;
     if (direction != 0) {
         is_facing_right = direction > 0;
-        if(start_run < FRAME / 6){
-            current_animation = is_facing_right ? &animation_knight_start_run_right : &animation_knight_start_run_left;
-            start_run++;
-            animation_run_right.reset();
-            animation_run_left.reset();
-        }
-        else{
-            current_animation = is_facing_right ? &animation_run_right : &animation_run_left;
-            animation_knight_start_run_left.reset();
-            animation_knight_start_run_right.reset();
-        }
+
+            if(start_run < FRAME / 6){
+                current_animation = is_facing_right ? &animation_knight_start_run_right : &animation_knight_start_run_left;
+                start_run++;
+                animation_run_right.reset();
+                animation_run_left.reset();
+            }
+            else{
+                current_animation = is_facing_right ? &animation_run_right : &animation_run_left;
+                animation_knight_start_run_left.reset();
+                animation_knight_start_run_right.reset();
+            }
+
 
         float distance = direction * run_velocity * delta;
         on_run(distance);
     } else {
         current_animation = is_facing_right ? &animation_idle_right : &animation_idle_left;
         start_run = 0;
+    }
+    if(position.y < 518) {
+        if (position.y > 450 && velocity.y < 0) {
+            current_animation = is_facing_right ? &animation_jump_start_right : &animation_jump_start_left;
+        } else if (position.y > 450 && velocity.y > 0) {
+            current_animation = is_facing_right ? &animation_jump_land_right : &animation_jump_land_left;
+        } else {
+            current_animation = is_facing_right ? &animation_jump_loop_right : &animation_jump_loop_left;
+            if(velocity.y > 0) {
+                animation_jump_start_left.reset();
+                animation_jump_start_left.reset();
+            }
+            else{
+                animation_jump_start_left.reset();
+                animation_jump_start_left.reset();
+            }
+
+        }
     }
 
     if (position.y > 518){

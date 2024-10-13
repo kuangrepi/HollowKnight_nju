@@ -22,6 +22,12 @@ void load_game_resourses() {
     atlas_knight_start_run_right.load_from_file(_T("images/Start_runR/%d.PNG"), 6);
     atlas_knight_run_left.load_from_file(_T("images/Walk/%d.PNG"), 5);
     atlas_knight_run_right.load_from_file(_T("images/WalkR/%d.PNG"), 5);
+    atlas_knight_jump_start_left.load_from_file(_T("images/Jump/Start/%d.PNG"), 12);
+    atlas_knight_jump_start_right.load_from_file(_T("images/JumpR/Start/%d.PNG"), 12);
+    atlas_knight_jump_loop_left.load_from_file(_T("images/Jump/Loop/%d.PNG"), 3);
+    atlas_knight_jump_loop_right.load_from_file(_T("images/JumpR/Loop/%d.PNG"), 3);
+    atlas_knight_jump_land_left.load_from_file(_T("images/Jump/Land/%d.PNG"), 3);
+    atlas_knight_jump_land_right.load_from_file(_T("images/JumpR/Land/%d.PNG"), 3);
     //
     loadimage(&img_gamescene_background, _T("images/background.png"));
 }
