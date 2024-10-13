@@ -27,6 +27,20 @@ public:
 
     }
 
+    virtual void on_hurt() {
+
+    }
+
+    void decrease_hp() {
+        if (!is_invulnerable) {
+            hp--;
+            is_invulnerable = true;
+            timer_invulnerable_status.restart();
+            timer_invulnerable_blink.restart();
+        }
+        std::cout << "hp: " << hp << std::endl;
+    }
+
     void set_position(float x, float y) {
         position.x = x;
         position.y = y;

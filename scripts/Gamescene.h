@@ -39,6 +39,8 @@ public:
 
     void on_update(int delta) {
         knight_1->on_update(delta);
+        CollisionManager* collision_manager = CollisionManager::instance();
+        collision_manager->process_collision();
     }
 
     void on_draw() {

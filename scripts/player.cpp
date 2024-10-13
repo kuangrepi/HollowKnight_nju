@@ -13,9 +13,9 @@ Player::~Player() {
 
 void Player::on_update(int delta) {
     if (position.x < 0) position.x = 0;
-    if (position.x > getwidth()) position.x = (float) getwidth();
+    if (position.x > getwidth() - 100) position.x = (float) getwidth() - 100;
     if (position.y < 0) position.y = 0;
-    if (position.y > getheight()) position.y = (float) getheight();
+    if (position.y > getheight() - 100) position.y = (float) getheight() - 100;
 
 
 }

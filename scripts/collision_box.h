@@ -55,6 +55,7 @@ public:
 
     CollisionBox(const CollisionBox&) = delete;
     CollisionBox& operator=(const CollisionBox&) = delete;
+    CollisionBox() = default;
 private:
     Vector2 position;
     Vector2 size;
@@ -62,7 +63,6 @@ private:
     std::function<void()> on_collide = nullptr;
     CollisionLayer layer_src = CollisionLayer::None;
     CollisionLayer layer_dst = CollisionLayer::None;
-    CollisionBox() = default;
     ~CollisionBox() = default;
 };
 

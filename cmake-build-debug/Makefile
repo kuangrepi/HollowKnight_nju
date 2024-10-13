@@ -368,6 +368,30 @@ scripts/Vector2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.s
 .PHONY : scripts/Vector2.cpp.s
 
+scripts/barb.obj: scripts/barb.cpp.obj
+.PHONY : scripts/barb.obj
+
+# target to build an object file
+scripts/barb.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj
+.PHONY : scripts/barb.cpp.obj
+
+scripts/barb.i: scripts/barb.cpp.i
+.PHONY : scripts/barb.i
+
+# target to preprocess a source file
+scripts/barb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.i
+.PHONY : scripts/barb.cpp.i
+
+scripts/barb.s: scripts/barb.cpp.s
+.PHONY : scripts/barb.s
+
+# target to generate assembly for a file
+scripts/barb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.s
+.PHONY : scripts/barb.cpp.s
+
 scripts/collision_manager.obj: scripts/collision_manager.cpp.obj
 .PHONY : scripts/collision_manager.obj
 
@@ -391,6 +415,30 @@ scripts/collision_manager.s: scripts/collision_manager.cpp.s
 scripts/collision_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.s
 .PHONY : scripts/collision_manager.cpp.s
+
+scripts/enemy.obj: scripts/enemy.cpp.obj
+.PHONY : scripts/enemy.obj
+
+# target to build an object file
+scripts/enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj
+.PHONY : scripts/enemy.cpp.obj
+
+scripts/enemy.i: scripts/enemy.cpp.i
+.PHONY : scripts/enemy.i
+
+# target to preprocess a source file
+scripts/enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.i
+.PHONY : scripts/enemy.cpp.i
+
+scripts/enemy.s: scripts/enemy.cpp.s
+.PHONY : scripts/enemy.s
+
+# target to generate assembly for a file
+scripts/enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.s
+.PHONY : scripts/enemy.cpp.s
 
 scripts/main.obj: scripts/main.cpp.obj
 .PHONY : scripts/main.obj
@@ -464,6 +512,30 @@ scripts/resourses.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.s
 .PHONY : scripts/resourses.cpp.s
 
+scripts/sword.obj: scripts/sword.cpp.obj
+.PHONY : scripts/sword.obj
+
+# target to build an object file
+scripts/sword.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj
+.PHONY : scripts/sword.cpp.obj
+
+scripts/sword.i: scripts/sword.cpp.i
+.PHONY : scripts/sword.i
+
+# target to preprocess a source file
+scripts/sword.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.i
+.PHONY : scripts/sword.cpp.i
+
+scripts/sword.s: scripts/sword.cpp.s
+.PHONY : scripts/sword.s
+
+# target to generate assembly for a file
+scripts/sword.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.s
+.PHONY : scripts/sword.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -503,9 +575,15 @@ help:
 	@echo ... scripts/Vector2.obj
 	@echo ... scripts/Vector2.i
 	@echo ... scripts/Vector2.s
+	@echo ... scripts/barb.obj
+	@echo ... scripts/barb.i
+	@echo ... scripts/barb.s
 	@echo ... scripts/collision_manager.obj
 	@echo ... scripts/collision_manager.i
 	@echo ... scripts/collision_manager.s
+	@echo ... scripts/enemy.obj
+	@echo ... scripts/enemy.i
+	@echo ... scripts/enemy.s
 	@echo ... scripts/main.obj
 	@echo ... scripts/main.i
 	@echo ... scripts/main.s
@@ -515,6 +593,9 @@ help:
 	@echo ... scripts/resourses.obj
 	@echo ... scripts/resourses.i
 	@echo ... scripts/resourses.s
+	@echo ... scripts/sword.obj
+	@echo ... scripts/sword.i
+	@echo ... scripts/sword.s
 .PHONY : help
 
 

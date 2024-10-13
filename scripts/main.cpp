@@ -4,6 +4,9 @@
 #include "GameScene.h"
 #include "MenuScene.h"
 #include "SceneManager.h"
+#include "sword.h"
+#include "barb.h"
+#include "enemy.h"
 
 IMAGE img_gamescene_background;         //游戏背景图片
 
@@ -28,7 +31,37 @@ void load_game_resourses() {
     atlas_knight_jump_loop_right.load_from_file(_T("images/JumpR/Loop/%d.PNG"), 3);
     atlas_knight_jump_land_left.load_from_file(_T("images/Jump/Land/%d.PNG"), 3);
     atlas_knight_jump_land_right.load_from_file(_T("images/JumpR/Land/%d.PNG"), 3);
-    //
+    // 黄蜂女道具
+    atlas_sword.load_from_file(_T("images/enemy/sword/%d.PNG"), 3);
+    atlas_barb_loose.load_from_file(_T("images/enemy/barb_loose/%d.PNG"), 5);
+    atlas_barb_break.load_from_file(_T("images/enemy/barb_break/%d.PNG"), 3);
+    // 黄蜂女动画
+    animation_silk.load_from_file(_T("images/enemy/silk/%d.PNG"), 3);
+    animation_aim_left.load_from_file(_T("images/enemy/aim_left/%d.PNG"), 3);
+    animation_aim_right.load_from_file(_T("images/enemy/aim_right/%d.PNG"), 3);
+    animation_dash_in_air_left.load_from_file(_T("images/enemy/dash_in_air_left/%d.PNG"), 3);
+    animation_dash_in_air_right.load_from_file(_T("images/enemy/dash_in_air_right/%d.PNG"), 3);
+    animation_dash_on_floor_left.load_from_file(_T("images/enemy/dash_on_floor_left/%d.PNG"), 3);
+    animation_dash_on_floor_right.load_from_file(_T("images/enemy/dash_on_floor_right/%d.PNG"), 3);
+    animation_fall_left.load_from_file(_T("images/enemy/fall_left/%d.PNG"), 3);
+    animation_fall_right.load_from_file(_T("images/enemy/fall_right/%d.PNG"), 3);
+    animation_idle_left.load_from_file(_T("images/enemy/idle_left/%d.PNG"), 3);
+    animation_idle_right.load_from_file(_T("images/enemy/idle_right/%d.PNG"), 3);
+    animation_jump_left.load_from_file(_T("images/enemy/jump_left/%d.PNG"), 3);
+    animation_jump_right.load_from_file(_T("images/enemy/jump_right/%d.PNG"), 3);
+    animation_run_left.load_from_file(_T("images/enemy/run_left/%d.PNG"), 3);
+    animation_run_right.load_from_file(_T("images/enemy/run_right/%d.PNG"), 3);
+    animation_squat_left.load_from_file(_T("images/enemy/squat_left/%d.PNG"), 3);
+    animation_squat_right.load_from_file(_T("images/enemy/squat_right/%d.PNG"), 3);
+    animation_throw_barb_left.load_from_file(_T("images/enemy/throw_barb_left/%d.PNG"), 3);
+    animation_throw_barb_right.load_from_file(_T("images/enemy/throw_barb_right/%d.PNG"), 3);
+    animation_throw_sword_left.load_from_file(_T("images/enemy/throw_sword_left/%d.PNG"), 3);
+    animation_throw_sword_right.load_from_file(_T("images/enemy/throw_sword_right/%d.PNG"), 3);
+    animation_throw_silk_left.load_from_file(_T("images/enemy/throw_silk_left/%d.PNG"), 3);
+    animation_throw_silk_right.load_from_file(_T("images/enemy/throw_silk_right/%d.PNG"), 3);
+    animation_vfx_dash_in_air_left.load_from_file(_T("images/enemy/vfx_dash_in_air_left/%d.PNG"), 3);
+    animation_vfx_dash_in_air_right.load_from_file(_T("images/enemy/vfx_dash_in_air_right/%d.PNG"), 3);
+
     loadimage(&img_gamescene_background, _T("images/background.png"));
 }
 

@@ -34,7 +34,13 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/collision_box.h
         scripts/collision_manager.h
         scripts/collision_manager.cpp
-        scripts/player.cpp)
+        scripts/player.cpp
+        scripts/sword.cpp
+        scripts/sword.h
+        scripts/barb.cpp
+        scripts/barb.h
+        scripts/enemy.cpp
+        scripts/enemy.h)
 
 target_link_libraries(Hollowknight_demo msimg32)
 

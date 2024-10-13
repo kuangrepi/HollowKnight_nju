@@ -1,6 +1,10 @@
+#ifndef CAMERA_H
+#define CAMERA_H
+
 #include "Vector2.h"
 
-class Camera {
+class Camera
+{
 private:
     Vector2 position;
 public:
@@ -18,10 +22,11 @@ public:
 
     void on_update(int delta) {
         const Vector2 speed(0.35f, 0);
-        position += speed * (float)delta;
+        position += speed * (float) delta;
     }
 
-
 };
+
+#endif //CAMERA_H
 
 
