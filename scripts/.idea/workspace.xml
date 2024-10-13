@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
@@ -9,323 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80f7274a-448f-4928-b09a-aa0ed525403a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0ef060b76284f865da17.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-293f213d0b946b803b47.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/linkLibs.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/objects1.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_right/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_in_air_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_in_air_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_on_floor_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_on_floor_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_right/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_right/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_right/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_right/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_right/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_right/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_right/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_right/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_right/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_right/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StateNode.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StateNode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enemy_state_node.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enemy_state_node.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state_machine.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state_machine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a0bcf668380ebc813e6.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a0bcf668380ebc813e6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-1f6730e23910543a4bf7.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-1f6730e23910543a4bf7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-4c1e8ffda232be9215e3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-4c1e8ffda232be9215e3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7c340b0605d2a07cff5d.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7c340b0605d2a07cff5d.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-2e200666112c987017dd.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-2e200666112c987017dd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9cb48f881e250a5e6df7.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9cb48f881e250a5e6df7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f49156768e4e0a957573.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f49156768e4e0a957573.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2024-10-13T12-35-18-0052.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2024-10-13T12-35-18-0052.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2024-10-13T13-19-09-0165.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2024-10-13T13-19-09-0165.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2024-10-13T13-33-04-0577.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2024-10-13T13-33-04-0577.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-81e6d475522ff71c2b31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CMakeRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Hollowknight_demo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Hollowknight_demo.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/aim_left/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_in_air/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_in_air_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_in_air/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_in_air_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_on_floor/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_on_floor_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_on_floor/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/dash_on_floor_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/fall_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/idle_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/jump_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/run_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/silk_left/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/squat_left/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/sword_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_barb_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_silk_left/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/throw_sword_left/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_in_air_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_left/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_left/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/images/enemy/vfx_dash_on_floor_left/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamescene.h" beforeDir="false" afterPath="$PROJECT_DIR$/Gamescene.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Timer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Timer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Timer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Timer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/enemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/util.h" afterDir="false" />
-    </list>
+    <list default="true" id="80f7274a-448f-4928-b09a-aa0ed525403a" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -358,8 +45,12 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "正在合并 main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/projects/hollow knight",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -374,7 +65,7 @@
       <updated>1728549226127</updated>
       <workItem from="1728549228302" duration="25000" />
       <workItem from="1728737051731" duration="167000" />
-      <workItem from="1728840119119" duration="138000" />
+      <workItem from="1728840183908" duration="300000" />
     </task>
     <servers />
   </component>

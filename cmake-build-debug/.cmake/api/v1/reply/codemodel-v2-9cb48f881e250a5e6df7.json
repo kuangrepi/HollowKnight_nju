@@ -49,17 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9cb48f881e250a5e6df7.json
 		"build" : "D:/Git/HollowKnight_demo/cmake-build-debug",
 		"source" : "D:/Git/HollowKnight_demo"
-========
-		"build" : "D:/Software/HollowKnight_nju/cmake-build-debug",
-		"source" : "D:/Software/HollowKnight_nju"
->>>>>>>> e46fa449ee97165b9e6904dddf364daa1f7fe1d8:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-2e200666112c987017dd.json
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 7
+		"minor" : 6
 	}
 }

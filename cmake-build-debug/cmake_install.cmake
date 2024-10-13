@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: D:/Git/HollowKnight_demo
-=======
-# Install script for directory: D:/Software/HollowKnight_nju
->>>>>>> e46fa449ee97165b9e6904dddf364daa1f7fe1d8
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/TDM-GCC/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,9 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
 file(WRITE "D:/Git/HollowKnight_demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "D:/Software/HollowKnight_nju/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> e46fa449ee97165b9e6904dddf364daa1f7fe1d8
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
