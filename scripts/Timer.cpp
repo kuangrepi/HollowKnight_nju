@@ -9,6 +9,9 @@ void Timer::on_update(int delta) {
         if ((!one_shot || (one_shot && !shotted)) && callback) {
             callback();
         }
+        if ((!one_shot || (one_shot && !shotted)) && on_timeout) {
+            on_timeout();
+        }
         shotted = true;
         pass_time = 0;
     }

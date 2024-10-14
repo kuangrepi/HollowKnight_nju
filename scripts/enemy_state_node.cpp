@@ -98,7 +98,6 @@ void EnemyFallState::on_update(float delta) {
 }
 
 EnemyIdleState::EnemyIdleState() {
-    std::cout << "EnemyIdleState::EnemyIdleState()" << std::endl;
     timer.set_one_shot(true);
     timer.set_on_timeout([&]() {
         int rand_num = generate_random_number(0, 100);;
@@ -141,7 +140,6 @@ EnemyIdleState::EnemyIdleState() {
 }
 
 void EnemyIdleState::on_enter() {
-    std::cout << "EnemyIdleState::on_enter()" << std::endl;
     enemy->set_animation("idle");
 
     enemy->set_velocity(0, 0);
