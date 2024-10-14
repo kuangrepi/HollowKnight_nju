@@ -33,7 +33,7 @@ Knight::Knight() {
     hit_box->set_enabled(false);
 
     hurt_box->set_on_collide([&]() {
-        //TODO decrease_hp();
+        decrease_hp();
     });
 
     animation_idle_left.set_interval(FRAME*2);

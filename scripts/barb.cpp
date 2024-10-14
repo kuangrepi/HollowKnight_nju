@@ -7,3 +7,8 @@ Barb::Barb() {
     animation_break.set_loop(false);
 
 }
+
+void Barb::set_position(Vector2 pos) {
+    base_position = pos;
+    cur_position = pos;
+}
