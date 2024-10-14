@@ -21,6 +21,9 @@ Knight::Knight() {
     animation_attack_right_up.set_atlas(&altas_knight_attack_right_up);
     animation_attack_left_effect_up.set_atlas(&altas_knight_attack_left_effect_up);
     animation_attack_right_effect_up.set_atlas(&altas_knight_attack_right_effect_up);
+    animation_damage_left.set_atlas(&altas_knight_damage_left);
+    animation_damage_right.set_atlas(&altas_knight_damage_right);
+    animation_damage_effect.set_atlas(&altas_knight_damage_effect);
 
 
     logic_height = 120;
@@ -37,7 +40,14 @@ Knight::Knight() {
     hit_box->set_enabled(false);
 
     hurt_box->set_on_collide([&]() {
-        decrease_hp();
+        if(!is_damage && damage > FRAME/3){
+            decrease_hp();
+            is_damage = true;
+            is_attack = false;
+            damage = 0;
+            effect_position.x = position.x - 290;
+            effect_position.y = position.y;
+        }
     });
 
     animation_idle_left.set_interval(FRAME*2);
@@ -60,6 +70,9 @@ Knight::Knight() {
     animation_attack_right_up.set_interval(FRAME*4);
     animation_attack_left_effect_up.set_interval(FRAME*8);
     animation_attack_right_effect_up.set_interval(FRAME*8);
+    animation_damage_left.set_interval(FRAME*4);
+    animation_damage_right.set_interval(FRAME*4);
+    animation_damage_effect.set_interval(FRAME*4);
 }
 void Knight::on_input(const ExMessage& msg) {
     switch (msg.message) {
@@ -78,7 +91,7 @@ void Knight::on_input(const ExMessage& msg) {
                     is_jump = true;
                     break;
                 case 0x58: // X
-                    if(!is_attack){
+                    if(!is_attack && !is_damage){
                         if(is_up_key_down && !normal_attack){
                             effect_facing_right = is_facing_right;
                             effect_position.y = position.y-160;
@@ -169,7 +182,7 @@ void Knight::on_update(int delta) {
         animation_knight_start_run_right.reset();
     }
 
-    if(is_attack){
+    if(is_attack && !is_damage){
         if((is_up_key_down || up_attack) && !normal_attack){
             up_attack = true;
             normal_attack = false;
@@ -202,6 +215,9 @@ void Knight::on_update(int delta) {
             hit_box->set_size(Vector2(170,136));
             effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
         }
+        if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2){
+            effect_animation = nullptr;
+        }
     } else {
         hit_box->set_enabled(false);
         animation_attack_left_1.reset();
@@ -209,7 +225,7 @@ void Knight::on_update(int delta) {
         animation_attack_left_up.reset();
         animation_attack_right_up.reset();
     }
-    if(effect_facing_right && is_facing_right){
+    if(effect_facing_right && is_facing_right && !is_damage){
         if(is_up_key_down && !normal_attack){
             effect_position.x = position_hurt_box.x - 80;
         }else if(!up_attack){
@@ -217,7 +233,7 @@ void Knight::on_update(int delta) {
         }
 
     }
-    if(!effect_facing_right && !is_facing_right){
+    if(!effect_facing_right && !is_facing_right && !is_damage){
         if(is_up_key_down && !normal_attack){
             effect_position.x = position_hurt_box.x - 80;
         }else if(!up_attack){
@@ -225,9 +241,24 @@ void Knight::on_update(int delta) {
         }
 
     }
-    if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2){
-        effect_animation = nullptr;
+
+    if(animation_damage_left.get_idx_frame() == 6 || animation_damage_right.get_idx_frame() == 6){
+        is_damage = false;
+        animation_damage_right.reset();
+        animation_damage_left.reset();
+        animation_damage_effect.reset();
     }
+    if(is_damage){
+        current_animation = is_facing_right ? &animation_damage_right : &animation_damage_left;
+        effect_animation = &animation_damage_effect;
+        if(effect_animation != nullptr && effect_animation->get_idx_frame() == 3){
+            effect_animation = nullptr;
+        }
+    }
+    if(damage < 1000){
+        damage++;
+    }
+    std::cout << hp << ' ' << is_damage;
     current_animation->on_update(delta);
     if(effect_animation != nullptr)
         effect_animation->on_update(delta);

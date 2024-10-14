@@ -47,7 +47,6 @@ void Player::on_update(int delta) {
 
 void Player::on_draw(const Camera& camera) {
     if (!current_animation || is_blink_invisible && is_invulnerable) return;
-
     current_animation->on_draw((int) position.x, (int) position.y);
 }
 
