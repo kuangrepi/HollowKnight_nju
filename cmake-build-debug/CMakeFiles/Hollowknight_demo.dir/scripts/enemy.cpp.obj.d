@@ -429,8 +429,9 @@ CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: \
  D:\Software\HollowKnight_nju\scripts\state_machine.h \
  D:\Software\HollowKnight_nju\scripts\StateNode.h \
  D:\Software\HollowKnight_nju\scripts\barb.h \
+ D:\Software\HollowKnight_nju\scripts\collision_manager.h \
  D:\Software\HollowKnight_nju\scripts\Animation.h \
  D:\Software\HollowKnight_nju\scripts\define.h \
  D:\Software\HollowKnight_nju\scripts\Timer.h \
- D:\Software\HollowKnight_nju\scripts\sword.h \
- D:\Software\HollowKnight_nju\scripts\collision_manager.h
+ D:\Software\HollowKnight_nju\scripts\Knight.h \
+ D:\Software\HollowKnight_nju\scripts\sword.h

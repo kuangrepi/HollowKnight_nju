@@ -115,9 +115,9 @@ Enemy::~Enemy() {
 }
 
 void Enemy::on_update(int delta) {
-    if (velocity.x >= 0) {
-        is_facing_left = false;
-    }
+// ?   if (velocity.x >= 0) {
+// ?       is_facing_left = false;
+// ?   }
 
     // 本应在Player::on_update中处理的逻辑
     if (hp <= 0)
@@ -161,16 +161,15 @@ void Enemy::on_update(int delta) {
         current_dash_animation->on_update(delta);
     }
 
-//    for (Barb* barb : barb_list)
-//        barb->on_update(delta);
+    for (Barb* barb : barb_list)
+        barb->on_update(delta);
     for (Sword* sword : sword_list)
         sword->on_update(delta);
-
-//    barb_list.erase(std::remove_if(barb_list.begin(), barb_list.end(), [](Barb* barb) {
-//        bool can_remove = !barb->is_valid_barb();
-//        if (can_remove) delete barb;
-//        return can_remove;
-//    }), barb_list.end());
+    barb_list.erase(std::remove_if(barb_list.begin(), barb_list.end(), [](Barb* barb) {
+        bool can_remove = !barb->is_valid_barb();
+        if (can_remove) delete barb;
+        return can_remove;
+    }), barb_list.end());
 
     sword_list.erase(std::remove_if(sword_list.begin(), sword_list.end(), [](Sword* sword) {
         bool can_remove = !sword->is_valid_sword();
@@ -180,8 +179,8 @@ void Enemy::on_update(int delta) {
 }
 
 void Enemy::on_draw(const Camera& camera) {
-    //    for (Barb* barb : barb_list)
-//        barb->on_draw(camera);
+    for (Barb* barb : barb_list)
+        barb->on_draw(camera);
 
     for (Sword* sword : sword_list)
         sword->on_draw(camera);
@@ -203,6 +202,7 @@ void Enemy::on_draw(const Camera& camera) {
 
 void Enemy::throw_barbs() {
     int num_new_barb = generate_random_number(3, 6);
+    std::cout << num_new_barb << std::endl;
 
     if (barb_list.size() >= 10) num_new_barb = 1;
     int width_grid = getwidth() / num_new_barb;
@@ -219,6 +219,8 @@ void Enemy::throw_barbs() {
 void Enemy::throw_sword() {
     Sword* sword = new Sword(position, is_facing_left);
     sword_list.push_back(sword);
+    std::cout << sword->is_valid_sword() << std::endl;
+
 }
 
 void Enemy::on_dash() {
@@ -254,6 +256,12 @@ void Enemy::on_input(const ExMessage& msg) {
                     //std::cout << "position.x = " << position.x << std::endl;
                     is_dashing_in_air = true;
                     is_facing_left = false;
+                    break;
+                case 0x46: // F
+                    throw_sword();
+                    break;
+                case 0x47: // G
+                    throw_barbs();
                     break;
             }
             break;

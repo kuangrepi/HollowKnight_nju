@@ -25,7 +25,7 @@ Player::~Player() {
 
 void Player::decrease_hp() {
     if (is_invulnerable) return;
-
+    //std::cout << hp << std::endl;
     hp -= 1;
     if (hp > 0) make_invulnerable();
     on_hurt();

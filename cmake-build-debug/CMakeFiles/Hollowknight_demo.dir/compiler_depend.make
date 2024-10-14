@@ -2644,6 +2644,8 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
@@ -2651,16 +2653,30 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
@@ -2683,8 +2699,11 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
@@ -2696,29 +2715,47 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
@@ -2802,6 +2839,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/commdlg.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/concurrencysal.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
@@ -2861,6 +2899,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/oleidl.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/playsoundapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/poppack.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/process.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/processenv.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/processthreadsapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/processtopologyapi.h \
@@ -2879,6 +2918,11 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pshpack2.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pshpack4.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/reason.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/rpc.h \
@@ -2897,12 +2941,14 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/tchar_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/securityappcontainer.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/securitybaseapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/servprov.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/shellapi.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/signal.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/specstrings.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
@@ -2914,11 +2960,14 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/stringapiset.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/synchapi.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sysinfoapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/systemtopologyapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/tchar.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/time.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/timeapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/tvout.h \
@@ -2929,6 +2978,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/virtdisk.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/winbase.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wincon.h \
@@ -2958,12 +3008,19 @@ CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_
   D:/Software/HollowKnight_nju/scripts/Animation.h \
   D:/Software/HollowKnight_nju/scripts/Atlas.h \
   D:/Software/HollowKnight_nju/scripts/Camera.h \
+  D:/Software/HollowKnight_nju/scripts/Knight.h \
+  D:/Software/HollowKnight_nju/scripts/StateNode.h \
   D:/Software/HollowKnight_nju/scripts/Timer.h \
   D:/Software/HollowKnight_nju/scripts/Vector2.h \
+  D:/Software/HollowKnight_nju/scripts/Animation.h \
   D:/Software/HollowKnight_nju/scripts/barb.h \
   D:/Software/HollowKnight_nju/scripts/collision_box.h \
   D:/Software/HollowKnight_nju/scripts/collision_layer.h \
+  D:/Software/HollowKnight_nju/scripts/collision_manager.h \
   D:/Software/HollowKnight_nju/scripts/define.h \
+  D:/Software/HollowKnight_nju/scripts/player.h \
+  D:/Software/HollowKnight_nju/scripts/state_machine.h \
+  D:/Software/HollowKnight_nju/scripts/Timer.h \
   D:/Software/HollowKnight_nju/scripts/util.h
 
 CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj: D:/Software/HollowKnight_nju/scripts/collision_manager.cpp \
@@ -3713,6 +3770,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: D:/Software/HollowKnight
   D:/Software/HollowKnight_nju/scripts/Animation.h \
   D:/Software/HollowKnight_nju/scripts/Atlas.h \
   D:/Software/HollowKnight_nju/scripts/Camera.h \
+  D:/Software/HollowKnight_nju/scripts/Knight.h \
   D:/Software/HollowKnight_nju/scripts/StateNode.h \
   D:/Software/HollowKnight_nju/scripts/Timer.h \
   D:/Software/HollowKnight_nju/scripts/Vector2.h \
@@ -5052,6 +5110,8 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
@@ -5059,16 +5119,26 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
@@ -5091,6 +5161,8 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
@@ -5104,29 +5176,45 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
@@ -5210,6 +5298,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/commdlg.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/concurrencysal.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
@@ -5269,6 +5358,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/oleidl.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/playsoundapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/poppack.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/process.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/processenv.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/processthreadsapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/processtopologyapi.h \
@@ -5287,6 +5377,11 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pshpack2.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pshpack4.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/reason.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/rpc.h \
@@ -5305,12 +5400,14 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/tchar_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/securityappcontainer.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/securitybaseapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/servprov.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/shellapi.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/signal.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/specstrings.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
@@ -5322,11 +5419,14 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/stringapiset.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/synchapi.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sysinfoapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/systemtopologyapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/tchar.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/time.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/timeapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/tvout.h \
@@ -5337,6 +5437,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/virtdisk.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/winbase.h \
   C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wincon.h \
