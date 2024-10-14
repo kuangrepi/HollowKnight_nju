@@ -258,7 +258,6 @@ void Knight::on_update(int delta) {
     if(damage < 1000){
         damage++;
     }
-    std::cout << hp << ' ' << is_damage;
     current_animation->on_update(delta);
     if(effect_animation != nullptr)
         effect_animation->on_update(delta);
