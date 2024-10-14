@@ -41,7 +41,7 @@ public:
     void on_exit() override;
 
 private:
-    const float SPEED_DASH = 1200.0f;
+    const float SPEED_DASH = 1200.0f / 10000.0f;
 };
 
 class EnemyDashOnFloorState : public StateNode
@@ -52,7 +52,7 @@ public:
     void on_enter() override;
     void on_update(float delta) override;
 private:
-    const float SPEED_DASH = 1000.0f;
+    const float SPEED_DASH = 1000.0f / 10000.0f;
 private:
     Timer timer;
 };
@@ -99,7 +99,7 @@ public:
     void on_enter() override;
     void on_update(float delta) override;
 private:
-    const float SPEED_JUMP = 1000.0f;
+    const float SPEED_JUMP = 1000.0f / 10000.0f;
 };
 
 class EnemyRunState : public StateNode

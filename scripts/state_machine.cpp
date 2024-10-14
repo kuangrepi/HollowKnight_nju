@@ -2,6 +2,7 @@
 // Created by yzzhhy on 24-10-13.
 //
 
+#include <iostream>
 #include "state_machine.h"
 
 StateMachine::StateMachine() = default;

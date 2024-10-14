@@ -5,40 +5,38 @@
 #include "enemy.h"
 #include "enemy_state_node.h"
 
-EnemyAimState::EnemyAimState()
-{
+EnemyAimState::EnemyAimState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(0.5f);
-    timer.set_on_timeout([&](){
+    timer.set_wait_time(30);
+    timer.set_on_timeout([&]() {
         enemy->set_gravity_enabled(true);
         enemy->switch_state("dash_in_air");
     });
 }
 
-void EnemyAimState::on_enter()
-{
+void EnemyAimState::on_enter() {
     enemy->set_animation("aim");
     enemy->set_gravity_enabled(false);
     enemy->set_velocity(0.0, 0.0);
     timer.restart();
 }
 
-void EnemyAimState::on_update(float delta)
-{
+void EnemyAimState::on_update(float delta) {
     timer.on_update(delta);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
 }
 
-void EnemyDashInAirState::on_enter()
-{
+void EnemyDashInAirState::on_enter() {
     enemy->set_animation("dash_in_air");
 
     const Player* player = knight_1;
     Vector2 pos_target = {player->get_position().x, floor};
-    float length=sqrt((pos_target.x - enemy->get_position().x)*(pos_target.x - enemy->get_position().x) + (pos_target.y - enemy->get_position().y)*(pos_target.y - enemy->get_position().y));
+    float length = sqrt((pos_target.x - enemy->get_position().x) * (pos_target.x - enemy->get_position().x)
+                            + (pos_target.y - enemy->get_position().y) * (pos_target.y - enemy->get_position().y));
 //    enemy->set_velocity((pos_target - enemy->get_position())/length * SPEED_DASH);
-    enemy->set_velocity((pos_target.x - enemy->get_position().x)/length* SPEED_DASH,(pos_target.y - enemy->get_position().y)/length*SPEED_DASH);
+    enemy->set_velocity((pos_target.x - enemy->get_position().x) / length * SPEED_DASH,
+                        (pos_target.y - enemy->get_position().y) / length * SPEED_DASH);
     enemy->set_dashing_in_air(true);
     enemy->set_gravity_enabled(false);
     enemy->on_dash();
@@ -46,34 +44,27 @@ void EnemyDashInAirState::on_enter()
 //    play_audio_I("enemy_dash", false);
 }
 
-void EnemyDashInAirState::on_update(float delta)
-{
-    if(enemy->get_hp() <= 0)
+void EnemyDashInAirState::on_update(float delta) {
+    if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
-    else if(enemy->is_on_floor())
+    else if (enemy->is_on_floor())
         enemy->switch_state("idle");
 }
 
-
-
-void EnemyDashInAirState::on_exit()
-{
+void EnemyDashInAirState::on_exit() {
     enemy->set_gravity_enabled(true);
     enemy->set_dashing_in_air(false);
 }
 
-EnemyDashOnFloorState::EnemyDashOnFloorState()
-{
+EnemyDashOnFloorState::EnemyDashOnFloorState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(0.5f);
-    timer.set_on_timeout([this]()
-    {
+    timer.set_wait_time(30);
+    timer.set_on_timeout([this]() {
         enemy->set_dashing_on_floor(false);
     });
 }
 
-void EnemyDashOnFloorState::on_enter()
-{
+void EnemyDashOnFloorState::on_enter() {
     enemy->set_animation("dash_on_floor");
     enemy->set_velocity(enemy->get_facing_left() ? -SPEED_DASH : SPEED_DASH, 0);
     enemy->set_dashing_on_floor(true);
@@ -82,39 +73,35 @@ void EnemyDashOnFloorState::on_enter()
 //    play_audio(_T("enemy_dash"), false);
 }
 
-void EnemyDashOnFloorState::on_update(float delta)
-{
+void EnemyDashOnFloorState::on_update(float delta) {
     timer.on_update(delta);
-    if(enemy->get_hp() <= 0)
+    if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
     else if (!enemy->get_dashing_on_floor())
         enemy->switch_state("idle");
 }
 
-void EnemyDeadState::on_enter()
-{
-    MessageBox(GetHWnd(), _T("很好，这样能行。"),_T("挑战成功！"),MB_OK);
+void EnemyDeadState::on_enter() {
+    MessageBox(GetHWnd(), _T("很好，这样能行。"), _T("挑战成功！"), MB_OK);
     exit(0);
 }
 
-void EnemyFallState::on_enter()
-{
+void EnemyFallState::on_enter() {
     enemy->set_animation("fall");
 }
 
-void EnemyFallState::on_update(float delta)
-{
+void EnemyFallState::on_update(float delta) {
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
-    else if(enemy->is_on_floor())
+    else if (enemy->is_on_floor())
         enemy->switch_state("idle");
 }
 
-EnemyIdleState::EnemyIdleState()
-{
+EnemyIdleState::EnemyIdleState() {
+    std::cout << "EnemyIdleState::EnemyIdleState()" << std::endl;
     timer.set_one_shot(true);
-    timer.set_on_timeout([this]() {
-        int rand_num = rand() % 100;;
+    timer.set_on_timeout([&]() {
+        int rand_num = generate_random_number(0, 100);;
         if (enemy->get_hp() > 5) {
             if (rand_num <= 25) {
                 if (!enemy->is_on_floor())
@@ -153,61 +140,57 @@ EnemyIdleState::EnemyIdleState()
     });
 }
 
-void EnemyIdleState::on_enter()
-{
+void EnemyIdleState::on_enter() {
+    std::cout << "EnemyIdleState::on_enter()" << std::endl;
     enemy->set_animation("idle");
 
-    enemy->set_velocity( 0,0 );
+    enemy->set_velocity(0, 0);
 
     float wait_time = 0;
-    if(enemy->get_hp() > 5)
-        wait_time = (rand()%2+1)*0.25f;//0.05~0.5s
+    if (enemy->get_hp() > 5)
+        wait_time = generate_random_number(0, 2) * 0.25f;//0.05~0.5s
     else
-        wait_time = rand()%4*0.125f;//0.05~0.25s
+        wait_time = generate_random_number(0, 1) * 0.25f;//0.05~0.25s
 
-    timer.set_wait_time(wait_time);
+    timer.set_wait_time((int) (wait_time * 60));
     timer.restart();
 }
 
-void EnemyIdleState::on_update(float delta)
-{
+void EnemyIdleState::on_update(float delta) {
+
     timer.on_update(delta);
 
-    if(enemy->get_hp() <= 0)
+    if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
-    else if(enemy->get_velocity().y>0)
+    else if (enemy->get_velocity().y > 0) {
+        std::cout << "EnemyIdleState::on_update()" << std::endl;
         enemy->switch_state("fall");
+    }
 }
 
-void EnemyIdleState::on_exit()
-{
+void EnemyIdleState::on_exit() {
+    std::cout << "EnemyIdleState::on_exit()" << std::endl;
     enemy->set_facing_left(enemy->get_position().x < knight_1->get_position().x);
 }
 
-void EnemyJumpState::on_enter()
-{
+void EnemyJumpState::on_enter() {
     enemy->set_animation("jump");
-    enemy->set_velocity(0, -SPEED_JUMP );
+    enemy->set_velocity(0, -SPEED_JUMP);
 }
 
-void EnemyJumpState::on_update(float delta)
-{
+void EnemyJumpState::on_update(float delta) {
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
-    else if (enemy->get_velocity().y > 0)
-    {
-        int rand_num = rand()%100;
-        if (enemy->get_hp() > 5)
-        {
+    else if (enemy->get_velocity().y > 0) {
+        int rand_num = generate_random_number(0, 100);
+        if (enemy->get_hp() > 5) {
             if (rand_num <= 50)
                 enemy->switch_state("aim");   // 50%
             else if (rand_num <= 80)
                 enemy->switch_state("fall");  // 30%
             else
                 enemy->switch_state("throw_silk"); // 20%
-        }
-        else
-        {
+        } else {
             if (rand_num <= 50)
                 enemy->switch_state("throw_silk"); // 50%
             else if (rand_num <= 80)
@@ -218,33 +201,27 @@ void EnemyJumpState::on_update(float delta)
     }
 }
 
-void EnemyRunState::on_enter()
-{
+void EnemyRunState::on_enter() {
     enemy->set_animation("run");
 //    play_audio(_T("enemy_run"), true);
 }
 
-void EnemyRunState::on_update(float delta)
-{
+void EnemyRunState::on_update(float delta) {
     const Vector2& pos_enemy = enemy->get_position();
-    const Vector2& pos_player =knight_1->get_position();
+    const Vector2& pos_player = knight_1->get_position();
     enemy->set_velocity(pos_enemy.x < pos_player.x ? SPEED_RUN : -SPEED_RUN, 0);
 
-    if(enemy->get_hp() <= 0)
+    if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
-    else if(abs(pos_enemy.x - pos_player.x) <= MIN_DIS)
-    {
-        int rand_num = rand()%100;
-        if(enemy->get_hp() > 5)
-        {
-            if(rand_num <= 75)
+    else if (abs(pos_enemy.x - pos_player.x) <= MIN_DIS) {
+        int rand_num = generate_random_number(0, 100);
+        if (enemy->get_hp() > 5) {
+            if (rand_num <= 75)
                 enemy->switch_state("squat");   // 75%
             else
                 enemy->switch_state("throw_silk");   // 25%
-        }
-        else
-        {
-            if(rand_num <= 75)
+        } else {
+            if (rand_num <= 75)
                 enemy->switch_state("throw_silk");   // 75%
             else
                 enemy->switch_state("squat");         // 25%
@@ -254,72 +231,61 @@ void EnemyRunState::on_update(float delta)
 //    stop_audio(_T("enemy_run"));
 }
 
-void EnemyRunState::on_exit()
-{
+void EnemyRunState::on_exit() {
     enemy->set_velocity(0, 0);
 }
 
-EnemySquatState::EnemySquatState()
-{
+EnemySquatState::EnemySquatState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(0.5f);
-    timer.set_on_timeout([this]()
-    {
-        enemy->switch_state("dash_on_floor");});
+    timer.set_wait_time(30);
+    timer.set_on_timeout([&]() {
+        enemy->switch_state("dash_on_floor");
+    });
 }
 
-void EnemySquatState::on_enter()
-{
+void EnemySquatState::on_enter() {
     enemy->set_animation("squat");
     enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.restart();
 }
 
-void EnemySquatState::on_update(float delta)
-{
+void EnemySquatState::on_update(float delta) {
     timer.on_update(delta);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
 }
 
-EnemyThrowBarbState::EnemyThrowBarbState()
-{
+EnemyThrowBarbState::EnemyThrowBarbState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(0.8f);
-    timer.set_on_timeout([this]()
-    {
+    timer.set_wait_time(48);
+    timer.set_on_timeout([&]() {
         enemy->throw_barbs();
         enemy->switch_state("idle");
     });
 }
 
-void EnemyThrowBarbState::on_enter()
-{
+void EnemyThrowBarbState::on_enter() {
     enemy->set_animation("throw_barb");
     timer.restart();
 //    play_audio(_T("enemy_throw_barbs"), false);
 }
 
-void EnemyThrowBarbState::on_update(float delta)
-{
+void EnemyThrowBarbState::on_update(float delta) {
     timer.on_update(delta);
 
-    if (enemy->get_hp() <= 0)
-    {
+    if (enemy->get_hp() <= 0) {
         enemy->switch_state("dead");
     }
 }
 
-EnemyThrowSilkState::EnemyThrowSilkState()
-{
+EnemyThrowSilkState::EnemyThrowSilkState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(0.9f);
-    timer.set_on_timeout([]()
-    {
+    timer.set_wait_time(54);
+    timer.set_on_timeout([&]() {
         enemy->set_gravity_enabled(true);
         enemy->set_throwing_silk(false);
 
-        if (!enemy->is_on_floor() && enemy->get_hp() > 5 && rand()%100 <= 25)
+        if (!enemy->is_on_floor() && enemy->get_hp() > 5 && generate_random_number(0, 100) <= 25)
             enemy->switch_state("aim");
         else if (enemy->is_on_floor())
             enemy->switch_state("fall");
@@ -328,8 +294,7 @@ EnemyThrowSilkState::EnemyThrowSilkState()
     });
 }
 
-void EnemyThrowSilkState::on_enter()
-{
+void EnemyThrowSilkState::on_enter() {
     enemy->set_animation("throw_silk");
 
     enemy->set_gravity_enabled(false);
@@ -341,65 +306,54 @@ void EnemyThrowSilkState::on_enter()
 //    play_audio(T("enemy_throw_silk"), false);
 }
 
-void EnemyThrowSilkState::on_update(float delta)
-{
+void EnemyThrowSilkState::on_update(float delta) {
     timer.on_update(delta);
-    if (enemy->get_hp() <= 0)
-    {
+    if (enemy->get_hp() <= 0) {
         enemy->switch_state("dead");
     }
 }
 
-EnemyThrowSwordState::EnemyThrowSwordState()
-{
-    timer_throw.set_wait_time(0.65f);
+EnemyThrowSwordState::EnemyThrowSwordState() {
+    timer_throw.set_wait_time(39);
     timer_throw.set_one_shot(true);
-    timer_throw.set_on_timeout([this]()
-    {
+    timer_throw.set_on_timeout([&]() {
         enemy->throw_sword();
 //        play_audio(_T("enemy_throw_sword"), false);
     });
 
-    timer_switch.set_wait_time(1.0f);
+    timer_switch.set_wait_time(60);
     timer_switch.set_one_shot(true);
-    timer_switch.set_on_timeout([this]()
-    {
-        int rand_num = rand()%100;
-        if(enemy->get_hp() > 5)
-        {
-            if(rand_num < 50)
+    timer_switch.set_on_timeout([&]() {
+        int rand_num = generate_random_number(0, 100);
+        if (enemy->get_hp() > 5) {
+            if (rand_num < 50)
                 enemy->switch_state("squat");   // 50%
-                else if(rand_num < 80)
-                    enemy->switch_state("jump");    // 30%
-                    else
-                        enemy->switch_state("idle");    // 20%
-        }
-        else
-        {
-            if(rand_num < 50)
+            else if (rand_num < 80)
+                enemy->switch_state("jump");    // 30%
+            else
+                enemy->switch_state("idle");    // 20%
+        } else {
+            if (rand_num < 50)
                 enemy->switch_state("jump");    // 50%
-                else if(rand_num < 80)
-                    enemy->switch_state("throw_silk");// 30%
-                    else
-                        enemy->switch_state("idle");    // 20%
+            else if (rand_num < 80)
+                enemy->switch_state("throw_silk");// 30%
+            else
+                enemy->switch_state("idle");    // 20%
         }
     });
 }
 
-void EnemyThrowSwordState::on_enter()
-{
+void EnemyThrowSwordState::on_enter() {
     enemy->set_animation("throw_sword");
     timer_throw.restart();
     timer_switch.restart();
 }
 
-void EnemyThrowSwordState::on_update(float delta)
-{
+void EnemyThrowSwordState::on_update(float delta) {
     timer_throw.on_update(delta);
     timer_switch.on_update(delta);
 
-    if (enemy->get_hp() <= 0)
-    {
+    if (enemy->get_hp() <= 0) {
         enemy->switch_state("dead");
     }
 }

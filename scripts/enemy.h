@@ -88,6 +88,14 @@ public:
     void switch_state(const std::string& id);
     void set_animation(const std::string& id);
 
+    void de_hp() {
+        if (is_invulnerable) return;
+        hp -= 1;
+        if (hp > 0)
+            make_invulnerable();
+        on_hurt();
+    }
+
 private:
     bool is_throwing_silk = false;
     bool is_dashing_in_air = false;

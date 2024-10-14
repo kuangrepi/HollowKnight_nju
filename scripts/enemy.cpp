@@ -127,7 +127,16 @@ Enemy::Enemy() {
     }
 
     {
-        timer_invulnerable_status.set_wait_time(20);
+        timer_invulnerable_status.set_wait_time(60);
+        timer_invulnerable_status.set_one_shot(true);
+        timer_invulnerable_status.set_on_timeout([&]() {
+            is_invulnerable = false;
+        });
+        timer_invulnerable_blink.set_wait_time(5);
+        timer_invulnerable_blink.set_one_shot(false);
+        timer_invulnerable_blink.set_on_timeout([&]() {
+            is_blink_invisible = !is_blink_invisible;
+        });
     }
 }
 
@@ -161,6 +170,8 @@ void Enemy::on_update(int delta) {
         if (current_animation)
             current_animation->on_update(delta);
     }
+    state_machine.on_update(delta);
+    timer_invulnerable_status.on_update(delta);
     Player::on_update(delta);
 
     hit_box->set_position(position);
@@ -178,8 +189,9 @@ void Enemy::on_update(int delta) {
         if (current_animation)
             current_animation->on_update(delta);
     } else if (is_dashing_in_air || is_dashing_on_floor) {
-        if (current_dash_animation)
-            current_dash_animation->on_update(delta);
+        if (current_dash_animation) {
+            // current_dash_animation->on_update(delta);
+        }
     }
 
     for (Barb* barb : barb_list)
@@ -197,6 +209,7 @@ void Enemy::on_update(int delta) {
         if (can_remove) delete sword;
         return can_remove;
     }), sword_list.end());
+
 }
 
 void Enemy::on_draw(const Camera& camera) {
@@ -312,10 +325,53 @@ void Enemy::on_input(const ExMessage& msg) {
 }
 
 void Enemy::switch_state(const std::string& id) {
-//    state_machine.switch_to(id);
+    state_machine.switch_to(id);
 }
 
 void Enemy::set_animation(const std::string& id) {
-    current_animation = &animation_pool[id];
-    is_facing_left = true;
+    if (id == "aim") {
+        current_animation = is_facing_left ? &animation_aim_left : &animation_aim_right;
+        animation_aim_left.reset();
+        animation_aim_right.reset();
+    } else if (id == "dash_in_air") {
+        current_animation = is_facing_left ? &animation_dash_in_air_left : &animation_dash_in_air_right;
+        animation_dash_in_air_left.reset();
+        animation_dash_in_air_right.reset();
+    } else if (id == "dash_on_floor") {
+        current_animation = is_facing_left ? &animation_dash_on_floor_left : &animation_dash_on_floor_right;
+        animation_dash_on_floor_left.reset();
+        animation_dash_on_floor_right.reset();
+    } else if (id == "fall") {
+        current_animation = is_facing_left ? &animation_fall_left : &animation_fall_right;
+        animation_fall_left.reset();
+        animation_fall_right.reset();
+    } else if (id == "idle") {
+        current_animation = is_facing_left ? &animation_idle_left : &animation_idle_right;
+        animation_idle_left.reset();
+        animation_idle_right.reset();
+    } else if (id == "jump") {
+        current_animation = is_facing_left ? &animation_jump_left : &animation_jump_right;
+        animation_jump_left.reset();
+        animation_jump_right.reset();
+    } else if (id == "run") {
+        current_animation = is_facing_left ? &animation_run_left : &animation_run_right;
+        animation_run_left.reset();
+        animation_run_right.reset();
+    } else if (id == "squat") {
+        current_animation = is_facing_left ? &animation_squat_left : &animation_squat_right;
+        animation_squat_left.reset();
+        animation_squat_right.reset();
+    } else if (id == "throw_barb") {
+        current_animation = is_facing_left ? &animation_throw_barb_left : &animation_throw_barb_right;
+        animation_throw_barb_left.reset();
+        animation_throw_barb_right.reset();
+    } else if (id == "throw_sword") {
+        current_animation = is_facing_left ? &animation_throw_sword_left : &animation_throw_sword_right;
+        animation_throw_sword_left.reset();
+        animation_throw_sword_right.reset();
+    } else if (id == "throw_silk") {
+        current_animation = is_facing_left ? &animation_throw_silk_left : &animation_throw_silk_right;
+        animation_throw_silk_left.reset();
+        animation_throw_silk_right.reset();
+    }
 }
