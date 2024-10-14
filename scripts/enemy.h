@@ -4,6 +4,7 @@
 #include "player.h"
 #include "barb.h"
 #include "sword.h"
+#include "state_machine.h"
 
 extern Atlas atlas_silk;
 extern Atlas atlas_aim_left;
@@ -30,6 +31,8 @@ extern Atlas atlas_throw_silk_left;
 extern Atlas atlas_throw_silk_right;
 extern Atlas atlas_vfx_dash_in_air_left;
 extern Atlas atlas_vfx_dash_in_air_right;
+
+#define floor 600
 
 class Enemy : public Player
 {
@@ -78,6 +81,10 @@ public:
     void throw_sword();
     void on_dash();
     void on_throw_silk();
+
+    //新增的一些函数
+    void switch_state(const std::string& id);
+    void set_animation(const std::string& id);
 
 private:
     bool is_throwing_silk = false;

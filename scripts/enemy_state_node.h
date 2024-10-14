@@ -7,6 +7,16 @@
 
 #include "timer.h"
 #include "statenode.h"
+#include "enemy.h"
+#include "Knight.h"
+#include "player.h"
+#include <random>
+#include <cstdlib>
+#include <ctime>
+
+
+extern Enemy* enemy;
+extern Knight* knight_1;
 
 class EnemyAimState : public StateNode
 {
@@ -155,8 +165,5 @@ private:
     Timer timer_throw;
     Timer timer_switch;
 };
-
-
-
 
 #endif //HOLLOWKNIGHT_DEMO_ENEMY_STATE_NODE_H

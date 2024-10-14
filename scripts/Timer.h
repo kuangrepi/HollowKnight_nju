@@ -12,6 +12,7 @@ private:
     bool shotted = false;           // 是否触发
     bool one_shot = false;          // 单次触发
     std::function<void()> callback; // 触发回调
+    std::function<void()> on_timeout;//定时器
 
 public:
     Timer() = default;
@@ -24,6 +25,12 @@ public:
     void set_one_shot(bool flag);
 
     void set_callback(std::function<void()> callback);
+
+    void set_on_timeout(std::function<void()> on_timeout)
+    {
+        this->on_timeout = on_timeout;
+    }
+
 
     void pause();
 
