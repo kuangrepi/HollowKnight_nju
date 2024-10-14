@@ -271,7 +271,6 @@ void Knight::on_update(int delta) {
         }
         position = dead_position;
         current_animation = &animation_death;
-        effect_animation = nullptr;
         if(current_animation->get_idx_frame() == 10)
             is_dead = true;
     }
