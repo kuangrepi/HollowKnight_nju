@@ -320,6 +320,30 @@ scripts/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.s
 .PHONY : scripts/SceneManager.cpp.s
 
+scripts/StateNode.obj: scripts/StateNode.cpp.obj
+.PHONY : scripts/StateNode.obj
+
+# target to build an object file
+scripts/StateNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj
+.PHONY : scripts/StateNode.cpp.obj
+
+scripts/StateNode.i: scripts/StateNode.cpp.i
+.PHONY : scripts/StateNode.i
+
+# target to preprocess a source file
+scripts/StateNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.i
+.PHONY : scripts/StateNode.cpp.i
+
+scripts/StateNode.s: scripts/StateNode.cpp.s
+.PHONY : scripts/StateNode.s
+
+# target to generate assembly for a file
+scripts/StateNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.s
+.PHONY : scripts/StateNode.cpp.s
+
 scripts/Timer.obj: scripts/Timer.cpp.obj
 .PHONY : scripts/Timer.obj
 
@@ -536,6 +560,30 @@ scripts/resourses.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.s
 .PHONY : scripts/resourses.cpp.s
 
+scripts/state_machine.obj: scripts/state_machine.cpp.obj
+.PHONY : scripts/state_machine.obj
+
+# target to build an object file
+scripts/state_machine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj
+.PHONY : scripts/state_machine.cpp.obj
+
+scripts/state_machine.i: scripts/state_machine.cpp.i
+.PHONY : scripts/state_machine.i
+
+# target to preprocess a source file
+scripts/state_machine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.i
+.PHONY : scripts/state_machine.cpp.i
+
+scripts/state_machine.s: scripts/state_machine.cpp.s
+.PHONY : scripts/state_machine.s
+
+# target to generate assembly for a file
+scripts/state_machine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.s
+.PHONY : scripts/state_machine.cpp.s
+
 scripts/sword.obj: scripts/sword.cpp.obj
 .PHONY : scripts/sword.obj
 
@@ -593,6 +641,9 @@ help:
 	@echo ... scripts/SceneManager.obj
 	@echo ... scripts/SceneManager.i
 	@echo ... scripts/SceneManager.s
+	@echo ... scripts/StateNode.obj
+	@echo ... scripts/StateNode.i
+	@echo ... scripts/StateNode.s
 	@echo ... scripts/Timer.obj
 	@echo ... scripts/Timer.i
 	@echo ... scripts/Timer.s
@@ -620,6 +671,9 @@ help:
 	@echo ... scripts/resourses.obj
 	@echo ... scripts/resourses.i
 	@echo ... scripts/resourses.s
+	@echo ... scripts/state_machine.obj
+	@echo ... scripts/state_machine.i
+	@echo ... scripts/state_machine.s
 	@echo ... scripts/sword.obj
 	@echo ... scripts/sword.i
 	@echo ... scripts/sword.s

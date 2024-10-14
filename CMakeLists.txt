@@ -40,7 +40,9 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/barb.h
         scripts/enemy.cpp
         scripts/enemy.h
-        scripts/enemy_state_node.cpp)
+        scripts/enemy_state_node.cpp
+        scripts/state_machine.cpp
+        scripts/StateNode.cpp)
 
 target_link_libraries(Hollowknight_demo msimg32)
 

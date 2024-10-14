@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/addr2line.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/ar.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Git/HollowKnight_demo/cmake-build-debug"
+			"value" : "d:/Software/HollowKnight_nju/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "28"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/c++.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/gcc-ar.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/gcc-ranlib.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/gcc.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -315,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/gcc-ar.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -331,7 +331,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/gcc-ranlib.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/dlltool.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -538,22 +538,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable output of compile commands during generation."
-				}
-			],
-			"type" : "BOOL",
-			"value" : ""
-		},
-		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
 			"properties" : 
 			[
@@ -575,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/Software/HollowKnight_nju/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -587,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "MinGW Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -647,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Git/HollowKnight_demo"
+			"value" : "D:/Software/HollowKnight_nju"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -675,19 +659,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/ld.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -783,7 +771,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/nm.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -811,7 +799,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/objcopy.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -827,7 +815,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/objdump.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -891,7 +879,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/ranlib.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -907,7 +895,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/windres.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1015,7 +1003,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/readelf.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1027,7 +1015,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1235,7 +1223,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/TDM-GCC/bin/strip.exe"
+			"value" : "C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1279,7 +1267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Git/HollowKnight_demo/cmake-build-debug"
+			"value" : "D:/Software/HollowKnight_nju/cmake-build-debug"
 		},
 		{
 			"name" : "Hollowknight_demo_IS_TOP_LEVEL",
@@ -1303,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Git/HollowKnight_demo"
+			"value" : "D:/Software/HollowKnight_nju"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

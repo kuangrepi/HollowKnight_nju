@@ -24,11 +24,7 @@ Player::~Player() {
 }
 
 void Player::decrease_hp() {
-    if (is_invulnerable) return;
-    //std::cout << hp << std::endl;
     hp -= 1;
-    if (hp > 0) make_invulnerable();
-    on_hurt();
 }
 
 void Player::on_update(int delta) {
@@ -49,8 +45,6 @@ void Player::on_draw(const Camera& camera) {
     if (!current_animation || is_blink_invisible && is_invulnerable) return;
     current_animation->on_draw((int) position.x, (int) position.y);
 }
-
-void Player::on_hurt() {};
 
 void Player::on_input(const ExMessage& msg) {};
 

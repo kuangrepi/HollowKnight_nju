@@ -7,7 +7,7 @@ Sword::Sword() {
 }
 
 Sword::Sword(Vector2 pos, bool is_left) {
-    position = pos + Vector2(0, 20);
+    position = pos + Vector2(0, 60);
     velocity = Vector2(is_left ? -speed : speed, 0);
     box = CollisionManager::instance()->create_collision_box();
     box->set_position(position);

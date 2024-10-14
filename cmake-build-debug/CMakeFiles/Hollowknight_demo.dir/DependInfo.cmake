@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Software/HollowKnight_nju/scripts/Menuscene.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/Scene.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/SceneManager.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj.d"
+  "D:/Software/HollowKnight_nju/scripts/StateNode.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/Timer.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/Vector2.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/barb.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj.d"
@@ -25,6 +26,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Software/HollowKnight_nju/scripts/main.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/player.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/resourses.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj.d"
+  "D:/Software/HollowKnight_nju/scripts/state_machine.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj.d"
   "D:/Software/HollowKnight_nju/scripts/sword.cpp" "CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj" "gcc" "CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj.d"
   )
 

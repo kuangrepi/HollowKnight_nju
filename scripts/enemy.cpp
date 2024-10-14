@@ -1,11 +1,14 @@
 #include <algorithm>
 #include "enemy.h"
 #include "state_machine.h"
+#include "enemy_state_node.h"
 
 Enemy::Enemy() {
     is_facing_left = true;
-    position = {1050, 200};
+    position = {1050, 100};
     logic_height = 150;
+    current_animation = &animation_idle_left;
+    current_dash_animation = &animation_dash_in_air_left;
 
     hit_box->set_layer_src(CollisionLayer::None);
     hit_box->set_layer_dst(CollisionLayer::Player);
@@ -107,7 +110,24 @@ Enemy::Enemy() {
     }
 
     {
-        // TODO: 状态机初始化
+        state_machine.register_state("aim", new EnemyAimState());
+        state_machine.register_state("dash_in_air", new EnemyDashInAirState());
+        state_machine.register_state("dash_on_floor", new EnemyDashOnFloorState());
+        state_machine.register_state("dead", new EnemyDeadState());
+        state_machine.register_state("fall", new EnemyFallState);
+        state_machine.register_state("idle", new EnemyIdleState());
+        state_machine.register_state("jump", new EnemyJumpState());
+        state_machine.register_state("run", new EnemyRunState());
+        state_machine.register_state("squat", new EnemySquatState());
+        state_machine.register_state("throw_barb", new EnemyThrowBarbState());
+        state_machine.register_state("throw_silk", new EnemyThrowSilkState());
+        state_machine.register_state("throw_sword", new EnemyThrowSwordState());
+
+        state_machine.set_entry("idle");
+    }
+
+    {
+        timer_invulnerable_status.set_wait_time(20);
     }
 }
 
@@ -116,15 +136,14 @@ Enemy::~Enemy() {
 }
 
 void Enemy::on_update(int delta) {
-// ?   if (velocity.x >= 0) {
-// ?       is_facing_left = false;
-// ?   }
-
+    if (velocity.x >= 0.0001f) {
+        is_facing_left = (velocity.x < 0);
+    }
     // 本应在Player::on_update中处理的逻辑
     if (hp <= 0)
         velocity.x = 0;
     if (enable_gravity)
-        velocity.y += GRAVITY * delta;
+        velocity.y += GRAVITY * delta / 1000.0f / FRAME / 1000.f;
 
     position += velocity * delta;
 
@@ -139,7 +158,8 @@ void Enemy::on_update(int delta) {
 //        return;
 
     if (!is_on_debug) {
-        current_animation->on_update(delta);
+        if (current_animation)
+            current_animation->on_update(delta);
     }
     Player::on_update(delta);
 
@@ -148,7 +168,6 @@ void Enemy::on_update(int delta) {
     if (is_throwing_silk) {
         collision_box_silk->set_position(position);
         // ?    collision_box_silk->set_enabled(true);
-        collision_box_silk->set_position(position);
         animation_silk.on_update(delta);
     }
     if (is_on_debug) {
@@ -159,7 +178,8 @@ void Enemy::on_update(int delta) {
         if (current_animation)
             current_animation->on_update(delta);
     } else if (is_dashing_in_air || is_dashing_on_floor) {
-        current_dash_animation->on_update(delta);
+        if (current_dash_animation)
+            current_dash_animation->on_update(delta);
     }
 
     for (Barb* barb : barb_list)
@@ -203,7 +223,7 @@ void Enemy::on_draw(const Camera& camera) {
 
 void Enemy::throw_barbs() {
     int num_new_barb = generate_random_number(3, 6);
-    std::cout << num_new_barb << std::endl;
+    //std::cout << num_new_barb << std::endl;
 
     if (barb_list.size() >= 10) num_new_barb = 1;
     int width_grid = getwidth() / num_new_barb;
@@ -220,7 +240,7 @@ void Enemy::throw_barbs() {
 void Enemy::throw_sword() {
     Sword* sword = new Sword(position, is_facing_left);
     sword_list.push_back(sword);
-    std::cout << sword->is_valid_sword() << std::endl;
+    //std::cout << sword->is_valid_sword() << std::endl;
 
 }
 
@@ -291,11 +311,11 @@ void Enemy::on_input(const ExMessage& msg) {
     }
 }
 
-void Enemy::switch_state(const std::string& id){
+void Enemy::switch_state(const std::string& id) {
 //    state_machine.switch_to(id);
 }
 
-void Enemy::set_animation(const std::string& id){
+void Enemy::set_animation(const std::string& id) {
     current_animation = &animation_pool[id];
     is_facing_left = true;
 }

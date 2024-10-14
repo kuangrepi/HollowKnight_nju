@@ -434,4 +434,7 @@ CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: \
  D:\Software\HollowKnight_nju\scripts\define.h \
  D:\Software\HollowKnight_nju\scripts\Timer.h \
  D:\Software\HollowKnight_nju\scripts\Knight.h \
- D:\Software\HollowKnight_nju\scripts\sword.h
+ D:\Software\HollowKnight_nju\scripts\sword.h \
+ D:\Software\HollowKnight_nju\scripts\enemy_state_node.h \
+ D:\Software\HollowKnight_nju\scripts\statenode.h \
+ C:/Users/13511/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime

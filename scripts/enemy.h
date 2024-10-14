@@ -37,6 +37,8 @@ extern Atlas atlas_vfx_dash_in_air_right;
 class Enemy : public Player
 {
 public:
+    bool is_on_debug = false;
+
     Enemy();
     ~Enemy();
 
@@ -90,7 +92,6 @@ private:
     bool is_throwing_silk = false;
     bool is_dashing_in_air = false;
     bool is_dashing_on_floor = false;
-    bool is_on_debug = true;
 
     // 动画资源
     Animation animation_silk;
