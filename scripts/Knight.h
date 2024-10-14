@@ -22,6 +22,10 @@ extern Atlas altas_knight_attack_left_1;
 extern Atlas altas_knight_attack_right_1;
 extern Atlas altas_knight_attack_left_effect_1;
 extern Atlas altas_knight_attack_right_effect_1;
+extern Atlas altas_knight_attack_left_up;
+extern Atlas altas_knight_attack_right_up;
+extern Atlas altas_knight_attack_left_effect_up;
+extern Atlas altas_knight_attack_right_effect_up;
 
 class Knight : public Player
 {
@@ -78,12 +82,17 @@ private:
     Animation animation_attack_right_1;
     Animation animation_attack_left_effect_1;
     Animation animation_attack_right_effect_1;
+    Animation animation_attack_left_up;
+    Animation animation_attack_right_up;
+    Animation animation_attack_left_effect_up;
+    Animation animation_attack_right_effect_up;
 
     Animation* current_animation = nullptr;
     Animation* effect_animation = nullptr;
 
     bool is_left_key_down = false;
     bool is_right_key_down = false;
+    bool is_up_key_down = false;
 
     bool is_facing_right = true;
     bool effect_facing_right;
@@ -93,16 +102,8 @@ private:
     bool is_land = false;
 
     bool is_attack = false;
-
-    bool move_0 = true;
-    bool move_1 = true;
-    bool move_2 = true;
-    bool move_3 = true;
-    bool move_4 = true;
-    bool move_5 = false;
-    int move_6l = 0;
-    bool move_6 = false;
-    int hurt_pre = 615;
+    bool normal_attack = false;
+    bool up_attack = false;
 
     int start_run = 0;
     int start_jump = 1;

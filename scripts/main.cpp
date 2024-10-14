@@ -36,6 +36,10 @@ void load_game_resourses() {
     altas_knight_attack_right_1.load_from_file(_T("images/AttackR/Attack/1/%d.PNG"), 5);
     altas_knight_attack_left_effect_1.load_from_file(_T("images/Attack/Attack/1/0%d.PNG"), 3);
     altas_knight_attack_right_effect_1.load_from_file(_T("images/AttackR/Attack/1/0%d.PNG"), 3);
+    altas_knight_attack_left_up.load_from_file(_T("images/Attack/AttackUp/%d.PNG"), 5);
+    altas_knight_attack_right_up.load_from_file(_T("images/AttackR/AttackUp/%d.PNG"), 5);
+    altas_knight_attack_left_effect_up.load_from_file(_T("images/Attack/AttackUp/0%d.PNG"), 3);
+    altas_knight_attack_right_effect_up.load_from_file(_T("images/AttackR/AttackUp/0%d.PNG"), 3);
     // 黄蜂女道具
     atlas_sword.load_from_file(_T("images/enemy/sword/%d.PNG"), 3);
     atlas_barb_loose.load_from_file(_T("images/enemy/barb_loose/%d.PNG"), 5);

@@ -17,6 +17,10 @@ Atlas altas_knight_attack_left_1;
 Atlas altas_knight_attack_right_1;
 Atlas altas_knight_attack_left_effect_1;
 Atlas altas_knight_attack_right_effect_1;
+Atlas altas_knight_attack_left_up;
+Atlas altas_knight_attack_right_up;
+Atlas altas_knight_attack_left_effect_up;
+Atlas altas_knight_attack_right_effect_up;
 
 //上面是小骑士的资源
 
