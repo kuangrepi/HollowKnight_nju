@@ -54,6 +54,7 @@ void EnemyDashInAirState::on_update(float delta)
         enemy->switch_state("idle");
 }
 
+
 void EnemyDashInAirState::on_exit()
 {
     enemy->set_gravity_enabled(true);
