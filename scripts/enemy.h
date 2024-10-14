@@ -32,6 +32,8 @@ extern Atlas atlas_throw_silk_right;
 extern Atlas atlas_vfx_dash_in_air_left;
 extern Atlas atlas_vfx_dash_in_air_right;
 
+#define floor 600
+
 class Enemy : public Player
 {
 public:

@@ -8,8 +8,15 @@
 #include "timer.h"
 #include "statenode.h"
 #include "enemy.h"
+#include "Knight.h"
+#include "player.h"
+#include <random>
+#include <cstdlib>
+#include <ctime>
+
 
 extern Enemy* enemy;
+extern Knight* knight_1;
 
 class EnemyAimState : public StateNode
 {
