@@ -68,8 +68,8 @@ Knight::Knight() {
     animation_attack_right_effect_1.set_interval(FRAME*8);
     animation_attack_left_up.set_interval(FRAME*4);
     animation_attack_right_up.set_interval(FRAME*4);
-    animation_attack_left_effect_up.set_interval(FRAME*8);
-    animation_attack_right_effect_up.set_interval(FRAME*8);
+    animation_attack_left_effect_up.set_interval(FRAME*6);
+    animation_attack_right_effect_up.set_interval(FRAME*6);
     animation_damage_left.set_interval(FRAME*4);
     animation_damage_right.set_interval(FRAME*4);
     animation_damage_effect.set_interval(FRAME*4);
@@ -198,6 +198,7 @@ void Knight::on_update(int delta) {
             hit_box->set_enabled(true);
             position_hit_box.x = effect_position.x+20;
             position_hit_box.y = effect_position.y+50;
+            effect_position.y = position.y - 160;
             hit_box->set_size(Vector2(150,166));
             effect_animation = effect_facing_right ? &animation_attack_right_effect_up : &animation_attack_left_effect_up;
         }
@@ -214,7 +215,8 @@ void Knight::on_update(int delta) {
             hit_box->set_enabled(true);
             position_hit_box.x = effect_position.x+15;
             position_hit_box.y = effect_position.y+10;
-            hit_box->set_size(Vector2(170,136));
+            effect_position.y = position.y;
+            hit_box->set_size(Vector2(170,116));
             effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
         }
         if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2){
@@ -231,7 +233,7 @@ void Knight::on_update(int delta) {
         if(is_up_key_down && !normal_attack){
             effect_position.x = position_hurt_box.x - 80;
         }else if(!up_attack){
-            effect_position.x = position_hurt_box.x + 10;
+            effect_position.x = position_hurt_box.x - 10;
         }
 
     }
@@ -239,7 +241,7 @@ void Knight::on_update(int delta) {
         if(is_up_key_down && !normal_attack){
             effect_position.x = position_hurt_box.x - 80;
         }else if(!up_attack){
-            effect_position.x = position_hurt_box.x - 170;
+            effect_position.x = position_hurt_box.x - 150;
         }
 
     }
