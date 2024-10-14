@@ -49,8 +49,8 @@ public:
     }
 
     void on_jump() {
-        if(start_jump <= 120 && velocity.y >= -0.1f){
-            if(start_jump == 1) velocity.y += jump_velocity;
+        if (start_jump <= 120 && velocity.y >= -0.1f) {
+            if (start_jump == 1) velocity.y += jump_velocity;
             else velocity.y += jump_velocity / 25;
             start_jump++;
         }
@@ -59,12 +59,9 @@ public:
     void move_and_collide(int delta);
 
 private:
-    int hp = 10; // 角色生命值
-    Vector2 position; // 角色脚底位置
     Vector2 effect_position;
     Vector2 position_hurt_box; // 角色碰撞箱位置
     Vector2 position_hit_box; // 角色攻击箱位置
-    Vector2 velocity; // 角色速度
 
     Animation animation_idle_left;
     Animation animation_idle_right;

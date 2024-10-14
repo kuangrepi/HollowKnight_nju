@@ -84,7 +84,7 @@ protected:
     float logic_height = 0; // 角色的逻辑高度
     bool is_facing_left = true; // 当前角色是否朝向左
     //StateMachine state_machine;
-    bool enable_gravity = true; // 启用重力模拟
+    bool enable_gravity = false; // 启用重力模拟
     bool is_invulnerable = false; // 当前是否无敌
     Timer timer_invulnerable_blink; // 无敌闪烁状态定时器
     Timer timer_invulnerable_status; // 无敌状态定时器

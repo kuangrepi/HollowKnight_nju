@@ -24,7 +24,8 @@ Atlas altas_knight_attack_right_effect_up;
 
 //上面是小骑士的资源
 
-Atlas atlas_sword;
+Atlas atlas_sword_left;
+Atlas atlas_sword_right;
 Atlas atlas_barb_loose;
 Atlas atlas_barb_break;
 
