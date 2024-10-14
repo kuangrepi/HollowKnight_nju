@@ -22,6 +22,14 @@ extern Atlas altas_knight_attack_left_1;
 extern Atlas altas_knight_attack_right_1;
 extern Atlas altas_knight_attack_left_effect_1;
 extern Atlas altas_knight_attack_right_effect_1;
+extern Atlas altas_knight_attack_left_up;
+extern Atlas altas_knight_attack_right_up;
+extern Atlas altas_knight_attack_left_effect_up;
+extern Atlas altas_knight_attack_right_effect_up;
+extern Atlas altas_knight_damage_left;
+extern Atlas altas_knight_damage_right;
+extern Atlas altas_knight_damage_effect;
+extern Atlas altas_knight_death;
 
 class Knight : public Player
 {
@@ -54,6 +62,10 @@ public:
 
     void move_and_collide(int delta);
 
+    bool game_over(){
+        return is_dead;
+    }
+
 private:
     Vector2 effect_position;
     Vector2 position_hurt_box; // 角色碰撞箱位置
@@ -75,12 +87,21 @@ private:
     Animation animation_attack_right_1;
     Animation animation_attack_left_effect_1;
     Animation animation_attack_right_effect_1;
+    Animation animation_attack_left_up;
+    Animation animation_attack_right_up;
+    Animation animation_attack_left_effect_up;
+    Animation animation_attack_right_effect_up;
+    Animation animation_damage_left;
+    Animation animation_damage_right;
+    Animation animation_damage_effect;
+    Animation animation_death;
 
     Animation* current_animation = nullptr;
     Animation* effect_animation = nullptr;
 
     bool is_left_key_down = false;
     bool is_right_key_down = false;
+    bool is_up_key_down = false;
 
     bool is_facing_right = true;
     bool effect_facing_right;
@@ -90,23 +111,19 @@ private:
     bool is_land = false;
 
     bool is_attack = false;
-
-    bool move_0 = true;
-    bool move_1 = true;
-    bool move_2 = true;
-    bool move_3 = true;
-    bool move_4 = true;
-    bool move_5 = false;
-    int move_6l = 0;
-    bool move_6 = false;
-    int hurt_pre = 615;
+    bool normal_attack = false;
+    bool up_attack = false;
+    bool is_damage = false;
+    bool is_dead = false;
+    Vector2 dead_position;
 
     int start_run = 0;
     int start_jump = 1;
+    int damage = 1000;
 
-    const float gravity = 0.005f / FRAME;
-    const float run_velocity = 6.0f / FRAME;
-    const float jump_velocity = -10.0f / FRAME;
+    const float gravity = 0.010f / FRAME;
+    const float run_velocity = 8.0f / FRAME;
+    const float jump_velocity = -22.0f / FRAME;
 };
 
 #endif //HOLLOWKNIGHT_DEMO_KNIGHT_H

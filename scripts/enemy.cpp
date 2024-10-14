@@ -1,5 +1,6 @@
 #include <algorithm>
 #include "enemy.h"
+#include "state_machine.h"
 
 Enemy::Enemy() {
     is_facing_left = true;
@@ -288,4 +289,13 @@ void Enemy::on_input(const ExMessage& msg) {
             break;
         default:break;
     }
+}
+
+void Enemy::switch_state(const std::string& id){
+//    state_machine.switch_to(id);
+}
+
+void Enemy::set_animation(const std::string& id){
+    current_animation = &animation_pool[id];
+    is_facing_left = true;
 }

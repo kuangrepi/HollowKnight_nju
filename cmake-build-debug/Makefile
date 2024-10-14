@@ -440,6 +440,30 @@ scripts/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.s
 .PHONY : scripts/enemy.cpp.s
 
+scripts/enemy_state_node.obj: scripts/enemy_state_node.cpp.obj
+.PHONY : scripts/enemy_state_node.obj
+
+# target to build an object file
+scripts/enemy_state_node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj
+.PHONY : scripts/enemy_state_node.cpp.obj
+
+scripts/enemy_state_node.i: scripts/enemy_state_node.cpp.i
+.PHONY : scripts/enemy_state_node.i
+
+# target to preprocess a source file
+scripts/enemy_state_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.i
+.PHONY : scripts/enemy_state_node.cpp.i
+
+scripts/enemy_state_node.s: scripts/enemy_state_node.cpp.s
+.PHONY : scripts/enemy_state_node.s
+
+# target to generate assembly for a file
+scripts/enemy_state_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.s
+.PHONY : scripts/enemy_state_node.cpp.s
+
 scripts/main.obj: scripts/main.cpp.obj
 .PHONY : scripts/main.obj
 
@@ -584,6 +608,9 @@ help:
 	@echo ... scripts/enemy.obj
 	@echo ... scripts/enemy.i
 	@echo ... scripts/enemy.s
+	@echo ... scripts/enemy_state_node.obj
+	@echo ... scripts/enemy_state_node.i
+	@echo ... scripts/enemy_state_node.s
 	@echo ... scripts/main.obj
 	@echo ... scripts/main.i
 	@echo ... scripts/main.s

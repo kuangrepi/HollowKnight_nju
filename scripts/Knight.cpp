@@ -17,7 +17,14 @@ Knight::Knight() {
     animation_attack_right_1.set_atlas(&altas_knight_attack_right_1);
     animation_attack_left_effect_1.set_atlas(&altas_knight_attack_left_effect_1);
     animation_attack_right_effect_1.set_atlas(&altas_knight_attack_right_effect_1);
-
+    animation_attack_left_up.set_atlas(&altas_knight_attack_left_up);
+    animation_attack_right_up.set_atlas(&altas_knight_attack_right_up);
+    animation_attack_left_effect_up.set_atlas(&altas_knight_attack_left_effect_up);
+    animation_attack_right_effect_up.set_atlas(&altas_knight_attack_right_effect_up);
+    animation_damage_left.set_atlas(&altas_knight_damage_left);
+    animation_damage_right.set_atlas(&altas_knight_damage_right);
+    animation_damage_effect.set_atlas(&altas_knight_damage_effect);
+    animation_death.set_atlas(&altas_knight_death);
 
     logic_height = 120;
 
@@ -33,7 +40,14 @@ Knight::Knight() {
     hit_box->set_enabled(false);
 
     hurt_box->set_on_collide([&]() {
-        decrease_hp();
+        if(!is_damage && damage > FRAME/3){
+            decrease_hp();
+            is_damage = true;
+            is_attack = false;
+            damage = 0;
+            effect_position.x = position.x - 290;
+            effect_position.y = position.y;
+        }
     });
 
     animation_idle_left.set_interval(FRAME*2);
@@ -42,66 +56,84 @@ Knight::Knight() {
     animation_knight_start_run_right.set_interval(FRAME*6);
     animation_run_left.set_interval(FRAME*6);
     animation_run_right.set_interval(FRAME*6);
-    animation_jump_start_left.set_interval(FRAME*3);
-    animation_jump_start_right.set_interval(FRAME*3);
-    animation_jump_loop_left.set_interval(FRAME*6);
-    animation_jump_loop_right.set_interval(FRAME*6);
-    animation_jump_land_left.set_interval(FRAME*6);
-    animation_jump_land_right.set_interval(FRAME*6);
+    animation_jump_start_left.set_interval(FRAME*2);
+    animation_jump_start_right.set_interval(FRAME*2);
+    animation_jump_loop_left.set_interval(FRAME*4);
+    animation_jump_loop_right.set_interval(FRAME*4);
+    animation_jump_land_left.set_interval(FRAME*4);
+    animation_jump_land_right.set_interval(FRAME*4);
     animation_attack_left_1.set_interval(FRAME*4);
     animation_attack_right_1.set_interval(FRAME*4);
     animation_attack_left_effect_1.set_interval(FRAME*8);
     animation_attack_right_effect_1.set_interval(FRAME*8);
+    animation_attack_left_up.set_interval(FRAME*4);
+    animation_attack_right_up.set_interval(FRAME*4);
+    animation_attack_left_effect_up.set_interval(FRAME*8);
+    animation_attack_right_effect_up.set_interval(FRAME*8);
+    animation_damage_left.set_interval(FRAME*4);
+    animation_damage_right.set_interval(FRAME*4);
+    animation_damage_effect.set_interval(FRAME*4);
+    animation_death.set_interval(FRAME*8);
 }
 void Knight::on_input(const ExMessage& msg) {
-    switch (msg.message) {
-        case WM_KEYDOWN:
-            switch (msg.vkcode) {
-                case VK_LEFT: // <-
-                    is_left_key_down = true;
-                    break;
-                case VK_RIGHT: // ->
-                    is_right_key_down = true;
-                    break;
-                case 0x5A: // Z
-                    is_jump = true;
-                    break;
-                case 0x58: // X
-                    if(!is_attack){
-                        effect_facing_right = is_facing_right;
-                        effect_position.y = position.y;
-                        animation_attack_left_effect_1.reset();
-                        animation_attack_right_effect_1.reset();
-                    }
-                    is_attack = true;
-                    break;
-            }
-            break;
-        case WM_KEYUP:
-            switch (msg.vkcode) {
-                case VK_LEFT: // <-
-                    is_left_key_down = false;
-                    break;
-                case VK_RIGHT: // ->
-                    is_right_key_down = false;
-                    break;
-                case 0x5A: // Z
-                    is_jump = false;
-                    break;
-            }
-            break;
-        default:break;
-    }
+    if(hp > 0)
+        switch (msg.message) {
+            case WM_KEYDOWN:
+                switch (msg.vkcode) {
+                    case VK_LEFT: // <-
+                        is_left_key_down = true;
+                        break;
+                    case VK_RIGHT: // ->
+                        is_right_key_down = true;
+                        break;
+                    case VK_UP: // ->
+                        is_up_key_down = true;
+                        break;
+                    case 0x5A: // Z
+                        is_jump = true;
+                        break;
+                    case 0x58: // X
+                        if(!is_attack && !is_damage){
+                            if(is_up_key_down && !normal_attack){
+                                effect_facing_right = is_facing_right;
+                                effect_position.y = position.y-160;
+                                animation_attack_left_effect_up.reset();
+                                animation_attack_right_effect_up.reset();
+                            }
+                            else if(!is_up_key_down && !up_attack){
+                                effect_facing_right = is_facing_right;
+                                effect_position.y = position.y;
+                                animation_attack_left_effect_1.reset();
+                                animation_attack_right_effect_1.reset();
+                            }
+                        }
+                        is_attack = true;
+                        break;
+                }
+                break;
+            case WM_KEYUP:
+                switch (msg.vkcode) {
+                    case VK_LEFT: // <-
+                        is_left_key_down = false;
+                        break;
+                    case VK_RIGHT: // ->
+                        is_right_key_down = false;
+                    case VK_UP: // ->
+                        is_up_key_down = false;
+                        break;
+                    case 0x5A: // Z
+                        is_jump = false;
+                        break;
+                }
+                break;
+            default:break;
+        }
 }
 
 void Knight::on_update(int delta) {
     int direction = is_right_key_down - is_left_key_down;
     position_hurt_box.x = position.x + 15;
     position_hurt_box.y = position.y + 20;
-//    if((hurt_pre - position_hurt_box.x > 25 && hurt_pre - position_hurt_box.x < 100
-//    || hurt_pre - position_hurt_box.x < -25 && hurt_pre - position_hurt_box.x > -100)
-//    && is_attack && is_facing_right)
-//        position_hurt_box.x = hurt_pre;
     hurt_box->set_position(position_hurt_box);
     hit_box->set_position(position_hit_box);
     if (direction != 0) {
@@ -117,8 +149,6 @@ void Knight::on_update(int delta) {
                 animation_knight_start_run_left.reset();
                 animation_knight_start_run_right.reset();
             }
-
-
         float distance = direction * run_velocity * delta;
         on_run(distance);
     } else {
@@ -144,18 +174,6 @@ void Knight::on_update(int delta) {
             is_land = false;
         }
     }
-    if(is_attack){
-        current_animation = is_facing_right ? &animation_attack_right_1 : &animation_attack_left_1;
-        if(animation_attack_right_1.get_idx_frame() == 4 || animation_attack_left_1.get_idx_frame() == 4){
-            animation_attack_left_1.reset();
-            animation_attack_right_1.reset();
-            is_attack = false;
-        }
-    }
-    else{
-        animation_attack_left_1.reset();
-        animation_attack_right_1.reset();
-    }
 
     if (position.y >= 520){
         start_jump = 1;
@@ -165,30 +183,103 @@ void Knight::on_update(int delta) {
         animation_knight_start_run_left.reset();
         animation_knight_start_run_right.reset();
     }
-    if(is_attack){
-        hit_box->set_enabled(true);
-        position_hit_box.x = effect_position.x+15;
-        position_hit_box.y = effect_position.y+10;
-        hit_box->set_size(Vector2(170,136));
-        effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
+
+    if(is_attack && !is_damage){
+        if((is_up_key_down || up_attack) && !normal_attack){
+            up_attack = true;
+            normal_attack = false;
+            current_animation = is_facing_right ? &animation_attack_right_up : &animation_attack_left_up;
+            if(animation_attack_right_up.get_idx_frame() == 4 || animation_attack_left_up.get_idx_frame() == 4){
+                animation_attack_left_up.reset();
+                animation_attack_right_up.reset();
+                is_attack = false;
+                up_attack = false;
+            }
+            hit_box->set_enabled(true);
+            position_hit_box.x = effect_position.x+20;
+            position_hit_box.y = effect_position.y+50;
+            hit_box->set_size(Vector2(150,166));
+            effect_animation = effect_facing_right ? &animation_attack_right_effect_up : &animation_attack_left_effect_up;
+        }
+        else{
+            normal_attack = true;
+            up_attack = false;
+            current_animation = is_facing_right ? &animation_attack_right_1 : &animation_attack_left_1;
+            if(animation_attack_right_1.get_idx_frame() == 4 || animation_attack_left_1.get_idx_frame() == 4){
+                animation_attack_left_1.reset();
+                animation_attack_right_1.reset();
+                is_attack = false;
+                normal_attack = false;
+            }
+            hit_box->set_enabled(true);
+            position_hit_box.x = effect_position.x+15;
+            position_hit_box.y = effect_position.y+10;
+            hit_box->set_size(Vector2(170,136));
+            effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
+        }
+        if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2){
+            effect_animation = nullptr;
+        }
     } else {
         hit_box->set_enabled(false);
+        animation_attack_left_1.reset();
+        animation_attack_right_1.reset();
+        animation_attack_left_up.reset();
+        animation_attack_right_up.reset();
     }
-    if(effect_facing_right && is_facing_right){
-        effect_position.x = position_hurt_box.x + 10;
+    if(effect_facing_right && is_facing_right && !is_damage){
+        if(is_up_key_down && !normal_attack){
+            effect_position.x = position_hurt_box.x - 80;
+        }else if(!up_attack){
+            effect_position.x = position_hurt_box.x + 10;
+        }
+
     }
-    if(!effect_facing_right && !is_facing_right){
-        effect_position.x = position_hurt_box.x - 170;
+    if(!effect_facing_right && !is_facing_right && !is_damage){
+        if(is_up_key_down && !normal_attack){
+            effect_position.x = position_hurt_box.x - 80;
+        }else if(!up_attack){
+            effect_position.x = position_hurt_box.x - 170;
+        }
+
     }
-    if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2){
+
+    if(animation_damage_left.get_idx_frame() == 6 || animation_damage_right.get_idx_frame() == 6){
+        is_damage = false;
+        animation_damage_right.reset();
+        animation_damage_left.reset();
+        animation_damage_effect.reset();
+    }
+    if(is_damage){
+        current_animation = is_facing_right ? &animation_damage_right : &animation_damage_left;
+        effect_animation = &animation_damage_effect;
+        if(effect_animation != nullptr && effect_animation->get_idx_frame() == 3){
+            effect_animation = nullptr;
+        }
+    }
+    if(damage < 1000){
+        damage++;
+    }
+    move_and_collide(delta);
+    if(hp <= 0){
+        static int n = 0;
+        if(n == 0){
+            dead_position= position;
+            n++;
+        }
+        position = dead_position;
+        current_animation = &animation_death;
         effect_animation = nullptr;
+        if(current_animation->get_idx_frame() == 10)
+            is_dead = true;
     }
-    current_animation->on_update(delta);
+    if(!is_dead)
+        current_animation->on_update(delta);
     if(effect_animation != nullptr)
         effect_animation->on_update(delta);
     Player::on_update(delta);
 
-    move_and_collide(delta);
+
 
 }
 

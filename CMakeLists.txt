@@ -18,7 +18,6 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/Camera.cpp
         scripts/Camera.h
         scripts/player.h
-        scripts/Hornet.h
         scripts/Knight.cpp
         scripts/Knight.h
         scripts/resourses.cpp
@@ -40,7 +39,8 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/barb.cpp
         scripts/barb.h
         scripts/enemy.cpp
-        scripts/enemy.h)
+        scripts/enemy.h
+        scripts/enemy_state_node.cpp)
 
 target_link_libraries(Hollowknight_demo msimg32)
 
