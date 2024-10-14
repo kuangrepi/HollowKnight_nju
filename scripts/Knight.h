@@ -57,7 +57,9 @@ public:
 private:
     int hp = 10; // 角色生命值
     Vector2 position; // 角色脚底位置
+    Vector2 effect_position;
     Vector2 position_hurt_box; // 角色碰撞箱位置
+    Vector2 position_hit_box; // 角色攻击箱位置
     Vector2 velocity; // 角色速度
 
     Animation animation_idle_left;
@@ -78,11 +80,13 @@ private:
     Animation animation_attack_right_effect_1;
 
     Animation* current_animation = nullptr;
+    Animation* effect_animation = nullptr;
 
     bool is_left_key_down = false;
     bool is_right_key_down = false;
 
     bool is_facing_right = true;
+    bool effect_facing_right;
 
     bool is_jump = false;
 

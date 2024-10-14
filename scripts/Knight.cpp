@@ -50,8 +50,8 @@ Knight::Knight() {
     animation_jump_land_right.set_interval(FRAME*6);
     animation_attack_left_1.set_interval(FRAME*4);
     animation_attack_right_1.set_interval(FRAME*4);
-    animation_attack_left_effect_1.set_interval(FRAME*6);
-    animation_attack_right_effect_1.set_interval(FRAME*6);
+    animation_attack_left_effect_1.set_interval(FRAME*8);
+    animation_attack_right_effect_1.set_interval(FRAME*8);
 }
 void Knight::on_input(const ExMessage& msg) {
     switch (msg.message) {
@@ -67,6 +67,12 @@ void Knight::on_input(const ExMessage& msg) {
                     is_jump = true;
                     break;
                 case 0x58: // X
+                    if(!is_attack){
+                        effect_facing_right = is_facing_right;
+                        effect_position.y = position.y;
+                        animation_attack_left_effect_1.reset();
+                        animation_attack_right_effect_1.reset();
+                    }
                     is_attack = true;
                     break;
             }
@@ -110,11 +116,12 @@ void Knight::on_update(int delta) {
                 break;
         }
     }
-    if((hurt_pre - position_hurt_box.x > 35 && hurt_pre - position_hurt_box.x < 60
-    || hurt_pre - position_hurt_box.x < -35 && hurt_pre - position_hurt_box.x > -60)
-    && is_attack && is_facing_right)
-        position_hurt_box.x = hurt_pre;
+//    if((hurt_pre - position_hurt_box.x > 25 && hurt_pre - position_hurt_box.x < 100
+//    || hurt_pre - position_hurt_box.x < -25 && hurt_pre - position_hurt_box.x > -100)
+//    && is_attack && is_facing_right)
+//        position_hurt_box.x = hurt_pre;
     hurt_box->set_position(position_hurt_box);
+    hit_box->set_position(position_hit_box);
     hurt_pre = position_hurt_box.x;
     if (direction != 0) {
         is_facing_right = direction > 0;
@@ -186,8 +193,27 @@ void Knight::on_update(int delta) {
         animation_knight_start_run_left.reset();
         animation_knight_start_run_right.reset();
     }
-
+    if(is_attack){
+        hit_box->set_enabled(true);
+        position_hit_box.x = effect_position.x+15;
+        position_hit_box.y = effect_position.y+10;
+        hit_box->set_size(Vector2(170,136));
+        effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
+    } else {
+        hit_box->set_enabled(false);
+    }
+    if(effect_facing_right && is_facing_right){
+        effect_position.x = position_hurt_box.x + 10;
+    }
+    if(!effect_facing_right && !is_facing_right){
+        effect_position.x = position_hurt_box.x - 150;
+    }
+    if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2){
+        effect_animation = nullptr;
+    }
     current_animation->on_update(delta);
+    if(effect_animation != nullptr)
+        effect_animation->on_update(delta);
     Player::on_update(delta);
 
     move_and_collide(delta);
@@ -245,6 +271,8 @@ void Knight::on_draw(const Camera& camera) {
         move_6 = true;
     }
     current_animation->on_draw((int) position.x, (int) position.y);
+    if(effect_animation != nullptr)
+        effect_animation->on_draw((int) effect_position.x, (int) effect_position.y);
     Player::on_draw(camera);
     if(move_6){
         move_6l++;
