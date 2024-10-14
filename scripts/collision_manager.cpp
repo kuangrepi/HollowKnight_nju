@@ -25,12 +25,12 @@ void CollisionManager::destroy_collision_box(CollisionBox* collision_box) {
 
 void CollisionManager::process_collision() {
     for (CollisionBox* collision_box_src : collision_box_list) {
-        if (!collision_box_src->enabled && collision_box_src->layer_dst == CollisionLayer::None) {
+        if (!collision_box_src->enabled || collision_box_src->layer_dst == CollisionLayer::None) {
             continue;
         }
         for (CollisionBox* collision_box_dst : collision_box_list) {
-            if (!collision_box_dst->enabled || collision_box_dst->layer_dst == CollisionLayer::None
-                || collision_box_src == collision_box_dst) {
+            if (!collision_box_dst->enabled || collision_box_src == collision_box_dst
+                || collision_box_src->layer_dst != collision_box_dst->layer_src) {
                 continue;
             }
             bool is_collide_x =

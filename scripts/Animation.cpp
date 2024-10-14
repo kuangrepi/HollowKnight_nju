@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Animation.h"
 
 void Animation::reset() {
@@ -26,7 +27,7 @@ IMAGE* Animation::get_frame() {
     return atlas->get_image(idx_frame);
 }
 
-void Animation::set_callback(std::function<void()> callback){
+void Animation::set_callback(std::function<void()> callback) {
     this->callback = callback;
 }
 bool Animation::check_finished() {
@@ -37,17 +38,18 @@ bool Animation::check_finished() {
 
 void Animation::on_update(int delta) {
     timer += delta;
-    if(timer >= interval) {
+    if (timer >= interval) {
         timer = 0;
         idx_frame++;
-        if(idx_frame >= atlas->get_size()) {
+        if (idx_frame >= atlas->get_size()) {
             idx_frame = is_loop ? 0 : atlas->get_size() - 1;
-            if(!is_loop && callback)
+            if (!is_loop && callback)
                 callback;
         }
     }
 }
 
-void Animation::on_draw(int x, int y) const{
+void Animation::on_draw(int x, int y) const {
     putimage_alpha(x, y, atlas->get_image(idx_frame));
+
 }

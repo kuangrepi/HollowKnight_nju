@@ -25,6 +25,8 @@ public:
     void on_enter() {
         knight_1 = new Knight();
         knight_1->set_position(600, 520);
+        enemy = new Enemy();
+        enemy->set_position(100, 520);
     }
 
     void on_exit() {
@@ -33,11 +35,12 @@ public:
 
     void on_input(const ExMessage& msg) {
         knight_1->on_input(msg);
+        enemy->on_input(msg);
     }
 
     void on_update(int delta) {
         knight_1->on_update(delta);
-        //  enemy->on_update(delta);
+        enemy->on_update(delta);
         CollisionManager* collision_manager = CollisionManager::instance();
         collision_manager->process_collision();
     }
@@ -45,7 +48,7 @@ public:
     void on_draw() {
         putimage(0, 0, &img_gamescene_background);
         knight_1->on_draw(camera);
-        //enemy->on_draw(camera);
+        enemy->on_draw(camera);
         CollisionManager* collision_manager = CollisionManager::instance();
         collision_manager->on_debug_draw();
     }

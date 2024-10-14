@@ -43,7 +43,7 @@ public:
     void on_update(int delta) override;
     void on_draw(const Camera& camera) override;
     void on_hurt() override {};
-
+    void on_input(const ExMessage& msg);
     void set_facing_left(bool flag) {
         is_facing_left = flag;
     }
@@ -90,6 +90,7 @@ private:
     bool is_throwing_silk = false;
     bool is_dashing_in_air = false;
     bool is_dashing_on_floor = false;
+    bool is_on_debug = true;
 
     // 动画资源
     Animation animation_silk;

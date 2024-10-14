@@ -7,7 +7,8 @@
 #include "define.h"
 #include "Camera.h"
 
-extern Atlas atlas_sword;
+extern Atlas atlas_sword_left;
+extern Atlas atlas_sword_right;
 
 class Sword
 {

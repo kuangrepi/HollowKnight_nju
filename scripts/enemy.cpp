@@ -138,8 +138,9 @@ void Enemy::on_update(int delta) {
 //    if (!current_animation)
 //        return;
 
-    current_animation->on_update(delta);
-
+    if (!is_on_debug) {
+        current_animation->on_update(delta);
+    }
     Player::on_update(delta);
 
     hit_box->set_position(position);
@@ -150,8 +151,14 @@ void Enemy::on_update(int delta) {
         collision_box_silk->set_position(position);
         animation_silk.on_update(delta);
     }
-
-    if (is_dashing_in_air || is_dashing_on_floor) {
+    if (is_on_debug) {
+        if (is_dashing_in_air || is_dashing_on_floor) {
+            current_animation = is_facing_left ? &animation_dash_in_air_left : &animation_dash_in_air_right;
+        } else
+            current_animation = is_facing_left ? &animation_idle_left : &animation_idle_right;
+        if (current_animation)
+            current_animation->on_update(delta);
+    } else if (is_dashing_in_air || is_dashing_on_floor) {
         current_dash_animation->on_update(delta);
     }
 
@@ -187,23 +194,27 @@ void Enemy::on_draw(const Camera& camera) {
     }
 
     if (is_dashing_in_air || is_dashing_on_floor) {
-        current_dash_animation->on_draw(position.x, position.y);
+        if (is_on_debug) {
+
+        } else {
+            current_dash_animation->on_draw(position.x, position.y);
+        }
     }
 }
 
 void Enemy::throw_barbs() {
-//    int num_new_barb = generate_random_number(3, 6);
-//
-//    if (barb_list.size() >= 10) num_new_barb = 1;
-//    int width_grid = getwidth() / num_new_barb;
-//
-//    for (int i = 0; i < num_new_barb; i++) {
-//        Barb* barb = new Barb();
-//        int rand_x = generate_random_number(width_grid * i, width_grid * (i + 1));
-//        int rand_y = generate_random_number(250, 500);
-//        barb->set_position({(float) rand_x, (float) rand_y});
-//        barb_list.push_back(barb);
-//    }
+    int num_new_barb = generate_random_number(3, 6);
+
+    if (barb_list.size() >= 10) num_new_barb = 1;
+    int width_grid = getwidth() / num_new_barb;
+
+    for (int i = 0; i < num_new_barb; i++) {
+        Barb* barb = new Barb();
+        int rand_x = generate_random_number(width_grid * i, width_grid * (i + 1));
+        int rand_y = generate_random_number(250, 500);
+        barb->set_position({(float) rand_x, (float) rand_y});
+        barb_list.push_back(barb);
+    }
 }
 
 void Enemy::throw_sword() {
@@ -222,6 +233,54 @@ void Enemy::on_dash() {
 void Enemy::on_throw_silk() {
     //is_throwing_silk = true;
     animation_silk.reset();
+}
+
+void Enemy::on_input(const ExMessage& msg) {
+    switch (msg.message) {
+        case WM_KEYDOWN:
+            switch (msg.vkcode) {
+                case 0x57: // W
+                    // Handle W key press
+                    break;
+                case 0x41: // A
+                    velocity.x = -(12.0f / FRAME);
+                    is_dashing_in_air = true;
+                    is_facing_left = true;
+                    break;
+                case 0x53: // S
+                    // Handle S key press
+                    break;
+                case 0x44: // D
+                    velocity.x = 12.0f / FRAME;
+                    //std::cout << "position.x = " << position.x << std::endl;
+                    is_dashing_in_air = true;
+                    is_facing_left = false;
+                    break;
+            }
+            break;
+        case WM_KEYUP:
+            switch (msg.vkcode) {
+                case 0x57: // W
+                    // Handle W key press
+                    break;
+                case 0x41: // A
+                    velocity.x = 0;
+                    is_dashing_in_air = false;
+                    is_facing_left = true;
+                    break;
+                case 0x53: // S
+                    // Handle S key press
+                    break;
+                case 0x44: // D
+                    velocity.x = 0;
+                    //std::cout << "position.x = " << position.x << std::endl;
+                    is_dashing_in_air = false;
+                    is_facing_left = false;
+                    break;
+            }
+            break;
+        default:break;
+    }
 }
 
 void Enemy::switch_state(const std::string& id){

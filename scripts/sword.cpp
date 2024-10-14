@@ -15,7 +15,7 @@ Sword::Sword(Vector2 pos, bool is_left) {
     box->set_layer_dst(CollisionLayer::Player);
     box->set_layer_src(CollisionLayer::None);
 
-    animation.set_atlas(&atlas_sword);
+    animation.set_atlas(is_left ? &atlas_sword_left : &atlas_sword_right);
     animation.set_interval(FRAME);
     animation.set_loop(true);
 }
