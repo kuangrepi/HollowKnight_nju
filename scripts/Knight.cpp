@@ -170,9 +170,7 @@ void Knight::on_update(int delta) {
     }
 
     if(is_attack){
-        std::cout << is_up_key_down << ' ' << !normal_attack << ' ' << ((is_up_key_down || up_attack) && !normal_attack) << std::endl;
         if((is_up_key_down || up_attack) && !normal_attack){
-            std:: cout << "upattack";
             up_attack = true;
             normal_attack = false;
             current_animation = is_facing_right ? &animation_attack_right_up : &animation_attack_left_up;
