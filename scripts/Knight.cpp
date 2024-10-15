@@ -253,7 +253,7 @@ void Knight::on_update(int delta) {
             position_hit_box.x = effect_position.x+5;
             position_hit_box.y = effect_position.y+30;
             if(position_hit_box.y > 450 && attack_down < 5 && velocity.y > jump_velocity / 4){
-                velocity.y += jump_velocity/4;
+                velocity.y += jump_velocity/5;
                 attack_down++;
             }
             hit_box->set_size(Vector2(160,166));
