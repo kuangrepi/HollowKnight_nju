@@ -14,7 +14,7 @@ Barb::Barb() {
     });
 
     collision_box = CollisionManager::instance()->create_collision_box();
-    collision_box->set_position(cur_position);
+    collision_box->set_position(cur_position + Vector2(15,15));
     collision_box->set_size(Vector2(20, 20));
     collision_box->set_layer_src(CollisionLayer::Enemy);
     collision_box->set_layer_dst(CollisionLayer::Player);
@@ -76,7 +76,7 @@ void Barb::on_update(int delta) {
             }
             break;
     }
-    collision_box->set_position(cur_position);
+    collision_box->set_position(cur_position+Vector2(15,15));
 
     current_animation = (stage == Stage::Break) ? &animation_break : &animation_loose;
     current_animation->on_update(delta / 10);
