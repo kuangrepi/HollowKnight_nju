@@ -1,54 +1,43 @@
 # ninja log v6
-12	1271	7506162424518508	CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj	62bf0921ad050d32
-<<<<<<< HEAD
-29	161	7506162424684704	CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj	494bfa3c167d84
-4	1007	7506784727733910	CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj	e74098c42282ec1f
-=======
-24	167	7506162424624690	CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj	bbffc42ed8ae5c0c
->>>>>>> main
-18	1537	7506162424574692	CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj	ea9ade6d27730aca
-4	1007	7506784727733910	CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj	e74098c42282ec1f
-29	161	7506162424684704	CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj	494bfa3c167d84
-4	839	7506784889338613	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	b0f2b8d8c4d2c6fe
-8	401	7506162424475075	CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj	d114338864a58d87
-<<<<<<< HEAD
-4	839	7506784889338613	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	b0f2b8d8c4d2c6fe
-=======
->>>>>>> main
-839	1216	7506784897696295	Hollowknight_demo.exe	3f30f7f912112aff
-16	1037	7506784727853913	CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj	c01105258954be97
-59	1165	7506162424990501	CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj	c0f223f74e698d21
-47	1198	7506162424865724	CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj	8361db5670e6abf2
-22	1023	7506784727914132	CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj	57c4d3a9cc242a49
-65	1416	7506162425049827	CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj	47b728ff89da02de
-71	1532	7506162425099850	CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj	c0d12a85be6dbeac
-76	1824	7506162425149854	CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj	a0a4759fb6a5aba9
-82	1506	7506162425209850	CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj	5e0d1d7437405bb3
-88	1549	7506162425268380	CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj	90ba08047f42027f
-<<<<<<< HEAD
-94	2071	7506162425331260	CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj	b262243ae8b82544
-27	1141	7506784727964153	CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj	a01fabbfb75bd8d5
-=======
-27	1141	7506784727964153	CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj	a01fabbfb75bd8d5
-94	2071	7506162425331260	CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj	b262243ae8b82544
-1	276	7506875914695260	build.ninja	8252e49a5b363313
 33	438	7506875915679360	CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj	bbffc42ed8ae5c0c
+22	1985	7506875915480414	CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj	62bf0921ad050d32
+26	1897	7506875915611221	CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj	ea9ade6d27730aca
+12	2073	7506875915324161	CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj	e74098c42282ec1f
 43	439	7506875915734795	CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj	494bfa3c167d84
 17	622	7506875915480414	CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj	d114338864a58d87
+49	2157	7506875915799862	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	b0f2b8d8c4d2c6fe
+2587	3025	7506875941205792	Hollowknight_demo.exe	3f30f7f912112aff
+56	2300	7506875915799862	CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj	c01105258954be97
 78	1524	7506875916120771	CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj	c0f223f74e698d21
+1	276	7506897907969170	build.ninja	8252e49a5b363313
 62	1527	7506875915960011	CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj	8361db5670e6abf2
-26	1897	7506875915611221	CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj	ea9ade6d27730aca
-179	1922	7506875917066424	CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj	5e0d1d7437405bb3
-156	1972	7506875916908850	CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj	c0d12a85be6dbeac
-22	1985	7506875915480414	CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj	62bf0921ad050d32
-189	2005	7506875917222697	CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj	90ba08047f42027f
-12	2073	7506875915324161	CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj	e74098c42282ec1f
 72	2101	7506875916008244	CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj	57c4d3a9cc242a49
 149	2110	7506875916823729	CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj	47b728ff89da02de
-49	2157	7506875915799862	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	b0f2b8d8c4d2c6fe
+156	1972	7506875916908850	CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj	c0d12a85be6dbeac
 168	2194	7506875917016358	CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj	a0a4759fb6a5aba9
-56	2300	7506875915799862	CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj	c01105258954be97
+179	1922	7506875917066424	CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj	5e0d1d7437405bb3
+189	2005	7506875917222697	CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj	90ba08047f42027f
 321	2367	7506875918481609	CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj	a01fabbfb75bd8d5
 199	2587	7506875917222697	CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj	b262243ae8b82544
-2587	3025	7506875941205792	Hollowknight_demo.exe	3f30f7f912112aff
->>>>>>> main
+6	304	7506897907969170	build.ninja	8252e49a5b363313
+46	260	7506897908946102	CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj	bbffc42ed8ae5c0c
+60	275	7506897909086131	CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj	494bfa3c167d84
+275	449	7506897911236642	CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj	c1d40979382b51f2
+18	499	7506897908602897	CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj	d114338864a58d87
+155	1461	7506897910040332	CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj	c0f223f74e698d21
+114	1472	7506897909627667	CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj	8361db5670e6abf2
+24	1548	7506897908602897	CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj	62bf0921ad050d32
+169	1774	7506897910174034	CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj	c0d12a85be6dbeac
+36	1890	7506897908759680	CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj	ea9ade6d27730aca
+185	1905	7506897910329119	CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj	5e0d1d7437405bb3
+163	1914	7506897910108810	CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj	47b728ff89da02de
+13	2067	7506897908602897	CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj	e74098c42282ec1f
+193	2109	7506897910419114	CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj	90ba08047f42027f
+102	2137	7506897909504989	CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj	b0f2b8d8c4d2c6fe
+109	2139	7506897909577403	CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj	c01105258954be97
+120	2162	7506897909688529	CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj	57c4d3a9cc242a49
+209	2187	7506897910576257	CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj	a01fabbfb75bd8d5
+260	2194	7506897911086512	CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj	c133b816e9e91508
+200	2197	7506897910484041	CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj	b262243ae8b82544
+178	2205	7506897910269113	CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj	a0a4759fb6a5aba9
+2205	2610	7506897930531223	Hollowknight_demo.exe	38b2597bf63c3195
