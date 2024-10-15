@@ -8,13 +8,14 @@
 #include "barb.h"
 #include "enemy.h"
 
-IMAGE img_gamescene_background;         //游戏背景图片
+IMAGE img_gamescene_background; //游戏背景图片
+IMAGE img_menuscene_background;
 
-Scene* game_scene = nullptr;
-Scene* menu_scene = nullptr;
+Scene *game_scene = nullptr;
+Scene *menu_scene = nullptr;
 
-Knight* knight_1 = nullptr;
-Enemy* enemy = nullptr;
+Knight *knight_1 = nullptr;
+Enemy *enemy = nullptr;
 
 SceneManager scene_manager;
 
@@ -79,11 +80,16 @@ void load_game_resourses() {
     atlas_vfx_dash_on_floor_right.load_from_file(_T("images/enemy/vfx_dash_on_floor_right/%d.PNG"), 6);
 
     loadimage(&img_gamescene_background, _T("images/background.png"));
+    loadimage(&img_menuscene_background, _T("images/menu.png"));
 }
 
 int main() {
     load_game_resourses();
     initgraph(1280, 720);
+    setbkmode(TRANSPARENT);
+    settextcolor(RGB(255, 255, 255));
+
+    settextstyle(40, 0, _T("黑体"));
 
     bool running = true;
 
@@ -94,7 +100,7 @@ int main() {
     game_scene = new Gamescene();
     menu_scene = new Menuscene();
 
-    scene_manager.set_current_scene(game_scene);
+    scene_manager.set_current_scene(menu_scene);
 
     LARGE_INTEGER frequency;
     LARGE_INTEGER start_time, end_time;

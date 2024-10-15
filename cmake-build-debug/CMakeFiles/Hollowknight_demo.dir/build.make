@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\13511\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\13511\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Software\HollowKnight_nju
+CMAKE_SOURCE_DIR = C:\Users\oyster\Documents\GitHub\HollowKnight_nju
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Software\HollowKnight_nju\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Hollowknight_demo.dir/depend.make
@@ -69,284 +69,284 @@ include CMakeFiles/Hollowknight_demo.dir/progress.make
 include CMakeFiles/Hollowknight_demo.dir/flags.make
 
 CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj: D:/Software/HollowKnight_nju/scripts/main.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/main.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.obj -c D:\Software\HollowKnight_nju\scripts\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\main.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\main.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\main.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\main.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\main.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\main.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj: D:/Software/HollowKnight_nju/scripts/Timer.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Timer.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Timer.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Timer.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Timer.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Timer.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Timer.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Timer.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj: D:/Software/HollowKnight_nju/scripts/Atlas.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Atlas.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Atlas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Atlas.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Atlas.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Atlas.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Atlas.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Atlas.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Atlas.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj: D:/Software/HollowKnight_nju/scripts/Animation.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Animation.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Animation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Animation.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Animation.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Animation.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Animation.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Animation.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Animation.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj: D:/Software/HollowKnight_nju/scripts/Vector2.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Vector2.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Vector2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Vector2.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Vector2.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Vector2.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Vector2.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Vector2.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Vector2.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj: D:/Software/HollowKnight_nju/scripts/Camera.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Camera.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Camera.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Camera.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Camera.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Camera.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Camera.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Camera.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj: D:/Software/HollowKnight_nju/scripts/Knight.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Knight.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Knight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Knight.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Knight.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Knight.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Knight.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Knight.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Knight.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj: D:/Software/HollowKnight_nju/scripts/resourses.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/resourses.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.obj -c D:\Software\HollowKnight_nju\scripts\resourses.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\resourses.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\resourses.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\resourses.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\resourses.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\resourses.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\resourses.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj: D:/Software/HollowKnight_nju/scripts/Scene.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Scene.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Scene.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Scene.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Scene.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Scene.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Scene.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Scene.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj: D:/Software/HollowKnight_nju/scripts/Gamescene.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Gamescene.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Gamescene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Gamescene.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Gamescene.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Gamescene.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Gamescene.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Gamescene.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Gamescene.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj: D:/Software/HollowKnight_nju/scripts/SceneManager.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/SceneManager.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.obj -c D:\Software\HollowKnight_nju\scripts\SceneManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\SceneManager.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\SceneManager.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\SceneManager.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\SceneManager.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\SceneManager.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\SceneManager.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj: D:/Software/HollowKnight_nju/scripts/Menuscene.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/Menuscene.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.obj -c D:\Software\HollowKnight_nju\scripts\Menuscene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Menuscene.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\Menuscene.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Menuscene.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\Menuscene.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Menuscene.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\Menuscene.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj: D:/Software/HollowKnight_nju/scripts/collision_manager.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/collision_manager.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.obj -c D:\Software\HollowKnight_nju\scripts\collision_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\collision_manager.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\collision_manager.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\collision_manager.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\collision_manager.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\collision_manager.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\collision_manager.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj: D:/Software/HollowKnight_nju/scripts/player.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/player.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.obj -c D:\Software\HollowKnight_nju\scripts\player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\player.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\player.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\player.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\player.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\player.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\player.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: D:/Software/HollowKnight_nju/scripts/sword.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/sword.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.obj -c D:\Software\HollowKnight_nju\scripts\sword.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\sword.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\sword.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\sword.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\sword.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\sword.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\sword.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: D:/Software/HollowKnight_nju/scripts/barb.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/barb.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.obj -c D:\Software\HollowKnight_nju\scripts\barb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\barb.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\barb.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\barb.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\barb.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\barb.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\barb.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: D:/Software/HollowKnight_nju/scripts/enemy.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/enemy.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.obj -c D:\Software\HollowKnight_nju\scripts\enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\enemy.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\enemy.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\enemy.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\enemy.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\enemy.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj: D:/Software/HollowKnight_nju/scripts/enemy_state_node.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/enemy_state_node.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.obj -c D:\Software\HollowKnight_nju\scripts\enemy_state_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\enemy_state_node.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\enemy_state_node.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\enemy_state_node.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\enemy_state_node.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\enemy_state_node.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\enemy_state_node.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj: D:/Software/HollowKnight_nju/scripts/state_machine.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/state_machine.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.obj -c D:\Software\HollowKnight_nju\scripts\state_machine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\state_machine.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\state_machine.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\state_machine.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\state_machine.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\state_machine.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\state_machine.cpp.s
 
 CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj: CMakeFiles/Hollowknight_demo.dir/flags.make
-CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj: D:/Software/HollowKnight_nju/scripts/StateNode.cpp
+CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj: C:/Users/oyster/Documents/GitHub/HollowKnight_nju/scripts/StateNode.cpp
 CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj: CMakeFiles/Hollowknight_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.obj -c D:\Software\HollowKnight_nju\scripts\StateNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj"
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj -MF CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.obj.d -o CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.obj -c C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\StateNode.cpp
 
 CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.i"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Software\HollowKnight_nju\scripts\StateNode.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.i
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\StateNode.cpp > CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.i
 
 CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.s"
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Software\HollowKnight_nju\scripts\StateNode.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.s
+	C:\toolbox\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\StateNode.cpp -o CMakeFiles\Hollowknight_demo.dir\scripts\StateNode.cpp.s
 
 # Object files for target Hollowknight_demo
 Hollowknight_demo_OBJECTS = \
@@ -398,7 +398,7 @@ Hollowknight_demo.exe: CMakeFiles/Hollowknight_demo.dir/build.make
 Hollowknight_demo.exe: CMakeFiles/Hollowknight_demo.dir/linkLibs.rsp
 Hollowknight_demo.exe: CMakeFiles/Hollowknight_demo.dir/objects1.rsp
 Hollowknight_demo.exe: CMakeFiles/Hollowknight_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Hollowknight_demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Hollowknight_demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Hollowknight_demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -410,6 +410,6 @@ CMakeFiles/Hollowknight_demo.dir/clean:
 .PHONY : CMakeFiles/Hollowknight_demo.dir/clean
 
 CMakeFiles/Hollowknight_demo.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Software\HollowKnight_nju D:\Software\HollowKnight_nju D:\Software\HollowKnight_nju\cmake-build-debug D:\Software\HollowKnight_nju\cmake-build-debug D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles\Hollowknight_demo.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\oyster\Documents\GitHub\HollowKnight_nju C:\Users\oyster\Documents\GitHub\HollowKnight_nju C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles\Hollowknight_demo.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Hollowknight_demo.dir/depend
 
