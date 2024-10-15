@@ -26,6 +26,10 @@ extern Atlas altas_knight_attack_left_up;
 extern Atlas altas_knight_attack_right_up;
 extern Atlas altas_knight_attack_left_effect_up;
 extern Atlas altas_knight_attack_right_effect_up;
+extern Atlas altas_knight_attack_left_down;
+extern Atlas altas_knight_attack_right_down;
+extern Atlas altas_knight_attack_left_effect_down;
+extern Atlas altas_knight_attack_right_effect_down;
 extern Atlas altas_knight_damage_left;
 extern Atlas altas_knight_damage_right;
 extern Atlas altas_knight_damage_effect;
@@ -91,6 +95,10 @@ private:
     Animation animation_attack_right_up;
     Animation animation_attack_left_effect_up;
     Animation animation_attack_right_effect_up;
+    Animation animation_attack_left_down;
+    Animation animation_attack_right_down;
+    Animation animation_attack_left_effect_down;
+    Animation animation_attack_right_effect_down;
     Animation animation_damage_left;
     Animation animation_damage_right;
     Animation animation_damage_effect;
@@ -102,6 +110,7 @@ private:
     bool is_left_key_down = false;
     bool is_right_key_down = false;
     bool is_up_key_down = false;
+    bool is_down_key_down = false;
 
     bool is_facing_right = true;
     bool effect_facing_right;
@@ -113,6 +122,7 @@ private:
     bool is_attack = false;
     bool normal_attack = false;
     bool up_attack = false;
+    bool down_attack = false;
     bool is_damage = false;
     bool is_dead = false;
     Vector2 dead_position;
@@ -120,6 +130,7 @@ private:
     int start_run = 0;
     int start_jump = 1;
     int damage = 1000;
+    int attack = 1000;
 
     const float gravity = 0.010f / FRAME;
     const float run_velocity = 8.0f / FRAME;
