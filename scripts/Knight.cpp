@@ -378,6 +378,12 @@ void Knight::on_update(int delta) {
     if(hit_box->get_size().x == 0){
         position_hit_box = position;
     }
+    for (int i = 0; i < hp; i++) {
+        animation_blood_normal[i].on_update(60);
+    }
+    for  (int i = hp; i < 10; i++) {
+        animation_blood_decrease[i].on_update(60);
+    }
 }
 
 void Knight::on_draw(const Camera& camera) {
@@ -392,7 +398,12 @@ void Knight::on_draw(const Camera& camera) {
     if(effect_animation != nullptr)
         effect_animation->on_draw((int) effect_position.x, (int) effect_position.y);
     Player::on_draw(camera);
-
+    for (int i = 0; i < 10; i++) {
+        animation_blood_normal[i].on_draw(50 * i + 50, 50);
+    }
+    for (int i = hp; i < 10; i++) {
+        animation_blood_decrease[i].on_draw(50 * i + 50, 50);
+    }
 //    int width = current_animation->get_frame()->getwidth();
 //    line(position.x + width, position.y, position.x + width, position.y+200);
 
@@ -412,20 +423,3 @@ void Knight::move_and_collide(int delta){
         }
     }
 }
-
-//case 0x41: // A
-//is_left_key_down = true;
-//break;
-//case 0x44: // D
-//is_right_key_down = true;
-//break;
-//case 0x57: // W
-//is_up_key_down = true;
-//break;
-//case 0x53: // S
-//is_down_key_down = true;
-//break;
-//case 0x4B: // K
-//is_jump = true;
-//break;
-//case 0x4A: // J

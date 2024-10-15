@@ -65,3 +65,6 @@ Atlas atlas_vfx_dash_in_air_right;
 Atlas atlas_vfx_dash_on_floor_left;
 Atlas atlas_vfx_dash_on_floor_right;
 
+Atlas atlas_blood_decrease;
+Atlas atlas_blood_normal;
+
