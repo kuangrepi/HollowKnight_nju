@@ -44,7 +44,7 @@ Knight::Knight() {
     hit_box->set_enabled(false);
 
     hurt_box->set_on_collide([&]() {
-        if(!is_damage && damage > FRAME/3){
+        if(!is_damage && damage > FRAME/2){
             decrease_hp();
             is_damage = true;
             is_attack = false;
@@ -94,7 +94,8 @@ void Knight::on_input(const ExMessage& msg) {
                         is_right_key_down = true;
                         break;
                     case VK_UP: // up
-                        is_up_key_down = true;
+                        if(attack_down > 5)
+                            is_up_key_down = true;
                         break;
                     case VK_DOWN: // up
                         is_down_key_down = true;
@@ -103,7 +104,7 @@ void Knight::on_input(const ExMessage& msg) {
                         is_jump = true;
                         break;
                     case 0x58: // X
-                        if(!is_attack && !is_damage){
+                        if(!is_attack && !is_damage  && attack > FRAME / 6){
                             if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y-160;
@@ -127,6 +128,7 @@ void Knight::on_input(const ExMessage& msg) {
                                 effect_position.y = position.y+100;
                                 animation_attack_left_effect_down.reset();
                                 animation_attack_right_effect_down.reset();
+                                attack_down = 0;
                             }
                             is_attack = true;
                         }
@@ -210,7 +212,7 @@ void Knight::on_update(int delta) {
         animation_knight_start_run_right.reset();
     }
 
-    if(is_attack && !is_damage && attack > FRAME / 6){
+    if(is_attack && !is_damage){
         if((is_up_key_down || up_attack) && !normal_attack && !down_attack){
             up_attack = true;
             normal_attack = false;
@@ -223,11 +225,11 @@ void Knight::on_update(int delta) {
                 up_attack = false;
                 attack = 0;
             }
-            hit_box->set_enabled(true);
             effect_position.y = position.y - 160;
             position_hit_box.x = effect_position.x+20;
             position_hit_box.y = effect_position.y+50;
             hit_box->set_size(Vector2(150,166));
+            hit_box->set_enabled(true);
             effect_animation = effect_facing_right ? &animation_attack_right_effect_up : &animation_attack_left_effect_up;
             if(animation_attack_right_effect_up.get_idx_frame() == 2 || animation_attack_left_effect_up.get_idx_frame() == 2){
                 effect_animation = nullptr;
@@ -245,16 +247,18 @@ void Knight::on_update(int delta) {
                 down_attack = false;
                 attack = 0;
             }
-            hit_box->set_enabled(true);
+
             effect_position.y = position.y + 100;
             position_hit_box.x = effect_position.x+5;
             position_hit_box.y = effect_position.y+30;
-            if(position_hit_box.y > 450){
-                velocity.y += jump_velocity/7;
+            if(position_hit_box.y > 450 && attack_down < 5){
+                velocity.y += jump_velocity/10;
+                attack_down++;
             }
             hit_box->set_size(Vector2(160,166));
+            hit_box->set_enabled(true);
             effect_animation = effect_facing_right ? &animation_attack_right_effect_down : &animation_attack_left_effect_down;
-            if(animation_attack_right_effect_up.get_idx_frame() == 2 || animation_attack_left_effect_up.get_idx_frame() == 2){
+            if(animation_attack_right_effect_down.get_idx_frame() == 2 || animation_attack_left_effect_down.get_idx_frame() == 2){
                 effect_animation = nullptr;
             }
         }
@@ -270,11 +274,11 @@ void Knight::on_update(int delta) {
                 normal_attack = false;
                 attack = 0;
             }
-            hit_box->set_enabled(true);
             effect_position.y = position.y;
             position_hit_box.x = effect_position.x+15;
             position_hit_box.y = effect_position.y+10;
             hit_box->set_size(Vector2(170,116));
+            hit_box->set_enabled(true);
             effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
             if(animation_attack_right_effect_1.get_idx_frame() == 2 || animation_attack_left_effect_1.get_idx_frame() == 2){
                 effect_animation = nullptr;
@@ -365,6 +369,8 @@ void Knight::on_update(int delta) {
     }
     if(!is_dead)
         current_animation->on_update(delta);
+    if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2)
+        effect_animation = nullptr;
     if(effect_animation != nullptr)
         effect_animation->on_update(delta);
     Player::on_update(delta);
@@ -391,6 +397,8 @@ void Knight::on_draw(const Camera& camera) {
 
 void Knight::move_and_collide(int delta){
     velocity.y += gravity * delta;
+    if(velocity.y < jump_velocity)
+        velocity.y = jump_velocity / 10;
     position += velocity * (float)delta;
     if(velocity.y > 0){
         if(position.y > 520){
