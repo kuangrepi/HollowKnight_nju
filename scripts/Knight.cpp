@@ -408,3 +408,20 @@ void Knight::move_and_collide(int delta){
         }
     }
 }
+
+//case 0x41: // A
+//is_left_key_down = true;
+//break;
+//case 0x44: // D
+//is_right_key_down = true;
+//break;
+//case 0x57: // W
+//is_up_key_down = true;
+//break;
+//case 0x53: // S
+//is_down_key_down = true;
+//break;
+//case 0x4B: // K
+//is_jump = true;
+//break;
+//case 0x4A: // J
