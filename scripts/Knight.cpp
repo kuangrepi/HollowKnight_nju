@@ -49,8 +49,8 @@ Knight::Knight() {
             is_damage = true;
             is_attack = false;
             damage = 0;
-            effect_position.x = position.x - 290;
-            effect_position.y = position.y;
+            effect_position.x = position.x - 490;
+            effect_position.y = position.y - 10;
         }
     });
 
@@ -80,8 +80,8 @@ Knight::Knight() {
     animation_attack_right_effect_down.set_interval(FRAME*6);
     animation_damage_left.set_interval(FRAME*4);
     animation_damage_right.set_interval(FRAME*4);
-    animation_damage_effect.set_interval(FRAME*4);
-    animation_death.set_interval(FRAME*8);
+    animation_damage_effect.set_interval(FRAME*6);
+    animation_death.set_interval(FRAME*12);
 }
 void Knight::on_input(const ExMessage& msg) {
     if(hp > 0)
