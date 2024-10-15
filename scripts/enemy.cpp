@@ -4,7 +4,7 @@
 #include "enemy_state_node.h"
 
 Enemy::Enemy() {
-    is_facing_left = true;
+    is_facing_left = false;
     position = {1050, 100};
     logic_height = 150;
 
@@ -22,7 +22,7 @@ Enemy::Enemy() {
     });
 
     collision_box_silk = CollisionManager::instance()->create_collision_box();
-    collision_box_silk->set_size({1000, 1000});
+    collision_box_silk->set_size({270, 270});
     collision_box_silk->set_layer_src(CollisionLayer::None);
     collision_box_silk->set_layer_dst(CollisionLayer::Player);
     collision_box_silk->set_enabled(false);
@@ -53,6 +53,8 @@ Enemy::Enemy() {
         animation_throw_silk_right.set_atlas(&atlas_throw_silk_right);
         animation_vfx_dash_in_air_left.set_atlas(&atlas_vfx_dash_in_air_left);
         animation_vfx_dash_in_air_right.set_atlas(&atlas_vfx_dash_in_air_right);
+        animation_vfx_dash_on_floor_left.set_atlas(&atlas_vfx_dash_on_floor_left);
+        animation_vfx_dash_on_floor_right.set_atlas(&atlas_vfx_dash_on_floor_right);
 
         animation_silk.set_interval(FRAME * 3);
         animation_aim_left.set_interval(FRAME * 3);
@@ -127,12 +129,12 @@ Enemy::Enemy() {
     {
         timer_invulnerable_status.set_wait_time(60);
         timer_invulnerable_status.set_one_shot(true);
-        timer_invulnerable_status.set_on_timeout([&]() {
+        timer_invulnerable_status.set_callback([&]() {
             is_invulnerable = false;
         });
         timer_invulnerable_blink.set_wait_time(5);
         timer_invulnerable_blink.set_one_shot(false);
-        timer_invulnerable_blink.set_on_timeout([&]() {
+        timer_invulnerable_blink.set_callback([&]() {
             is_blink_invisible = !is_blink_invisible;
         });
     }
@@ -171,12 +173,15 @@ void Enemy::on_update(int delta) {
     if (!is_on_debug)
         state_machine.on_update(delta);
     timer_invulnerable_status.on_update(delta);
+    if (is_invulnerable) {
+        timer_invulnerable_blink.on_update(delta);
+    }
     Player::on_update(delta);
 
     hit_box->set_position(position + Vector2(40, 30));
 
     if (is_throwing_silk) {
-        collision_box_silk->set_position(position);
+        collision_box_silk->set_position(position + Vector2(-75, -60));
         collision_box_silk->set_enabled(true);
         animation_silk.on_update(delta);
     }
@@ -209,6 +214,11 @@ void Enemy::on_update(int delta) {
         return can_remove;
     }), sword_list.end());
 
+    if (animation_silk.check_finished()) {
+        is_throwing_silk = false;
+        collision_box_silk->set_enabled(false);
+        animation_silk.reset();
+    }
 }
 
 void Enemy::on_draw(const Camera& camera) {
@@ -221,14 +231,16 @@ void Enemy::on_draw(const Camera& camera) {
     Player::on_draw(camera);
 
     if (is_throwing_silk) {
-        animation_silk.on_draw(position.x, position.y);
+        animation_silk.on_draw(position.x - 75.0f, position.y - 70.0f);
     }
 
     if (is_dashing_in_air || is_dashing_on_floor) {
         if (is_on_debug) {
 
         } else {
-            current_dash_animation->on_draw(position.x, position.y);
+            if (current_dash_animation) {
+                current_dash_animation->on_draw(position.x, position.y);
+            }
         }
     }
 }
@@ -259,7 +271,7 @@ void Enemy::throw_sword() {
 void Enemy::on_dash() {
     if (is_dashing_in_air)
         current_dash_animation = velocity.x < 0 ? &animation_vfx_dash_in_air_left : &animation_vfx_dash_in_air_right;
-    else
+    else if (is_dashing_on_floor)
         current_dash_animation = velocity.x < 0 ? &animation_vfx_dash_on_floor_left : &animation_vfx_dash_on_floor_right;
     current_dash_animation->reset();
 }

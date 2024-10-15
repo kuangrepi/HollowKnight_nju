@@ -33,12 +33,6 @@ void Player::on_update(int delta) {
     if (position.y < 0) position.y = 0;
     if (position.y > getheight() - 100) position.y = (float) getheight() - 100;
 
-    timer_invulnerable_status.on_update(delta);
-
-    if (is_invulnerable) {
-        timer_invulnerable_blink.on_update(delta);
-    }
-
 }
 
 void Player::on_draw(const Camera& camera) {

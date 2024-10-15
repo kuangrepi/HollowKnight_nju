@@ -39,7 +39,7 @@ extern Atlas atlas_vfx_dash_on_floor_right;
 class Enemy : public Player
 {
 public:
-    bool is_on_debug = true;
+    bool is_on_debug = false;
 
     Enemy();
     ~Enemy();
@@ -93,7 +93,7 @@ public:
     void de_hp() {
         if (is_invulnerable) return;
         hp -= 1;
-        //std::cout << hp << std::endl;
+        std::cout << hp << std::endl;
         if (hp > 0)
             make_invulnerable();
         on_hurt();
