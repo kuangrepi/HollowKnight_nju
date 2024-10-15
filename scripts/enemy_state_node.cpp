@@ -15,6 +15,7 @@ EnemyAimState::EnemyAimState() {
 }
 
 void EnemyAimState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("aim");
     enemy->set_gravity_enabled(false);
     enemy->set_velocity(0.0, 0.0);
@@ -22,12 +23,14 @@ void EnemyAimState::on_enter() {
 }
 
 void EnemyAimState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.on_update(delta);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
 }
 
 void EnemyDashInAirState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("dash_in_air");
 
     const Player* player = knight_1;
@@ -45,6 +48,7 @@ void EnemyDashInAirState::on_enter() {
 }
 
 void EnemyDashInAirState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
     else if (enemy->is_on_floor())
@@ -65,6 +69,7 @@ EnemyDashOnFloorState::EnemyDashOnFloorState() {
 }
 
 void EnemyDashOnFloorState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("dash_on_floor");
     enemy->set_velocity(enemy->get_facing_left() ? -SPEED_DASH : SPEED_DASH, 0);
     enemy->set_dashing_on_floor(true);
@@ -74,6 +79,7 @@ void EnemyDashOnFloorState::on_enter() {
 }
 
 void EnemyDashOnFloorState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.on_update(delta);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
@@ -87,10 +93,12 @@ void EnemyDeadState::on_enter() {
 }
 
 void EnemyFallState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("fall");
 }
 
 void EnemyFallState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
     else if (enemy->is_on_floor())
@@ -140,6 +148,7 @@ EnemyIdleState::EnemyIdleState() {
 }
 
 void EnemyIdleState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("idle");
 
     enemy->set_velocity(0, 0);
@@ -155,23 +164,22 @@ void EnemyIdleState::on_enter() {
 }
 
 void EnemyIdleState::on_update(float delta) {
-
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.on_update(delta);
 
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
     else if (enemy->get_velocity().y > 0) {
-        std::cout << "EnemyIdleState::on_update()" << std::endl;
         enemy->switch_state("fall");
     }
 }
 
 void EnemyIdleState::on_exit() {
-    std::cout << "EnemyIdleState::on_exit()" << std::endl;
     enemy->set_facing_left(enemy->get_position().x < knight_1->get_position().x);
 }
 
 void EnemyJumpState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("jump");
     enemy->set_velocity(0, -SPEED_JUMP);
 }
@@ -200,11 +208,13 @@ void EnemyJumpState::on_update(float delta) {
 }
 
 void EnemyRunState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("run");
 //    play_audio(_T("enemy_run"), true);
 }
 
 void EnemyRunState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     const Vector2& pos_enemy = enemy->get_position();
     const Vector2& pos_player = knight_1->get_position();
     enemy->set_velocity(pos_enemy.x < pos_player.x ? SPEED_RUN : -SPEED_RUN, 0);
@@ -242,12 +252,14 @@ EnemySquatState::EnemySquatState() {
 }
 
 void EnemySquatState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("squat");
     enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.restart();
 }
 
 void EnemySquatState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.on_update(delta);
     if (enemy->get_hp() <= 0)
         enemy->switch_state("dead");
@@ -263,12 +275,14 @@ EnemyThrowBarbState::EnemyThrowBarbState() {
 }
 
 void EnemyThrowBarbState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("throw_barb");
     timer.restart();
 //    play_audio(_T("enemy_throw_barbs"), false);
 }
 
 void EnemyThrowBarbState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.on_update(delta);
 
     if (enemy->get_hp() <= 0) {
@@ -293,6 +307,7 @@ EnemyThrowSilkState::EnemyThrowSilkState() {
 }
 
 void EnemyThrowSilkState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("throw_silk");
 
     enemy->set_gravity_enabled(false);
@@ -305,6 +320,7 @@ void EnemyThrowSilkState::on_enter() {
 }
 
 void EnemyThrowSilkState::on_update(float delta) {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     timer.on_update(delta);
     if (enemy->get_hp() <= 0) {
         enemy->switch_state("dead");
@@ -342,6 +358,7 @@ EnemyThrowSwordState::EnemyThrowSwordState() {
 }
 
 void EnemyThrowSwordState::on_enter() {
+    enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("throw_sword");
     timer_throw.restart();
     timer_switch.restart();
