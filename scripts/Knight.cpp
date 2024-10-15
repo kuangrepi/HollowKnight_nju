@@ -49,8 +49,7 @@ Knight::Knight() {
             is_damage = true;
             is_attack = false;
             damage = 0;
-            effect_position.x = position.x - 490;
-            effect_position.y = position.y - 10;
+
         }
     });
 
@@ -78,8 +77,8 @@ Knight::Knight() {
     animation_attack_right_down.set_interval(FRAME*4);
     animation_attack_left_effect_down.set_interval(FRAME*6);
     animation_attack_right_effect_down.set_interval(FRAME*6);
-    animation_damage_left.set_interval(FRAME*4);
-    animation_damage_right.set_interval(FRAME*4);
+    animation_damage_left.set_interval(FRAME*3);
+    animation_damage_right.set_interval(FRAME*3);
     animation_damage_effect.set_interval(FRAME*6);
     animation_death.set_interval(FRAME*12);
 }
@@ -108,23 +107,30 @@ void Knight::on_input(const ExMessage& msg) {
                             if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y-160;
+                                effect_position.x = position_hurt_box.x - 80;
                                 animation_attack_left_effect_up.reset();
                                 animation_attack_right_effect_up.reset();
                             }
                             else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y;
+                                effect_position.x = position_hurt_box.x - 75;
                                 animation_attack_left_effect_1.reset();
                                 animation_attack_right_effect_1.reset();
                             }
                             else{
                                 effect_facing_right = is_facing_right;
+                                if(is_facing_right)
+                                    effect_position.x = position_hurt_box.x - 10;
+                                else
+                                    effect_position.x = position_hurt_box.x - 150;
                                 effect_position.y = position.y+100;
                                 animation_attack_left_effect_down.reset();
                                 animation_attack_right_effect_down.reset();
                             }
+                            is_attack = true;
                         }
-                        is_attack = true;
+
                         break;
                 }
                 break;
@@ -352,6 +358,10 @@ void Knight::on_update(int delta) {
         current_animation = &animation_death;
         if(current_animation->get_idx_frame() == 10)
             is_dead = true;
+    }
+    if(is_damage){
+        effect_position.x = position.x - 490;
+        effect_position.y = position.y - 10;
     }
     if(!is_dead)
         current_animation->on_update(delta);
