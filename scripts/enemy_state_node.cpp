@@ -65,6 +65,7 @@ EnemyDashOnFloorState::EnemyDashOnFloorState() {
     timer.set_wait_time(30);
     timer.set_on_timeout([&]() {
         enemy->set_dashing_on_floor(false);
+        enemy->set_collision_box_dashFalse();
     });
 }
 
@@ -109,7 +110,7 @@ EnemyIdleState::EnemyIdleState() {
     timer.set_one_shot(true);
     timer.set_on_timeout([&]() {
         int rand_num = generate_random_number(0, 100);;
-        if (enemy->get_hp() > 5) {
+        if (enemy->get_hp() > 12) {
             if (rand_num <= 25) {
                 if (!enemy->is_on_floor())
                     enemy->switch_state("fall");
@@ -190,15 +191,15 @@ void EnemyJumpState::on_update(float delta) {
     else if (enemy->get_velocity().y > 0) {
         int rand_num = generate_random_number(0, 100);
         if (enemy->get_hp() > 5) {
-            if (rand_num <= 50)
-                enemy->switch_state("aim");   // 50%
+            if (rand_num <= 60)
+                enemy->switch_state("aim");   // 60%
             else if (rand_num <= 80)
-                enemy->switch_state("fall");  // 30%
+                enemy->switch_state("fall");  // 20%
             else
                 enemy->switch_state("throw_silk"); // 20%
         } else {
-            if (rand_num <= 50)
-                enemy->switch_state("throw_silk"); // 50%
+            if (rand_num <= 60)
+                enemy->switch_state("throw_silk"); // 60%
             else if (rand_num <= 80)
                 enemy->switch_state("fall");  // 30%
             else
@@ -297,7 +298,7 @@ EnemyThrowSilkState::EnemyThrowSilkState() {
         enemy->set_gravity_enabled(true);
         enemy->set_throwing_silk(false);
 
-        if (!enemy->is_on_floor() && enemy->get_hp() > 5 && generate_random_number(0, 100) <= 25)
+        if (!enemy->is_on_floor() && enemy->get_hp() > 5 && generate_random_number(0, 100) <= 60)
             enemy->switch_state("aim");
         else if (enemy->is_on_floor())
             enemy->switch_state("fall");

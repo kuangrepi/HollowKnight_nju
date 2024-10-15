@@ -93,10 +93,14 @@ public:
     void de_hp() {
         if (is_invulnerable) return;
         hp -= 1;
-        std::cout << hp << std::endl;
+        //std::cout << hp << std::endl;
         if (hp > 0)
             make_invulnerable();
         on_hurt();
+    }
+
+    void set_collision_box_dashFalse() {
+        collision_box_dash->set_enabled(false);
     }
 
 private:
@@ -139,6 +143,7 @@ private:
     std::vector<Sword*> sword_list;
 
     CollisionBox* collision_box_silk = nullptr;
+    CollisionBox* collision_box_dash = nullptr;
 
 };
 

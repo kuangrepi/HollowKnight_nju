@@ -78,7 +78,7 @@ public:
 protected:
     const float FLOOR_Y = 500; // 地板的竖直方向坐标
     const float GRAVITY = 980 * 2; // 重力大小
-    int hp = 10; // 角色生命值
+    int hp = 15; // 角色生命值
     Vector2 position; // 角色脚底位置
     Vector2 velocity; // 角色速度
     float logic_height = 0; // 角色的逻辑高度

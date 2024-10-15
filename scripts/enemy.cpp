@@ -27,6 +27,12 @@ Enemy::Enemy() {
     collision_box_silk->set_layer_dst(CollisionLayer::Player);
     collision_box_silk->set_enabled(false);
 
+    collision_box_dash = CollisionManager::instance()->create_collision_box();
+    collision_box_dash->set_size({100, 50});
+    collision_box_dash->set_layer_src(CollisionLayer::None);
+    collision_box_dash->set_layer_dst(CollisionLayer::Player);
+    collision_box_dash->set_enabled(false);
+
     {
         animation_silk.set_atlas(&atlas_silk);
         animation_aim_left.set_atlas(&atlas_aim_left);
@@ -239,7 +245,19 @@ void Enemy::on_draw(const Camera& camera) {
 
         } else {
             if (current_dash_animation) {
-                current_dash_animation->on_draw(position.x, position.y);
+                if (current_animation == &animation_dash_on_floor_left) {
+                    current_dash_animation->on_draw(position.x - 450, position.y);
+                    collision_box_dash->set_position(position - Vector2(80, -100));
+                    collision_box_dash->set_enabled(true);
+                } else if (current_animation == &animation_dash_on_floor_right) {
+                    collision_box_dash->set_position(position + Vector2(130, 100));
+                    collision_box_dash->set_enabled(true);
+                    current_dash_animation->on_draw(position.x - 20, position.y);
+                } else if (current_animation == &animation_dash_in_air_left) {
+                    current_dash_animation->on_draw(position.x - 500, position.y);
+                } else {
+                    current_dash_animation->on_draw(position.x, position.y);
+                }
             }
         }
     }
@@ -249,7 +267,7 @@ void Enemy::throw_barbs() {
     int num_new_barb = generate_random_number(3, 6);
     //std::cout << num_new_barb << std::endl;
 
-    if (barb_list.size() >= 10) num_new_barb = 1;
+    if (barb_list.size() >= 8) num_new_barb = 1;
     int width_grid = getwidth() / num_new_barb;
 
     for (int i = 0; i < num_new_barb; i++) {
