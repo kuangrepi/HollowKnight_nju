@@ -159,6 +159,7 @@ void Knight::on_input(const ExMessage& msg) {
 }
 
 void Knight::on_update(int delta) {
+    hit_box->set_size(Vector2(0,0));
     int direction = is_right_key_down - is_left_key_down;
     position_hurt_box.x = position.x + 15;
     position_hurt_box.y = position.y + 20;
@@ -374,6 +375,9 @@ void Knight::on_update(int delta) {
     if(effect_animation != nullptr)
         effect_animation->on_update(delta);
     Player::on_update(delta);
+    if(hit_box->get_size().x == 0){
+        position_hit_box = position;
+    }
 }
 
 void Knight::on_draw(const Camera& camera) {
