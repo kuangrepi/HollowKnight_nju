@@ -59,7 +59,7 @@ void EnemyDashInAirState::on_exit() {
 EnemyDashOnFloorState::EnemyDashOnFloorState() {
     timer.set_one_shot(true);
     timer.set_wait_time(30);
-    timer.set_on_timeout([this]() {
+    timer.set_on_timeout([&]() {
         enemy->set_dashing_on_floor(false);
     });
 }

@@ -5,13 +5,13 @@ Player::Player() {
     hit_box = CollisionManager::instance()->create_collision_box();
     hurt_box = CollisionManager::instance()->create_collision_box();
 
-    timer_invulnerable_status.set_wait_time(1.0f);
+    timer_invulnerable_status.set_wait_time(60);
     timer_invulnerable_status.set_one_shot(true);
     timer_invulnerable_status.set_callback([&]() {
         is_invulnerable = false;
     });
 
-    timer_invulnerable_blink.set_wait_time(0.075f);
+    timer_invulnerable_blink.set_wait_time(5);
     timer_invulnerable_blink.set_one_shot(false);
     timer_invulnerable_blink.set_callback([&]() {
         is_blink_invisible = !is_blink_invisible;

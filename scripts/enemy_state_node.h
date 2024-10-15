@@ -114,7 +114,7 @@ public:
 
 private:
     const float MIN_DIS = 350.0f;
-    const float SPEED_RUN = 500.0f;
+    const float SPEED_RUN = 500.0f / 10000.0f;
 };
 
 class EnemySquatState : public StateNode

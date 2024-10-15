@@ -75,6 +75,8 @@ void load_game_resourses() {
     atlas_throw_silk_right.load_from_file(_T("images/enemy/throw_silk_right/%d.PNG"), 17);
     atlas_vfx_dash_in_air_left.load_from_file(_T("images/enemy/vfx_dash_in_air_left/%d.PNG"), 5);
     atlas_vfx_dash_in_air_right.load_from_file(_T("images/enemy/vfx_dash_in_air_right/%d.PNG"), 5);
+    atlas_vfx_dash_on_floor_left.load_from_file(_T("images/enemy/vfx_dash_on_floor_left/%d.PNG"), 6);
+    atlas_vfx_dash_on_floor_right.load_from_file(_T("images/enemy/vfx_dash_on_floor_right/%d.PNG"), 6);
 
     loadimage(&img_gamescene_background, _T("images/background.png"));
 }

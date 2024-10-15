@@ -7,8 +7,6 @@ Enemy::Enemy() {
     is_facing_left = true;
     position = {1050, 100};
     logic_height = 150;
-    current_animation = &animation_idle_left;
-    current_dash_animation = &animation_dash_in_air_left;
 
     hit_box->set_layer_src(CollisionLayer::None);
     hit_box->set_layer_dst(CollisionLayer::Player);
@@ -16,21 +14,21 @@ Enemy::Enemy() {
     hurt_box->set_layer_src(CollisionLayer::Enemy);
     hurt_box->set_layer_dst(CollisionLayer::None);
 
-    hit_box->set_size({50, 80});
-    hurt_box->set_size({100, 180});
+    hit_box->set_size({40, 100});
+    hurt_box->set_size({80, 120});
 
     hurt_box->set_on_collide([&]() {
-        decrease_hp();
+        de_hp();
     });
 
     collision_box_silk = CollisionManager::instance()->create_collision_box();
-    collision_box_silk->set_size({225, 225});
+    collision_box_silk->set_size({1000, 1000});
     collision_box_silk->set_layer_src(CollisionLayer::None);
     collision_box_silk->set_layer_dst(CollisionLayer::Player);
     collision_box_silk->set_enabled(false);
 
     {
-        animation_silk.set_atlas(&atlas_throw_silk_left);
+        animation_silk.set_atlas(&atlas_silk);
         animation_aim_left.set_atlas(&atlas_aim_left);
         animation_aim_right.set_atlas(&atlas_aim_right);
         animation_dash_in_air_left.set_atlas(&atlas_dash_in_air_left);
@@ -161,7 +159,7 @@ void Enemy::on_update(int delta) {
         velocity.y = 0;
     }
 
-    hurt_box->set_position(position);
+    hurt_box->set_position(position + Vector2(20, 20));
 
 //    if (!current_animation)
 //        return;
@@ -170,15 +168,16 @@ void Enemy::on_update(int delta) {
         if (current_animation)
             current_animation->on_update(delta);
     }
-    state_machine.on_update(delta);
+    if (!is_on_debug)
+        state_machine.on_update(delta);
     timer_invulnerable_status.on_update(delta);
     Player::on_update(delta);
 
-    hit_box->set_position(position);
+    hit_box->set_position(position + Vector2(40, 30));
 
     if (is_throwing_silk) {
         collision_box_silk->set_position(position);
-        // ?    collision_box_silk->set_enabled(true);
+        collision_box_silk->set_enabled(true);
         animation_silk.on_update(delta);
     }
     if (is_on_debug) {
@@ -190,7 +189,7 @@ void Enemy::on_update(int delta) {
             current_animation->on_update(delta);
     } else if (is_dashing_in_air || is_dashing_on_floor) {
         if (current_dash_animation) {
-            // current_dash_animation->on_update(delta);
+            current_dash_animation->on_update(delta);
         }
     }
 
@@ -259,14 +258,14 @@ void Enemy::throw_sword() {
 
 void Enemy::on_dash() {
     if (is_dashing_in_air)
-        current_dash_animation = velocity.x < 0 ? &animation_dash_in_air_left : &animation_dash_in_air_right;
+        current_dash_animation = velocity.x < 0 ? &animation_vfx_dash_in_air_left : &animation_vfx_dash_in_air_right;
     else
-        current_dash_animation = velocity.x < 0 ? &animation_dash_on_floor_left : &animation_dash_on_floor_right;
+        current_dash_animation = velocity.x < 0 ? &animation_vfx_dash_on_floor_left : &animation_vfx_dash_on_floor_right;
     current_dash_animation->reset();
 }
 
 void Enemy::on_throw_silk() {
-    //is_throwing_silk = true;
+    is_throwing_silk = true;
     animation_silk.reset();
 }
 
@@ -296,6 +295,9 @@ void Enemy::on_input(const ExMessage& msg) {
                     break;
                 case 0x47: // G
                     throw_barbs();
+                    break;
+                case 0x48: // H
+                    on_throw_silk();
                     break;
             }
             break;
@@ -374,4 +376,8 @@ void Enemy::set_animation(const std::string& id) {
         animation_throw_silk_left.reset();
         animation_throw_silk_right.reset();
     }
+}
+
+void Enemy::on_hurt() {
+
 }

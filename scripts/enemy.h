@@ -31,20 +31,22 @@ extern Atlas atlas_throw_silk_left;
 extern Atlas atlas_throw_silk_right;
 extern Atlas atlas_vfx_dash_in_air_left;
 extern Atlas atlas_vfx_dash_in_air_right;
+extern Atlas atlas_vfx_dash_on_floor_left;
+extern Atlas atlas_vfx_dash_on_floor_right;
 
 #define floor 600
 
 class Enemy : public Player
 {
 public:
-    bool is_on_debug = false;
+    bool is_on_debug = true;
 
     Enemy();
     ~Enemy();
 
     void on_update(int delta) override;
     void on_draw(const Camera& camera) override;
-    void on_hurt() override {};
+    void on_hurt() override;
     void on_input(const ExMessage& msg);
     void set_facing_left(bool flag) {
         is_facing_left = flag;
@@ -91,6 +93,7 @@ public:
     void de_hp() {
         if (is_invulnerable) return;
         hp -= 1;
+        //std::cout << hp << std::endl;
         if (hp > 0)
             make_invulnerable();
         on_hurt();
@@ -127,6 +130,8 @@ private:
     Animation animation_throw_silk_right;
     Animation animation_vfx_dash_in_air_left;
     Animation animation_vfx_dash_in_air_right;
+    Animation animation_vfx_dash_on_floor_left;
+    Animation animation_vfx_dash_on_floor_right;
 
     Animation* current_dash_animation = nullptr;
 
