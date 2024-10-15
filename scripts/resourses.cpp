@@ -62,4 +62,6 @@ Atlas atlas_throw_silk_left;
 Atlas atlas_throw_silk_right;
 Atlas atlas_vfx_dash_in_air_left;
 Atlas atlas_vfx_dash_in_air_right;
+Atlas atlas_vfx_dash_on_floor_left;
+Atlas atlas_vfx_dash_on_floor_right;
 

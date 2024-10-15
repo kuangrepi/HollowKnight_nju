@@ -26,7 +26,7 @@ public:
 
     virtual void on_input(const ExMessage& msg);
 
-    virtual void on_hurt();
+    virtual void on_hurt() {}
 
     void decrease_hp();
 
@@ -76,15 +76,15 @@ public:
     void set_animation(Animation* animation);
 
 protected:
-    const float FLOOR_Y = 620; // 地板的竖直方向坐标
+    const float FLOOR_Y = 500; // 地板的竖直方向坐标
     const float GRAVITY = 980 * 2; // 重力大小
     int hp = 10; // 角色生命值
     Vector2 position; // 角色脚底位置
     Vector2 velocity; // 角色速度
     float logic_height = 0; // 角色的逻辑高度
     bool is_facing_left = true; // 当前角色是否朝向左
-    //StateMachine state_machine;
-    bool enable_gravity = false; // 启用重力模拟
+    StateMachine state_machine;
+    bool enable_gravity = true; // 启用重力模拟
     bool is_invulnerable = false; // 当前是否无敌
     Timer timer_invulnerable_blink; // 无敌闪烁状态定时器
     Timer timer_invulnerable_status; // 无敌状态定时器

@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\13511\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\13511\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Software\HollowKnight_nju
+CMAKE_SOURCE_DIR = C:\Users\oyster\Documents\GitHub\HollowKnight_nju
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Software\HollowKnight_nju\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\Software\HollowKnight_nju\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\Users\13511\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\toolbox\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles D:\Software\HollowKnight_nju\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Software\HollowKnight_nju\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\oyster\Documents\GitHub\HollowKnight_nju\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -320,6 +320,30 @@ scripts/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.s
 .PHONY : scripts/SceneManager.cpp.s
 
+scripts/StateNode.obj: scripts/StateNode.cpp.obj
+.PHONY : scripts/StateNode.obj
+
+# target to build an object file
+scripts/StateNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj
+.PHONY : scripts/StateNode.cpp.obj
+
+scripts/StateNode.i: scripts/StateNode.cpp.i
+.PHONY : scripts/StateNode.i
+
+# target to preprocess a source file
+scripts/StateNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.i
+.PHONY : scripts/StateNode.cpp.i
+
+scripts/StateNode.s: scripts/StateNode.cpp.s
+.PHONY : scripts/StateNode.s
+
+# target to generate assembly for a file
+scripts/StateNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.s
+.PHONY : scripts/StateNode.cpp.s
+
 scripts/Timer.obj: scripts/Timer.cpp.obj
 .PHONY : scripts/Timer.obj
 
@@ -440,6 +464,30 @@ scripts/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.s
 .PHONY : scripts/enemy.cpp.s
 
+scripts/enemy_state_node.obj: scripts/enemy_state_node.cpp.obj
+.PHONY : scripts/enemy_state_node.obj
+
+# target to build an object file
+scripts/enemy_state_node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj
+.PHONY : scripts/enemy_state_node.cpp.obj
+
+scripts/enemy_state_node.i: scripts/enemy_state_node.cpp.i
+.PHONY : scripts/enemy_state_node.i
+
+# target to preprocess a source file
+scripts/enemy_state_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.i
+.PHONY : scripts/enemy_state_node.cpp.i
+
+scripts/enemy_state_node.s: scripts/enemy_state_node.cpp.s
+.PHONY : scripts/enemy_state_node.s
+
+# target to generate assembly for a file
+scripts/enemy_state_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.s
+.PHONY : scripts/enemy_state_node.cpp.s
+
 scripts/main.obj: scripts/main.cpp.obj
 .PHONY : scripts/main.obj
 
@@ -512,6 +560,30 @@ scripts/resourses.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.s
 .PHONY : scripts/resourses.cpp.s
 
+scripts/state_machine.obj: scripts/state_machine.cpp.obj
+.PHONY : scripts/state_machine.obj
+
+# target to build an object file
+scripts/state_machine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj
+.PHONY : scripts/state_machine.cpp.obj
+
+scripts/state_machine.i: scripts/state_machine.cpp.i
+.PHONY : scripts/state_machine.i
+
+# target to preprocess a source file
+scripts/state_machine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.i
+.PHONY : scripts/state_machine.cpp.i
+
+scripts/state_machine.s: scripts/state_machine.cpp.s
+.PHONY : scripts/state_machine.s
+
+# target to generate assembly for a file
+scripts/state_machine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hollowknight_demo.dir\build.make CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.s
+.PHONY : scripts/state_machine.cpp.s
+
 scripts/sword.obj: scripts/sword.cpp.obj
 .PHONY : scripts/sword.obj
 
@@ -569,6 +641,9 @@ help:
 	@echo ... scripts/SceneManager.obj
 	@echo ... scripts/SceneManager.i
 	@echo ... scripts/SceneManager.s
+	@echo ... scripts/StateNode.obj
+	@echo ... scripts/StateNode.i
+	@echo ... scripts/StateNode.s
 	@echo ... scripts/Timer.obj
 	@echo ... scripts/Timer.i
 	@echo ... scripts/Timer.s
@@ -584,6 +659,9 @@ help:
 	@echo ... scripts/enemy.obj
 	@echo ... scripts/enemy.i
 	@echo ... scripts/enemy.s
+	@echo ... scripts/enemy_state_node.obj
+	@echo ... scripts/enemy_state_node.i
+	@echo ... scripts/enemy_state_node.s
 	@echo ... scripts/main.obj
 	@echo ... scripts/main.i
 	@echo ... scripts/main.s
@@ -593,6 +671,9 @@ help:
 	@echo ... scripts/resourses.obj
 	@echo ... scripts/resourses.i
 	@echo ... scripts/resourses.s
+	@echo ... scripts/state_machine.obj
+	@echo ... scripts/state_machine.i
+	@echo ... scripts/state_machine.s
 	@echo ... scripts/sword.obj
 	@echo ... scripts/sword.i
 	@echo ... scripts/sword.s

@@ -12,6 +12,7 @@
 
 #include <iostream>
 
+extern IMAGE img_menuscene_background;
 extern SceneManager scene_manager;
 
 class Menuscene : public Scene{
@@ -28,7 +29,9 @@ public:
     }
 
     void on_input(const ExMessage& msg) {
-
+        if(msg.message == WM_KEYDOWN) {
+            scene_manager.switch_to(SceneManager::SceneType::GameScene);
+        }
     }
 
     void on_update(int delta) {
@@ -36,7 +39,8 @@ public:
     }
 
     void on_draw() {
-
+        putimage(0, 0, &img_menuscene_background);
+        outtextxy(670, 550, _T("按任意键开始游戏"));
     }
 
 private:

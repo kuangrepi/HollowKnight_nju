@@ -26,7 +26,7 @@ public:
         knight_1 = new Knight();
         knight_1->set_position(600, 520);
         enemy = new Enemy();
-        enemy->set_position(100, 520);
+        enemy->set_position(100, 120);
     }
 
     void on_exit() {
@@ -35,7 +35,7 @@ public:
 
     void on_input(const ExMessage& msg) {
         knight_1->on_input(msg);
-        enemy->on_input(msg);
+        if (enemy->is_on_debug) { enemy->on_input(msg); }
     }
 
     void on_update(int delta) {

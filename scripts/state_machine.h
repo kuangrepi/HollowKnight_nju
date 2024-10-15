@@ -11,7 +11,8 @@
 #include <unordered_map>
 
 class StateMachine
-{ public:
+{
+public:
     StateMachine();
     ~StateMachine();
 
@@ -25,6 +26,5 @@ private:
     StateNode* current_state = nullptr;
     std::unordered_map<std::string, StateNode*> state_pool;
 };
-
 
 #endif //HOLLOWKNIGHT_DEMO_STATE_MACHINE_H

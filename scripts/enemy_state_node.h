@@ -14,7 +14,6 @@
 #include <cstdlib>
 #include <ctime>
 
-
 extern Enemy* enemy;
 extern Knight* knight_1;
 
@@ -42,7 +41,7 @@ public:
     void on_exit() override;
 
 private:
-    const float SPEED_DASH=1200.0f;
+    const float SPEED_DASH = 1200.0f / 10000.0f;
 };
 
 class EnemyDashOnFloorState : public StateNode
@@ -53,7 +52,7 @@ public:
     void on_enter() override;
     void on_update(float delta) override;
 private:
-    const float SPEED_DASH = 1000.0f;
+    const float SPEED_DASH = 1000.0f / 10000.0f;
 private:
     Timer timer;
 };
@@ -75,7 +74,8 @@ public:
     void on_update(float delta) override;
 };
 
-class EnemyIdleState : public StateNode {
+class EnemyIdleState : public StateNode
+{
 public:
     EnemyIdleState();
 
@@ -99,7 +99,7 @@ public:
     void on_enter() override;
     void on_update(float delta) override;
 private:
-    const float SPEED_JUMP = 1000.0f;
+    const float SPEED_JUMP = 1000.0f / 10000.0f;
 };
 
 class EnemyRunState : public StateNode
@@ -114,7 +114,7 @@ public:
 
 private:
     const float MIN_DIS = 350.0f;
-    const float SPEED_RUN = 500.0f;
+    const float SPEED_RUN = 500.0f / 10000.0f;
 };
 
 class EnemySquatState : public StateNode
@@ -140,7 +140,9 @@ public:
 private:
     Timer timer;
 };
-class EnemyThrowSilkState : public StateNode {
+
+class EnemyThrowSilkState : public StateNode
+{
 public:
     EnemyThrowSilkState();
 

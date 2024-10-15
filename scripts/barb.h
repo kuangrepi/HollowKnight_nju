@@ -2,13 +2,16 @@
 #define HOLLOWKNIGHT_DEMO_SCRIPTS_BARB_H_
 
 #include "Camera.h"
-#include "collision_box.h"
+#include "collision_manager.h"
 #include "Animation.h"
 #include "define.h"
 #include "Timer.h"
+#include "Knight.h"
 
 extern Atlas atlas_barb_loose;
 extern Atlas atlas_barb_break;
+
+extern Knight* knight_1;
 
 class Barb
 {
@@ -28,6 +31,7 @@ private:
         Dash,
         Break
     };
+    Stage stage = Stage::Idle;
     const float speed = 6.0f / FRAME;
 
     Timer timer_idle;
@@ -40,7 +44,7 @@ private:
     Vector2 cur_position;
     Vector2 velocity;
 
-    CollisionBox* box = nullptr;
+    CollisionBox* collision_box = nullptr;
     Animation animation_loose;
     Animation animation_break;
     Animation* current_animation = nullptr;
