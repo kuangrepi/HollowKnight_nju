@@ -14,6 +14,9 @@
 #include "timer.h"
 #include "state_machine.h"
 
+extern Atlas atlas_blood_decrease;
+extern Atlas atlas_blood_normal;
+
 class Player
 {
 public:
@@ -93,7 +96,8 @@ protected:
     CollisionBox* hurt_box = nullptr; // 受击碰撞箱
     Animation* current_animation = nullptr; // 当前动画
     std::unordered_map<std::string, Animation> animation_pool; // 角色动画池
-
+    Animation animation_blood_normal[10];
+    Animation animation_blood_decrease[10];
 
 
 };

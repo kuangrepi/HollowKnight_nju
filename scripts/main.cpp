@@ -85,6 +85,9 @@ void load_game_resourses() {
 
     loadimage(&img_gamescene_background, _T("images/background.png"));
     loadimage(&img_menuscene_background, _T("images/menu.png"));
+
+    atlas_blood_decrease.load_from_file(_T("images/UI/Blood/Damage/%d.PNG"), 7);
+    atlas_blood_normal.load_from_file(_T("images/UI/Blood/tmp/%d.PNG"), 6);
 }
 
 int main() {

@@ -37,6 +37,30 @@
     <ClCompile Include="D:\Software\HollowKnight_nju\scripts\Menuscene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\collision_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\sword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\barb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\enemy_state_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\state_machine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\StateNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\define.h">
@@ -63,10 +87,7 @@
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Hornet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\knight.h">
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Knight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Scene.h">
@@ -79,6 +100,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Menuscene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\collision_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\collision_box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\collision_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\sword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\barb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
