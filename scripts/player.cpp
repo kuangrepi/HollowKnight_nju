@@ -1,5 +1,6 @@
 #include "player.h"
 #include "collision_manager.h"
+#include "define.h"
 
 Player::Player() {
     hit_box = CollisionManager::instance()->create_collision_box();
@@ -16,6 +17,18 @@ Player::Player() {
     timer_invulnerable_blink.set_callback([&]() {
         is_blink_invisible = !is_blink_invisible;
     });
+
+    for (int i = 0; i < 10; i++) {
+        animation_blood_normal[i].set_atlas(&atlas_blood_normal);
+        animation_blood_normal[i].set_interval(FRAME * 3);
+        animation_blood_normal[i].set_loop(true);
+    }
+    for (int i = 0; i < 10; i++) {
+        animation_blood_decrease[i].set_atlas(&atlas_blood_decrease);
+        animation_blood_decrease[i].set_interval(FRAME * 3);
+        animation_blood_decrease[i].set_loop(false);
+    }
+
 }
 
 Player::~Player() {

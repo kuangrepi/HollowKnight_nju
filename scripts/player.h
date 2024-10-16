@@ -14,6 +14,9 @@
 #include "timer.h"
 #include "state_machine.h"
 
+extern Atlas atlas_blood_decrease;
+extern Atlas atlas_blood_normal;
+
 class Player
 {
 public:
@@ -78,7 +81,7 @@ public:
 protected:
     const float FLOOR_Y = 500; // 地板的竖直方向坐标
     const float GRAVITY = 980 * 2; // 重力大小
-    int hp = 15; // 角色生命值
+    int hp = 10; // 角色生命值
     Vector2 position; // 角色脚底位置
     Vector2 velocity; // 角色速度
     float logic_height = 0; // 角色的逻辑高度
@@ -93,7 +96,8 @@ protected:
     CollisionBox* hurt_box = nullptr; // 受击碰撞箱
     Animation* current_animation = nullptr; // 当前动画
     std::unordered_map<std::string, Animation> animation_pool; // 角色动画池
-
+    Animation animation_blood_normal[10];
+    Animation animation_blood_decrease[10];
 
 
 };
