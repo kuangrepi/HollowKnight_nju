@@ -7,7 +7,7 @@
 
 EnemyAimState::EnemyAimState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(30);
+    timer.set_wait_time(45);
     timer.set_on_timeout([&]() {
         enemy->set_gravity_enabled(true);
         enemy->switch_state("dash_in_air");
@@ -63,7 +63,7 @@ void EnemyDashInAirState::on_exit() {
 
 EnemyDashOnFloorState::EnemyDashOnFloorState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(30);
+    timer.set_wait_time(45);
     timer.set_on_timeout([&]() {
         enemy->set_dashing_on_floor(false);
         enemy->set_collision_box_dashFalse();
@@ -163,7 +163,7 @@ void EnemyIdleState::on_enter() {
     else
         wait_time = generate_random_number(0, 1) * 0.25f;//0.05~0.25s
 
-    timer.set_wait_time((int) (wait_time * 60));
+    timer.set_wait_time((int) (wait_time * 90));
     timer.restart();
 }
 
@@ -249,7 +249,7 @@ void EnemyRunState::on_exit() {
 
 EnemySquatState::EnemySquatState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(30);
+    timer.set_wait_time(45);
     timer.set_on_timeout([&]() {
         enemy->switch_state("dash_on_floor");
     });
@@ -271,7 +271,7 @@ void EnemySquatState::on_update(float delta) {
 
 EnemyThrowBarbState::EnemyThrowBarbState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(48);
+    timer.set_wait_time(56);
     timer.set_on_timeout([&]() {
         enemy->throw_barbs();
         enemy->switch_state("idle");
@@ -298,7 +298,7 @@ void EnemyThrowBarbState::on_update(float delta) {
 
 EnemyThrowSilkState::EnemyThrowSilkState() {
     timer.set_one_shot(true);
-    timer.set_wait_time(54);
+    timer.set_wait_time(64);
     timer.set_on_timeout([&]() {
         enemy->set_gravity_enabled(true);
         enemy->set_throwing_silk(false);

@@ -204,7 +204,6 @@ void Enemy::on_update(int delta) {
             current_dash_animation->on_update(delta);
         }
     }
-
     for (Barb* barb : barb_list)
         barb->on_update(delta);
     for (Sword* sword : sword_list)
@@ -265,12 +264,11 @@ void Enemy::on_draw(const Camera& camera) {
 }
 
 void Enemy::throw_barbs() {
-    int num_new_barb = generate_random_number(3, 6);
+    int num_new_barb = generate_random_number(3, 5);
     //std::cout << num_new_barb << std::endl;
 
     if (barb_list.size() >= 8) num_new_barb = 1;
     int width_grid = getwidth() / num_new_barb;
-
     for (int i = 0; i < num_new_barb; i++) {
         Barb* barb = new Barb();
         int rand_x = generate_random_number(width_grid * i, width_grid * (i + 1));
