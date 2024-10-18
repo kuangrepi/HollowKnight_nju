@@ -46,12 +46,5 @@ add_executable(Hollowknight_demo scripts/main.cpp
 
 target_link_libraries(Hollowknight_demo msimg32)
 target_link_libraries(Hollowknight_demo winmm)
-target_link_libraries(Hollowknight_demo
-        SDL2main
-        SDL2
-        SDL2_image
-        SDL2_mixer
-        SDL2_ttf
-)
 
 

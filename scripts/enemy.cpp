@@ -284,6 +284,8 @@ void Enemy::throw_sword() {
     Sword* sword = new Sword(position, is_facing_left);
     sword_list.push_back(sword);
     //std::cout << sword->is_valid_sword() << std::endl;
+    if (is_on_debug)
+        mciSendString(_T("play enemy_throw_sword from 0"), NULL, 0, NULL);
 
 }
 
@@ -410,5 +412,12 @@ void Enemy::set_animation(const std::string& id) {
 }
 
 void Enemy::on_hurt() {
-
+    switch (generate_random_number(1, 3)) {
+        case 1:mciSendString(_T("play enemy_hurt_1 from 0"), NULL, 0, NULL);
+            break;
+        case 2:mciSendString(_T("play enemy_hurt_2 from 0"), NULL, 0, NULL);
+            break;
+        case 3:mciSendString(_T("play enemy_hurt_3 from 0"), NULL, 0, NULL);
+            break;
+    }
 }

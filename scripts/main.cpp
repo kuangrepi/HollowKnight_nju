@@ -9,17 +9,18 @@
 #include "barb.h"
 #include "enemy.h"
 #include <mmsystem.h>
+
 #pragma comment(lib, "Winmm.lib")
 #pragma comment(lib, "MSIMG32.LIB")
 
 IMAGE img_gamescene_background; //游戏背景图片
 IMAGE img_menuscene_background;
 
-Scene *game_scene = nullptr;
-Scene *menu_scene = nullptr;
+Scene* game_scene = nullptr;
+Scene* menu_scene = nullptr;
 
-Knight *knight_1 = nullptr;
-Enemy *enemy = nullptr;
+Knight* knight_1 = nullptr;
+Enemy* enemy = nullptr;
 
 SceneManager scene_manager;
 
@@ -102,23 +103,23 @@ int main() {
 
     settextstyle(40, 0, _T("黑体"));
 
-     mciSendString("open audio/Player/player_damage.wav alias player_damage", NULL, 0, NULL);
-     mciSendString("open audio/Player/sword_1.wav alias sword_1", NULL, 0, NULL);
-     mciSendString("open audio/Player/sword_2.wav alias sword_2", NULL, 0, NULL);
-     mciSendString("open audio/Player/sword_hit.wav alias sword_hit", NULL, 0, NULL);
-     mciSendString("open audio/Player/sword_up.wav alias sword_up", NULL, 0, NULL);
-     mciSendString("open audio/barb_break.mp3 alias barb_break", NULL, 0, NULL);
-     mciSendString("open audio/bgm.mp3 alias bgm", NULL, 0, NULL);
-     mciSendString("open audio/bullet_time.mp3 alias bullet_time", NULL, 0, NULL);
-     mciSendString("open audio/enemy_dash.mp3 alias enemy_dash", NULL, 0, NULL);
-     mciSendString("open audio/enemy_hurt_1.mp3 alias enemy_hurt_1", NULL, 0, NULL);
-     mciSendString("open audio/enemy_hurt_2.mp3 alias enemy_hurt_2", NULL, 0, NULL);
-     mciSendString("open audio/enemy_hurt_3.mp3 alias enemy_hurt_3", NULL, 0, NULL);
-     mciSendString("open audio/enemy_run.mp3 alias enemy_run", NULL, 0, NULL);
-     mciSendString("open audio/enemy_throw_barbs.mp3 alias enemy_throw_barbs", NULL, 0, NULL);
-     mciSendString("open audio/enemy_throw_silk.mp3 alias enemy_throw_silk", NULL, 0, NULL);
-     mciSendString("open audio/enemy_throw_sword.mp3 alias enemy_throw_sword", NULL, 0, NULL);
-     mciSendString("open audio/Hornet.mp3 alias Hornet", NULL, 0, NULL);
+    mciSendString("open audio/Player/player_damage.wav alias player_damage", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_1.wav alias sword_1", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_2.wav alias sword_2", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_hit.wav alias sword_hit", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_up.wav alias sword_up", NULL, 0, NULL);
+    mciSendString("open audio/barb_break.mp3 alias barb_break", NULL, 0, NULL);
+    mciSendString("open audio/bgm.mp3 alias bgm", NULL, 0, NULL);
+    mciSendString("open audio/bullet_time.mp3 alias bullet_time", NULL, 0, NULL);
+    mciSendString("open audio/enemy_dash.mp3 alias enemy_dash", NULL, 0, NULL);
+    mciSendString("open audio/enemy_hurt_1.mp3 alias enemy_hurt_1", NULL, 0, NULL);
+    mciSendString("open audio/enemy_hurt_2.mp3 alias enemy_hurt_2", NULL, 0, NULL);
+    mciSendString("open audio/enemy_hurt_3.mp3 alias enemy_hurt_3", NULL, 0, NULL);
+    mciSendString("open audio/enemy_run.mp3 alias enemy_run", NULL, 0, NULL);
+    mciSendString("open audio/enemy_throw_barbs.mp3 alias enemy_throw_barbs", NULL, 0, NULL);
+    mciSendString("open audio/enemy_throw_silk.mp3 alias enemy_throw_silk", NULL, 0, NULL);
+    mciSendString("open audio/enemy_throw_sword.mp3 alias enemy_throw_sword", NULL, 0, NULL);
+    mciSendString("open audio/Hornet.mp3 alias Hornet", NULL, 0, NULL);
 
     bool running = true;
 

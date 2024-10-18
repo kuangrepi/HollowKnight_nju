@@ -30,6 +30,8 @@ void EnemyAimState::on_update(float delta) {
 }
 
 void EnemyDashInAirState::on_enter() {
+    mciSendString(_T("play enemy_dash from 0"), NULL, 0, NULL);
+
     enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("dash_in_air");
 
@@ -44,7 +46,6 @@ void EnemyDashInAirState::on_enter() {
     enemy->set_gravity_enabled(false);
     enemy->on_dash();
 
-//    play_audio_I("enemy_dash", false);
 }
 
 void EnemyDashInAirState::on_update(float delta) {
@@ -70,13 +71,15 @@ EnemyDashOnFloorState::EnemyDashOnFloorState() {
 }
 
 void EnemyDashOnFloorState::on_enter() {
+    mciSendString(_T("play enemy_dash from 0"), NULL, 0, NULL);
+
     enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("dash_on_floor");
     enemy->set_velocity(enemy->get_facing_left() ? -SPEED_DASH : SPEED_DASH, 0);
     enemy->set_dashing_on_floor(true);
     enemy->on_dash();
     timer.restart();
-//    play_audio(_T("enemy_dash"), false);
+    //mciSendString("stop enemy_dash", NULL, 0, NULL);
 }
 
 void EnemyDashOnFloorState::on_update(float delta) {
@@ -209,9 +212,9 @@ void EnemyJumpState::on_update(float delta) {
 }
 
 void EnemyRunState::on_enter() {
+    mciSendString(_T("play enemy_run from 0"), NULL, 0, NULL);
     enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("run");
-//    play_audio(_T("enemy_run"), true);
 }
 
 void EnemyRunState::on_update(float delta) {
@@ -237,7 +240,7 @@ void EnemyRunState::on_update(float delta) {
         }
     }
 
-//    stop_audio(_T("enemy_run"));
+    mciSendString("stop enemy_run", NULL, 0, NULL);
 }
 
 void EnemyRunState::on_exit() {
@@ -276,10 +279,12 @@ EnemyThrowBarbState::EnemyThrowBarbState() {
 }
 
 void EnemyThrowBarbState::on_enter() {
+    mciSendString(_T("play enemy_throw_barbs from 0"), NULL, 0, NULL);
+
     enemy->set_facing_left(enemy->get_position().x > knight_1->get_position().x);
     enemy->set_animation("throw_barb");
     timer.restart();
-//    play_audio(_T("enemy_throw_barbs"), false);
+    //  mciSendString("stop enemy_throw_barbs", NULL, 0, NULL);
 }
 
 void EnemyThrowBarbState::on_update(float delta) {
@@ -316,8 +321,7 @@ void EnemyThrowSilkState::on_enter() {
     enemy->set_velocity(0, 0);
     enemy->on_throw_silk();
     timer.restart();
-
-//    play_audio(T("enemy_throw_silk"), false);
+    mciSendString(_T("play enemy_throw_silk from 0"), NULL, 0, NULL);
 }
 
 void EnemyThrowSilkState::on_update(float delta) {
@@ -333,7 +337,7 @@ EnemyThrowSwordState::EnemyThrowSwordState() {
     timer_throw.set_one_shot(true);
     timer_throw.set_on_timeout([&]() {
         enemy->throw_sword();
-//        play_audio(_T("enemy_throw_sword"), false);
+        //   mciSendString("stop enemy_throw_sword", NULL, 0, NULL);
     });
 
     timer_switch.set_wait_time(60);
@@ -363,6 +367,7 @@ void EnemyThrowSwordState::on_enter() {
     enemy->set_animation("throw_sword");
     timer_throw.restart();
     timer_switch.restart();
+    mciSendString(_T("play enemy_throw_sword from 0"), NULL, 0, NULL);
 }
 
 void EnemyThrowSwordState::on_update(float delta) {
