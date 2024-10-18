@@ -1,6 +1,7 @@
 #include <graphics.h>
 #include <random>
 
+
 inline void putimage_alpha(int dst_x, int dst_y, IMAGE* img) {
     int w = img->getwidth();
     int h = img->getheight();
