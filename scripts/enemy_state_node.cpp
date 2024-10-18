@@ -92,7 +92,7 @@ void EnemyDashOnFloorState::on_update(float delta) {
 }
 
 void EnemyDeadState::on_enter() {
-    MessageBox(GetHWnd(), _T("很好，这样能行。"), _T("挑战成功！"), MB_OK);
+    MessageBox(GetHWnd(), _T("Congratulations!"), _T("You win！"), MB_OK);
     exit(0);
 }
 

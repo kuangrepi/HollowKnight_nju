@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Software/HollowKnight_nju/cmake-build-debug",
-		"source" : "D:/Software/HollowKnight_nju"
+		"build" : "C:/Users/oyster/Documents/GitHub/HollowKnight_nju/cmake-build-debug",
+		"source" : "C:/Users/oyster/Documents/GitHub/HollowKnight_nju"
 	},
 	"version" : 
 	{
