@@ -39,7 +39,7 @@ extern Atlas atlas_vfx_dash_on_floor_right;
 class Enemy : public Player
 {
 public:
-    bool is_on_debug = true;
+    bool is_on_debug = false;
 
     Enemy();
     ~Enemy();
@@ -99,6 +99,10 @@ public:
         on_hurt();
     }
 
+    void set_collision_box_dashFalse() {
+        collision_box_dash->set_enabled(false);
+    }
+
 private:
     bool is_throwing_silk = false;
     bool is_dashing_in_air = false;
@@ -139,6 +143,7 @@ private:
     std::vector<Sword*> sword_list;
 
     CollisionBox* collision_box_silk = nullptr;
+    CollisionBox* collision_box_dash = nullptr;
 
 };
 

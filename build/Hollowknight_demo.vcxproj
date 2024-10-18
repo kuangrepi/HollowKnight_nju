@@ -326,9 +326,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Software\HollowKnight_nju\scripts\Camera.cpp" />
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Camera.h" />
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\player.h" />
-    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Hornet.h" />
     <ClCompile Include="D:\Software\HollowKnight_nju\scripts\Knight.cpp" />
-    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\knight.h" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Knight.h" />
     <ClCompile Include="D:\Software\HollowKnight_nju\scripts\resourses.cpp" />
     <ClCompile Include="D:\Software\HollowKnight_nju\scripts\Scene.cpp" />
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Scene.h" />
@@ -338,6 +337,20 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\SceneManager.h" />
     <ClCompile Include="D:\Software\HollowKnight_nju\scripts\Menuscene.cpp" />
     <ClInclude Include="D:\Software\HollowKnight_nju\scripts\Menuscene.h" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\collision_layer.h" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\collision_box.h" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\collision_manager.h" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\collision_manager.cpp" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\player.cpp" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\sword.cpp" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\sword.h" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\barb.cpp" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\barb.h" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\enemy.cpp" />
+    <ClInclude Include="D:\Software\HollowKnight_nju\scripts\enemy.h" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\enemy_state_node.cpp" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\state_machine.cpp" />
+    <ClCompile Include="D:\Software\HollowKnight_nju\scripts\StateNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\Software\HollowKnight_nju\build\ZERO_CHECK.vcxproj">
