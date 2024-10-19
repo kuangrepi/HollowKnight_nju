@@ -1,0 +1,29 @@
+CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj: \
+ C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Vector2.cpp \
+ C:\Users\oyster\Documents\GitHub\HollowKnight_nju\scripts\Vector2.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/math.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+ C:/toolbox/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+ C:/toolbox/CLion/bin/mingw/x86_64-w64-mingw32/include/errno.h

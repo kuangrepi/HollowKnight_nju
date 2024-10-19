@@ -44,6 +44,13 @@ public:
         enemy->on_update(delta);
         CollisionManager *collision_manager = CollisionManager::instance();
         collision_manager->process_collision();
+        if(knight_1->is_dead) {
+            scene_manager.switch_to(SceneManager::SceneType::MenuScene);
+            mciSendString(_T("stop Hornet"), NULL, 0, NULL);
+            mciSendString(_T("play bgm repeat from 0"), NULL, 0, NULL);
+            knight_1->hp = 10;
+            enemy->hp = 20;
+        }
     }
 
 

@@ -7,7 +7,7 @@ Enemy::Enemy() {
     is_facing_left = false;
     position = {1050, 100};
     logic_height = 150;
-    hp += 5;
+    hp += 10;
 
     hit_box->set_layer_src(CollisionLayer::None);
     hit_box->set_layer_dst(CollisionLayer::Player);
