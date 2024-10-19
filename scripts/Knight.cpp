@@ -475,7 +475,6 @@ void Knight::on_update(int delta) {
     for  (int i = hp; i < 10; i++) {
         animation_blood_decrease[i].on_update(60);
     }
-    std::cout << is_attack << is_up_key_down << up_attack << down_attack << normal_attack << std::endl;
 }
 
 void Knight::on_draw(const Camera& camera) {
