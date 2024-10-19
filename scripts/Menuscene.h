@@ -40,7 +40,7 @@ public:
 
     void on_draw() {
         putimage(0, 0, &img_menuscene_background);
-        outtextxy(670, 550, _T("按任意键开始游戏"));
+        outtextxy(600, 550, _T("Press Any Key To Start"));
     }
 
 private:

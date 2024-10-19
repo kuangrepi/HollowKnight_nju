@@ -78,7 +78,6 @@ public:
 
     void set_animation(Animation* animation);
 
-protected:
     const float FLOOR_Y = 500; // 地板的竖直方向坐标
     const float GRAVITY = 980 * 2; // 重力大小
     int hp = 10; // 角色生命值

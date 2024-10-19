@@ -92,7 +92,7 @@ void EnemyDashOnFloorState::on_update(float delta) {
 }
 
 void EnemyDeadState::on_enter() {
-    MessageBox(GetHWnd(), _T("很好，这样能行。"), _T("挑战成功！"), MB_OK);
+    MessageBox(GetHWnd(), _T("Congratulations! You Win!"), _T("You Win！"), MB_OK);
     exit(0);
 }
 
@@ -113,7 +113,7 @@ EnemyIdleState::EnemyIdleState() {
     timer.set_one_shot(true);
     timer.set_on_timeout([&]() {
         int rand_num = generate_random_number(0, 100);;
-        if (enemy->get_hp() > 12) {
+        if (enemy->get_hp() > 15) {
             if (rand_num <= 25) {
                 if (!enemy->is_on_floor())
                     enemy->switch_state("fall");

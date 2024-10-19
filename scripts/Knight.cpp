@@ -1,5 +1,7 @@
 #include "Knight.h"
 
+#include "GameScene.h"
+
 Knight::Knight() {
     animation_idle_left.set_atlas(&atlas_knight_idle_left);
     animation_idle_right.set_atlas(&atlas_knight_idle_right);
