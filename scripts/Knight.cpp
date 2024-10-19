@@ -444,13 +444,16 @@ void Knight::on_update(int delta) {
     if(hp <= 0){
         static int n = 0;
         if(n == 0){
-            dead_position= position;
+            dead_position = position;
             n++;
         }
         position = dead_position;
         current_animation = &animation_death;
-        if(current_animation->get_idx_frame() == 10)
+        if(current_animation->get_idx_frame() == 10){
             is_dead = true;
+            n = 0;
+        }
+
     }
     if(is_damage){
         effect_position.x = position.x - 490;
