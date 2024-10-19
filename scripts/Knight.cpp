@@ -49,7 +49,7 @@ Knight::Knight() {
             is_damage = true;
             is_attack = false;
             damage = 0;
-
+            mciSendString(_T("play enemy_throw_sword from 0"), NULL, 0, NULL);
         }
     });
 
@@ -105,21 +105,27 @@ void Knight::on_input(const ExMessage& msg) {
                         break;
                     case 0x58: // X
                         if(!is_attack && !is_damage  && attack > FRAME / 6){
-                            if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){
+                            if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){ // 上劈
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y-160;
                                 effect_position.x = position_hurt_box.x - 80;
                                 animation_attack_left_effect_up.reset();
                                 animation_attack_right_effect_up.reset();
+                                mciSendString(_T("play sword_up from 0"), NULL, 0, NULL);
+                                up_attack = true;
+                                down_attack = false;
+                                normal_attack = false;
                             }
-                            else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){
+                            else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){ // 普通攻击
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y;
                                 effect_position.x = position_hurt_box.x - 75;
                                 animation_attack_left_effect_1.reset();
                                 animation_attack_right_effect_1.reset();
+
+                                mciSendString(_T("play sword_1 from 0"), NULL, 0, NULL);
                             }
-                            else{
+                            else{ // 下劈
                                 effect_facing_right = is_facing_right;
                                 if(is_facing_right)
                                     effect_position.x = position_hurt_box.x - 10;
@@ -129,6 +135,7 @@ void Knight::on_input(const ExMessage& msg) {
                                 animation_attack_left_effect_down.reset();
                                 animation_attack_right_effect_down.reset();
                                 attack_down = 0;
+                                mciSendString(_T("play sword_2 from 0"), NULL, 0, NULL);
                             }
                             is_attack = true;
                         }

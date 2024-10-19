@@ -103,11 +103,11 @@ int main() {
 
     settextstyle(40, 0, _T("黑体"));
 
-    mciSendString("open audio/Player/player_damage.wav alias player_damage", NULL, 0, NULL);
-    mciSendString("open audio/Player/sword_1.wav alias sword_1", NULL, 0, NULL);
-    mciSendString("open audio/Player/sword_2.wav alias sword_2", NULL, 0, NULL);
-    mciSendString("open audio/Player/sword_hit.wav alias sword_hit", NULL, 0, NULL);
-    mciSendString("open audio/Player/sword_up.wav alias sword_up", NULL, 0, NULL);
+    mciSendString("open audio/Player/player_damage.mp3 alias player_damage", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_1.mp3 alias sword_1", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_2.mp3 alias sword_2", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_hit.mp3 alias sword_hit", NULL, 0, NULL);
+    mciSendString("open audio/Player/sword_up.mp3 alias sword_up", NULL, 0, NULL);
     mciSendString("open audio/barb_break.mp3 alias barb_break", NULL, 0, NULL);
     mciSendString("open audio/bgm.mp3 alias bgm", NULL, 0, NULL);
     mciSendString("open audio/bullet_time.mp3 alias bullet_time", NULL, 0, NULL);

@@ -283,7 +283,7 @@ void Enemy::throw_sword() {
     sword_list.push_back(sword);
     //std::cout << sword->is_valid_sword() << std::endl;
     if (is_on_debug)
-        mciSendString(_T("play enemy_throw_sword from 0"), NULL, 0, NULL);
+        mciSendString(_T("play player_damage from 0"), NULL, 0, NULL);
 
 }
 
@@ -418,4 +418,5 @@ void Enemy::on_hurt() {
         case 3:mciSendString(_T("play enemy_hurt_3 from 0"), NULL, 0, NULL);
             break;
     }
+    mciSendString(_T("play sword_hit from 0"), NULL, 0, NULL);
 }
