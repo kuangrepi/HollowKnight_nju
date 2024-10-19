@@ -149,6 +149,8 @@ Enemy::Enemy() {
 
 Enemy::~Enemy() {
     CollisionManager::instance()->destroy_collision_box(collision_box_silk);
+    for (Barb* barb : barb_list)
+        delete barb;
 }
 
 void Enemy::on_update(int delta) {
