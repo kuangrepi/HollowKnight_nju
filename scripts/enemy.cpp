@@ -4,9 +4,10 @@
 #include "enemy_state_node.h"
 
 Enemy::Enemy() {
-    is_facing_left = true;
+    is_facing_left = false;
     position = {1050, 100};
     logic_height = 150;
+    hp += 10;
 
     hit_box->set_layer_src(CollisionLayer::None);
     hit_box->set_layer_dst(CollisionLayer::Player);
@@ -22,10 +23,16 @@ Enemy::Enemy() {
     });
 
     collision_box_silk = CollisionManager::instance()->create_collision_box();
-    collision_box_silk->set_size({1000, 1000});
+    collision_box_silk->set_size({270, 270});
     collision_box_silk->set_layer_src(CollisionLayer::None);
     collision_box_silk->set_layer_dst(CollisionLayer::Player);
     collision_box_silk->set_enabled(false);
+
+    collision_box_dash = CollisionManager::instance()->create_collision_box();
+    collision_box_dash->set_size({100, 50});
+    collision_box_dash->set_layer_src(CollisionLayer::None);
+    collision_box_dash->set_layer_dst(CollisionLayer::Player);
+    collision_box_dash->set_enabled(false);
 
     {
         animation_silk.set_atlas(&atlas_silk);
@@ -53,6 +60,8 @@ Enemy::Enemy() {
         animation_throw_silk_right.set_atlas(&atlas_throw_silk_right);
         animation_vfx_dash_in_air_left.set_atlas(&atlas_vfx_dash_in_air_left);
         animation_vfx_dash_in_air_right.set_atlas(&atlas_vfx_dash_in_air_right);
+        animation_vfx_dash_on_floor_left.set_atlas(&atlas_vfx_dash_on_floor_left);
+        animation_vfx_dash_on_floor_right.set_atlas(&atlas_vfx_dash_on_floor_right);
 
         animation_silk.set_interval(FRAME * 3);
         animation_aim_left.set_interval(FRAME * 3);
@@ -127,12 +136,12 @@ Enemy::Enemy() {
     {
         timer_invulnerable_status.set_wait_time(60);
         timer_invulnerable_status.set_one_shot(true);
-        timer_invulnerable_status.set_on_timeout([&]() {
+        timer_invulnerable_status.set_callback([&]() {
             is_invulnerable = false;
         });
         timer_invulnerable_blink.set_wait_time(5);
         timer_invulnerable_blink.set_one_shot(false);
-        timer_invulnerable_blink.set_on_timeout([&]() {
+        timer_invulnerable_blink.set_callback([&]() {
             is_blink_invisible = !is_blink_invisible;
         });
     }
@@ -140,6 +149,8 @@ Enemy::Enemy() {
 
 Enemy::~Enemy() {
     CollisionManager::instance()->destroy_collision_box(collision_box_silk);
+    for (Barb* barb : barb_list)
+        delete barb;
 }
 
 void Enemy::on_update(int delta) {
@@ -171,12 +182,15 @@ void Enemy::on_update(int delta) {
     if (!is_on_debug)
         state_machine.on_update(delta);
     timer_invulnerable_status.on_update(delta);
+    if (is_invulnerable) {
+        timer_invulnerable_blink.on_update(delta);
+    }
     Player::on_update(delta);
 
     hit_box->set_position(position + Vector2(40, 30));
 
     if (is_throwing_silk) {
-        collision_box_silk->set_position(position);
+        collision_box_silk->set_position(position + Vector2(-75, -60));
         collision_box_silk->set_enabled(true);
         animation_silk.on_update(delta);
     }
@@ -192,7 +206,6 @@ void Enemy::on_update(int delta) {
             current_dash_animation->on_update(delta);
         }
     }
-
     for (Barb* barb : barb_list)
         barb->on_update(delta);
     for (Sword* sword : sword_list)
@@ -209,6 +222,11 @@ void Enemy::on_update(int delta) {
         return can_remove;
     }), sword_list.end());
 
+    if (animation_silk.check_finished()) {
+        is_throwing_silk = false;
+        collision_box_silk->set_enabled(false);
+        animation_silk.reset();
+    }
 }
 
 void Enemy::on_draw(const Camera& camera) {
@@ -221,25 +239,38 @@ void Enemy::on_draw(const Camera& camera) {
     Player::on_draw(camera);
 
     if (is_throwing_silk) {
-        animation_silk.on_draw(position.x, position.y);
+        animation_silk.on_draw(position.x - 75.0f, position.y - 70.0f);
     }
 
     if (is_dashing_in_air || is_dashing_on_floor) {
         if (is_on_debug) {
 
         } else {
-            current_dash_animation->on_draw(position.x, position.y);
+            if (current_dash_animation) {
+                if (current_animation == &animation_dash_on_floor_left) {
+                    current_dash_animation->on_draw(position.x - 450, position.y);
+                    collision_box_dash->set_position(position - Vector2(80, -100));
+                    collision_box_dash->set_enabled(true);
+                } else if (current_animation == &animation_dash_on_floor_right) {
+                    collision_box_dash->set_position(position + Vector2(130, 100));
+                    collision_box_dash->set_enabled(true);
+                    current_dash_animation->on_draw(position.x - 20, position.y);
+                } else if (current_animation == &animation_dash_in_air_left) {
+                    current_dash_animation->on_draw(position.x - 500, position.y);
+                } else {
+                    current_dash_animation->on_draw(position.x, position.y);
+                }
+            }
         }
     }
 }
 
 void Enemy::throw_barbs() {
-    int num_new_barb = generate_random_number(3, 6);
+    int num_new_barb = generate_random_number(3, 5);
     //std::cout << num_new_barb << std::endl;
 
-    if (barb_list.size() >= 10) num_new_barb = 1;
+    if (barb_list.size() >= 8) num_new_barb = 1;
     int width_grid = getwidth() / num_new_barb;
-
     for (int i = 0; i < num_new_barb; i++) {
         Barb* barb = new Barb();
         int rand_x = generate_random_number(width_grid * i, width_grid * (i + 1));
@@ -253,13 +284,15 @@ void Enemy::throw_sword() {
     Sword* sword = new Sword(position, is_facing_left);
     sword_list.push_back(sword);
     //std::cout << sword->is_valid_sword() << std::endl;
+    if (is_on_debug)
+        mciSendString(_T("play player_damage from 0"), NULL, 0, NULL);
 
 }
 
 void Enemy::on_dash() {
     if (is_dashing_in_air)
         current_dash_animation = velocity.x < 0 ? &animation_vfx_dash_in_air_left : &animation_vfx_dash_in_air_right;
-    else
+    else if (is_dashing_on_floor)
         current_dash_animation = velocity.x < 0 ? &animation_vfx_dash_on_floor_left : &animation_vfx_dash_on_floor_right;
     current_dash_animation->reset();
 }
@@ -379,5 +412,13 @@ void Enemy::set_animation(const std::string& id) {
 }
 
 void Enemy::on_hurt() {
-
+    switch (generate_random_number(1, 3)) {
+        case 1:mciSendString(_T("play enemy_hurt_1 from 0"), NULL, 0, NULL);
+            break;
+        case 2:mciSendString(_T("play enemy_hurt_2 from 0"), NULL, 0, NULL);
+            break;
+        case 3:mciSendString(_T("play enemy_hurt_3 from 0"), NULL, 0, NULL);
+            break;
+    }
+    mciSendString(_T("play sword_hit1 from 0"), NULL, 0, NULL);
 }

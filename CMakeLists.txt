@@ -45,4 +45,6 @@ add_executable(Hollowknight_demo scripts/main.cpp
         scripts/StateNode.cpp)
 
 target_link_libraries(Hollowknight_demo msimg32)
+target_link_libraries(Hollowknight_demo winmm)
+
 

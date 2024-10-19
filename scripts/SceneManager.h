@@ -13,7 +13,7 @@ extern Scene* game_scene;
 class SceneManager {
 public:
     enum class SceneType {
-        MenuMenu,
+        MenuScene,
         GameScene,
     };
 
@@ -28,7 +28,7 @@ public:
     void switch_to(SceneType type) {
         current_scene->on_exit();
         switch (type) {
-            case SceneType::MenuMenu:
+            case SceneType::MenuScene:
                 current_scene = menu_scene;
                 break;
             case SceneType::GameScene:

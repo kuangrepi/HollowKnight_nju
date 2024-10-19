@@ -219,7 +219,7 @@ build CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj: CXX_COMPILER__
 
 build Hollowknight_demo.exe: CXX_EXECUTABLE_LINKER__Hollowknight_demo_Debug CMakeFiles/Hollowknight_demo.dir/scripts/main.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Timer.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Atlas.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Animation.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Vector2.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Camera.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Knight.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/resourses.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Scene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Gamescene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/SceneManager.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/Menuscene.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/collision_manager.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/player.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/sword.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/barb.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/enemy.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/enemy_state_node.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/state_machine.cpp.obj CMakeFiles/Hollowknight_demo.dir/scripts/StateNode.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  -Wl,-Bdynamic  -lmsimg32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  -Wl,-Bdynamic  -lmsimg32  -lwinmm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hollowknight_demo.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
