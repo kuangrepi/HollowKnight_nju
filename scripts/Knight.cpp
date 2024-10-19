@@ -96,7 +96,6 @@ void Knight::on_input(const ExMessage& msg) {
                         is_right_key_down = true;
                         break;
                     case VK_UP: // up
-                        if(attack_down > 5)
                             is_up_key_down = true;
                         break;
                     case VK_DOWN: // up
@@ -115,8 +114,6 @@ void Knight::on_input(const ExMessage& msg) {
                                 animation_attack_right_effect_up.reset();
                                 mciSendString(_T("play sword_up from 0"), NULL, 0, NULL);
                                 up_attack = true;
-                                down_attack = false;
-                                normal_attack = false;
                             }
                             else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){ // 普通攻击
                                 effect_facing_right = is_facing_right;
@@ -438,6 +435,11 @@ void Knight::on_update(int delta) {
     if(damage < 1000){
         damage++;
     }
+    if(!is_attack){
+        up_attack = false;
+        down_attack = false;
+        normal_attack = false;
+    }
     move_and_collide(delta);
     if(hp <= 0){
         static int n = 0;
@@ -453,6 +455,9 @@ void Knight::on_update(int delta) {
     if(is_damage){
         effect_position.x = position.x - 490;
         effect_position.y = position.y - 10;
+        up_attack = false;
+        down_attack = false;
+        normal_attack = false;
     }
     if(!is_dead)
         current_animation->on_update(delta);
@@ -470,6 +475,7 @@ void Knight::on_update(int delta) {
     for  (int i = hp; i < 10; i++) {
         animation_blood_decrease[i].on_update(60);
     }
+    std::cout << is_attack << is_up_key_down << up_attack << down_attack << normal_attack << std::endl;
 }
 
 void Knight::on_draw(const Camera& camera) {

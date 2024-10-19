@@ -418,5 +418,5 @@ void Enemy::on_hurt() {
         case 3:mciSendString(_T("play enemy_hurt_3 from 0"), NULL, 0, NULL);
             break;
     }
-    mciSendString(_T("play sword_hit from 0"), NULL, 0, NULL);
+    mciSendString(_T("play sword_hit1 from 0"), NULL, 0, NULL);
 }
