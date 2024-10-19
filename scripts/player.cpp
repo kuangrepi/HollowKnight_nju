@@ -41,8 +41,8 @@ void Player::decrease_hp() {
 }
 
 void Player::on_update(int delta) {
-    if (position.x < 0) position.x = 0;
-    if (position.x > getwidth() - 100) position.x = (float) getwidth() - 100;
+    if (position.x < 125) position.x = 125;
+    if (position.x > getwidth() - 175) position.x = (float) getwidth() - 175;
     if (position.y < 0) position.y = 0;
     if (position.y > getheight() - 100) position.y = (float) getheight() - 100;
 

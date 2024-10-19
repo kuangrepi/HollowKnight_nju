@@ -165,6 +165,83 @@ void Knight::on_input(const ExMessage& msg) {
         }
 }
 
+//void Knight::on_input(const ExMessage& msg) {
+//    if(hp > 0)
+//        switch (msg.message) {
+//            case WM_KEYDOWN:
+//                switch (msg.vkcode) {
+//                    case 0x41: // A
+//                        is_left_key_down = true;
+//                        break;
+//                    case 0x44: // D
+//                        is_right_key_down = true;
+//                        break;
+//                    case 0x57: // W
+//                        is_up_key_down = true;
+//                        break;
+//                    case 0x53: // S
+//                        is_down_key_down = true;
+//                        break;
+//                    case 0x4B: // K
+//                        is_jump = true;
+//                        break;
+//                    case 0x4A: // J
+//                        if(!is_attack && !is_damage  && attack > FRAME / 6){
+//                            if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){
+//                                effect_facing_right = is_facing_right;
+//                                effect_position.y = position.y-160;
+//                                effect_position.x = position_hurt_box.x - 80;
+//                                animation_attack_left_effect_up.reset();
+//                                animation_attack_right_effect_up.reset();
+//                            }
+//                            else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){
+//                                effect_facing_right = is_facing_right;
+//                                effect_position.y = position.y;
+//                                effect_position.x = position_hurt_box.x - 75;
+//                                animation_attack_left_effect_1.reset();
+//                                animation_attack_right_effect_1.reset();
+//                            }
+//                            else{
+//                                effect_facing_right = is_facing_right;
+//                                if(is_facing_right)
+//                                    effect_position.x = position_hurt_box.x - 10;
+//                                else
+//                                    effect_position.x = position_hurt_box.x - 150;
+//                                effect_position.y = position.y+100;
+//                                animation_attack_left_effect_down.reset();
+//                                animation_attack_right_effect_down.reset();
+//                                attack_down = 0;
+//                            }
+//                            is_attack = true;
+//                        }
+//
+//                        break;
+//                }
+//
+//                break;
+//            case WM_KEYUP:
+//                switch (msg.vkcode) {
+//                    case 0x41: // <-
+//                        is_left_key_down = false;
+//                        break;
+//                    case 0x44: // ->
+//                        is_right_key_down = false;
+//                    case 0x57: // ->
+//                        is_up_key_down = false;
+//                        break;
+//                    case 0x53: // ->
+//                        is_down_key_down = false;
+//                        break;
+//                    case 0x4B: // Z
+//                        is_jump = false;
+//                        break;
+//                }
+//                break;
+//            default:break;
+//        }
+//}
+
+
 void Knight::on_update(int delta) {
     hit_box->set_size(Vector2(0,0));
     int direction = is_right_key_down - is_left_key_down;
