@@ -7,7 +7,7 @@ Enemy::Enemy() {
     is_facing_left = false;
     position = {1050, 100};
     logic_height = 150;
-    hp += 5;
+    hp += 20;
 
     hit_box->set_layer_src(CollisionLayer::None);
     hit_box->set_layer_dst(CollisionLayer::Player);
@@ -156,6 +156,7 @@ void Enemy::on_update(int delta) {
         is_facing_left = (velocity.x < 0);
     }
     // 本应在Player::on_update中处理的逻辑
+    if (position.x > getwidth() - 230) position.x = (float) getwidth() - 230;
     if (hp <= 0)
         velocity.x = 0;
     if (enable_gravity)
