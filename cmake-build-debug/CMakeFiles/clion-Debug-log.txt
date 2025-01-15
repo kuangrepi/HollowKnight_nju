@@ -11,6 +11,10 @@ C:\Users\guyu\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMA
 -- Check for working CXX compiler: D:/TDM-GCC/bin/c++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+<<<<<<< Updated upstream
 -- Configuring done (3.5s)
+=======
+-- Configuring done (1.6s)
+>>>>>>> Stashed changes
 -- Generating done (0.0s)
 -- Build files have been written to: D:/Git/HollowKnight_demo/cmake-build-debug

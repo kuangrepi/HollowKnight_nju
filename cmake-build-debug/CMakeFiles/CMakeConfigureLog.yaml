@@ -61,8 +61,13 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
+<<<<<<< Updated upstream
       source: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekikgf"
       binary: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekikgf"
+=======
+      source: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijyxph"
+      binary: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijyxph"
+>>>>>>> Stashed changes
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,18 +76,30 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< Updated upstream
         Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekikgf'
         
         Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_206c3
         [1/2] D:\\TDM-GCC\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+=======
+        Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijyxph'
+        
+        Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_e384f
+        [1/2] D:\\TDM-GCC\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+>>>>>>> Stashed changes
         Using built-in specs.
         COLLECT_GCC=D:\\TDM-GCC\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
         Configured with: ../../../src/gcc-git-9.2.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
         Thread model: posix
         gcc version 9.2.0 (tdm64-1) 
+<<<<<<< Updated upstream
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
          D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccknnwar.s
+=======
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+         D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccb1HAV8.s
+>>>>>>> Stashed changes
         GNU C17 (tdm64-1) version 9.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -104,6 +121,7 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 28379e31cc2f1f6d7a657691ed425dfd
+<<<<<<< Updated upstream
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
          D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccknnwar.s
         GNU assembler version 2.33.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.33.1
@@ -111,6 +129,15 @@ events:
         LIBRARY_PATH=D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../lib/gcc/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../\x0d
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d
         [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\gcc.exe  -v CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj -o cmTC_206c3.exe -Wl,--out-implib,libcmTC_206c3.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+=======
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+         D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccb1HAV8.s
+        GNU assembler version 2.33.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.33.1
+        COMPILER_PATH=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../libexec/gcc/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../lib/gcc/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../\x0d
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\gcc.exe  -v CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj -o cmTC_e384f.exe -Wl,--out-implib,libcmTC_e384f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+>>>>>>> Stashed changes
         Using built-in specs.
         COLLECT_GCC=D:\\TDM-GCC\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe
@@ -120,9 +147,15 @@ events:
         gcc version 9.2.0 (tdm64-1) 
         COMPILER_PATH=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../libexec/gcc/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../lib/gcc/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../
+<<<<<<< Updated upstream
         COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_206c3.exe' '-mtune=generic' '-march=x86-64'
          D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccMrpKWB.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_206c3.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_206c3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d
         COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_206c3.exe' '-mtune=generic' '-march=x86-64'\x0d
+=======
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e384f.exe' '-mtune=generic' '-march=x86-64'
+         D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\cc3oC6Cf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_e384f.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_e384f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e384f.exe' '-mtune=generic' '-march=x86-64'\x0d
+>>>>>>> Stashed changes
         
       exitCode: 0
   -
@@ -158,18 +191,30 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+<<<<<<< Updated upstream
         ignore line: [Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekikgf']
         ignore line: []
         ignore line: [Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_206c3]
         ignore line: [[1/2] D:\\TDM-GCC\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+=======
+        ignore line: [Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijyxph']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_e384f]
+        ignore line: [[1/2] D:\\TDM-GCC\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+>>>>>>> Stashed changes
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\TDM-GCC\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.2.0 (tdm64-1) ]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
         ignore line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccknnwar.s]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccb1HAV8.s]
+>>>>>>> Stashed changes
         ignore line: [GNU C17 (tdm64-1) version 9.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -191,8 +236,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 28379e31cc2f1f6d7a657691ed425dfd]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
         ignore line: [ D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccknnwar.s]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccb1HAV8.s]
+>>>>>>> Stashed changes
         ignore line: [GNU assembler version 2.33.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.33.1]
         ignore line: [COMPILER_PATH=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/]
         ignore line: [D:/TDM-GCC/bin/../libexec/gcc/]
@@ -205,8 +255,13 @@ events:
         ignore line: [D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../\x0d]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d]
         ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\gcc.exe  -v CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj -o cmTC_206c3.exe -Wl --out-implib libcmTC_206c3.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\gcc.exe  -v CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj -o cmTC_e384f.exe -Wl --out-implib libcmTC_e384f.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+>>>>>>> Stashed changes
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\TDM-GCC\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe]
@@ -225,13 +280,22 @@ events:
         ignore line: [D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_206c3.exe' '-mtune=generic' '-march=x86-64']
         link line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccMrpKWB.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_206c3.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_206c3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e384f.exe' '-mtune=generic' '-march=x86-64']
+        link line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\cc3oC6Cf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_e384f.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_e384f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d]
+>>>>>>> Stashed changes
           arg [D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll] ==> ignore
           arg [-plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe] ==> ignore
+<<<<<<< Updated upstream
           arg [-plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccMrpKWB.res] ==> ignore
+=======
+          arg [-plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\cc3oC6Cf.res] ==> ignore
+>>>>>>> Stashed changes
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
@@ -252,7 +316,11 @@ events:
           arg [--exclude-libs=libpthread.a] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
+<<<<<<< Updated upstream
           arg [cmTC_206c3.exe] ==> ignore
+=======
+          arg [cmTC_e384f.exe] ==> ignore
+>>>>>>> Stashed changes
           arg [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o] ==> obj [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o]
           arg [-LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0] ==> dir [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0]
@@ -263,9 +331,15 @@ events:
           arg [-LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib] ==> dir [D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib]
           arg [-LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../..] ==> dir [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../..]
+<<<<<<< Updated upstream
           arg [CMakeFiles/cmTC_206c3.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
           arg [libcmTC_206c3.dll.a] ==> ignore
+=======
+          arg [CMakeFiles/cmTC_e384f.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_e384f.dll.a] ==> ignore
+>>>>>>> Stashed changes
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -316,8 +390,13 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
+<<<<<<< Updated upstream
       source: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ctagh9"
       binary: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ctagh9"
+=======
+      source: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-71jbty"
+      binary: "D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-71jbty"
+>>>>>>> Stashed changes
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -326,18 +405,30 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< Updated upstream
         Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ctagh9'
         
         Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_3195a
         [1/2] D:\\TDM-GCC\\bin\\c++.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+=======
+        Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-71jbty'
+        
+        Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_9ebfb
+        [1/2] D:\\TDM-GCC\\bin\\c++.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+>>>>>>> Stashed changes
         Using built-in specs.
         COLLECT_GCC=D:\\TDM-GCC\\bin\\c++.exe
         Target: x86_64-w64-mingw32
         Configured with: ../../../src/gcc-git-9.2.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
         Thread model: posix
         gcc version 9.2.0 (tdm64-1) 
+<<<<<<< Updated upstream
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
          D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgBJyV8.s
+=======
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+         D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccGGutKw.s
+>>>>>>> Stashed changes
         GNU C++14 (tdm64-1) version 9.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -364,6 +455,7 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 75884ba1d8f1274f120b97d05d513c01
+<<<<<<< Updated upstream
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
          D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgBJyV8.s
         GNU assembler version 2.33.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.33.1
@@ -371,6 +463,15 @@ events:
         LIBRARY_PATH=D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../lib/gcc/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../\x0d
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d
         [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\c++.exe  -v CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_3195a.exe -Wl,--out-implib,libcmTC_3195a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+=======
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+         D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccGGutKw.s
+        GNU assembler version 2.33.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.33.1
+        COMPILER_PATH=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../libexec/gcc/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../lib/gcc/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../\x0d
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\c++.exe  -v CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9ebfb.exe -Wl,--out-implib,libcmTC_9ebfb.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+>>>>>>> Stashed changes
         Using built-in specs.
         COLLECT_GCC=D:\\TDM-GCC\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe
@@ -380,9 +481,15 @@ events:
         gcc version 9.2.0 (tdm64-1) 
         COMPILER_PATH=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../libexec/gcc/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/;D:/TDM-GCC/bin/../lib/gcc/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib/;D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/;D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../
+<<<<<<< Updated upstream
         COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3195a.exe' '-mtune=generic' '-march=x86-64'
          D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccApnOKe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_3195a.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_3195a.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d
         COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3195a.exe' '-mtune=generic' '-march=x86-64'\x0d
+=======
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ebfb.exe' '-mtune=generic' '-march=x86-64'
+         D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgPoL1D.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_9ebfb.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9ebfb.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ebfb.exe' '-mtune=generic' '-march=x86-64'\x0d
+>>>>>>> Stashed changes
         
       exitCode: 0
   -
@@ -422,18 +529,30 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+<<<<<<< Updated upstream
         ignore line: [Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ctagh9']
         ignore line: []
         ignore line: [Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_3195a]
         ignore line: [[1/2] D:\\TDM-GCC\\bin\\c++.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+=======
+        ignore line: [Change Dir: 'D:/Git/HollowKnight_demo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-71jbty']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/guyu/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_9ebfb]
+        ignore line: [[1/2] D:\\TDM-GCC\\bin\\c++.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+>>>>>>> Stashed changes
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\TDM-GCC\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.2.0 (tdm64-1) ]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
         ignore line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgBJyV8.s]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/ -D_REENTRANT C:/Users/guyu/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\guyu\\AppData\\Local\\Temp\\ccGGutKw.s]
+>>>>>>> Stashed changes
         ignore line: [GNU C++14 (tdm64-1) version 9.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -460,8 +579,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 75884ba1d8f1274f120b97d05d513c01]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
         ignore line: [ D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgBJyV8.s]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\guyu\\AppData\\Local\\Temp\\ccGGutKw.s]
+>>>>>>> Stashed changes
         ignore line: [GNU assembler version 2.33.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.33.1]
         ignore line: [COMPILER_PATH=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/]
         ignore line: [D:/TDM-GCC/bin/../libexec/gcc/]
@@ -474,8 +598,13 @@ events:
         ignore line: [D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../\x0d]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d]
         ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\c++.exe  -v CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_3195a.exe -Wl --out-implib libcmTC_3195a.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\TDM-GCC\\bin\\c++.exe  -v CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9ebfb.exe -Wl --out-implib libcmTC_9ebfb.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+>>>>>>> Stashed changes
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\TDM-GCC\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe]
@@ -494,13 +623,22 @@ events:
         ignore line: [D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../]
+<<<<<<< Updated upstream
         ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3195a.exe' '-mtune=generic' '-march=x86-64']
         link line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccApnOKe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_3195a.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_3195a.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ebfb.exe' '-mtune=generic' '-march=x86-64']
+        link line: [ D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe -plugin D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgPoL1D.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_9ebfb.exe D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0 -LD:/TDM-GCC/bin/../lib/gcc -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../lib -LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib -LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../.. CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9ebfb.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtend.o\x0d]
+>>>>>>> Stashed changes
           arg [D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/liblto_plugin-0.dll] ==> ignore
           arg [-plugin-opt=D:/TDM-GCC/bin/../libexec/gcc/x86_64-w64-mingw32/9.2.0/lto-wrapper.exe] ==> ignore
+<<<<<<< Updated upstream
           arg [-plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccApnOKe.res] ==> ignore
+=======
+          arg [-plugin-opt=-fresolution=C:\\Users\\guyu\\AppData\\Local\\Temp\\ccgPoL1D.res] ==> ignore
+>>>>>>> Stashed changes
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
@@ -521,7 +659,11 @@ events:
           arg [--exclude-libs=libpthread.a] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
+<<<<<<< Updated upstream
           arg [cmTC_3195a.exe] ==> ignore
+=======
+          arg [cmTC_9ebfb.exe] ==> ignore
+>>>>>>> Stashed changes
           arg [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o] ==> obj [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/crtbegin.o]
           arg [-LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0] ==> dir [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0]
@@ -532,9 +674,15 @@ events:
           arg [-LD:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib] ==> dir [D:/mingw(CLion+VSC)/mingw(CLion+VSC)/SDL2-2.26.0-allinone/x86_64-w64-mingw32/lib]
           arg [-LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LD:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../..] ==> dir [D:/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../..]
+<<<<<<< Updated upstream
           arg [CMakeFiles/cmTC_3195a.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
           arg [libcmTC_3195a.dll.a] ==> ignore
+=======
+          arg [CMakeFiles/cmTC_9ebfb.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_9ebfb.dll.a] ==> ignore
+>>>>>>> Stashed changes
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
