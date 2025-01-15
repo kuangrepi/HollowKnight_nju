@@ -18,8 +18,10 @@ extern Enemy* enemy;
 class Gamescene : public Scene
 {
     Camera camera;
+
 public:
     Gamescene() = default;
+
     ~Gamescene() = default;
 
     void on_enter() {
@@ -30,7 +32,8 @@ public:
     }
 
     void on_exit() {
-
+        delete knight_1;
+        delete enemy;
     }
 
     void on_input(const ExMessage& msg) {
@@ -43,14 +46,22 @@ public:
         enemy->on_update(delta);
         CollisionManager* collision_manager = CollisionManager::instance();
         collision_manager->process_collision();
+        if (knight_1->is_dead) {
+            scene_manager.switch_to(SceneManager::SceneType::MenuScene);
+            mciSendString(_T("stop Hornet"), NULL, 0, NULL);
+            mciSendString(_T("play bgm repeat from 0"), NULL, 0, NULL);
+            knight_1->hp = 10;
+            enemy->hp = 20;
+        }
     }
 
     void on_draw() {
         putimage(0, 0, &img_gamescene_background);
+
         knight_1->on_draw(camera);
         enemy->on_draw(camera);
         CollisionManager* collision_manager = CollisionManager::instance();
-        collision_manager->on_debug_draw();
+        //collision_manager->on_debug_draw();
     }
 
 private:

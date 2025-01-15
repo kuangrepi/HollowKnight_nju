@@ -1,5 +1,7 @@
 #include "Knight.h"
 
+#include "GameScene.h"
+
 Knight::Knight() {
     animation_idle_left.set_atlas(&atlas_knight_idle_left);
     animation_idle_right.set_atlas(&atlas_knight_idle_right);
@@ -44,13 +46,12 @@ Knight::Knight() {
     hit_box->set_enabled(false);
 
     hurt_box->set_on_collide([&]() {
-        if(!is_damage && damage > FRAME/3){
+        if(!is_damage && damage > FRAME/2){
             decrease_hp();
             is_damage = true;
             is_attack = false;
             damage = 0;
-            effect_position.x = position.x - 290;
-            effect_position.y = position.y;
+            mciSendString(_T("play enemy_throw_sword from 0"), NULL, 0, NULL);
         }
     });
 
@@ -78,10 +79,10 @@ Knight::Knight() {
     animation_attack_right_down.set_interval(FRAME*4);
     animation_attack_left_effect_down.set_interval(FRAME*6);
     animation_attack_right_effect_down.set_interval(FRAME*6);
-    animation_damage_left.set_interval(FRAME*4);
-    animation_damage_right.set_interval(FRAME*4);
-    animation_damage_effect.set_interval(FRAME*4);
-    animation_death.set_interval(FRAME*8);
+    animation_damage_left.set_interval(FRAME*3);
+    animation_damage_right.set_interval(FRAME*3);
+    animation_damage_effect.set_interval(FRAME*6);
+    animation_death.set_interval(FRAME*12);
 }
 void Knight::on_input(const ExMessage& msg) {
     if(hp > 0)
@@ -95,7 +96,7 @@ void Knight::on_input(const ExMessage& msg) {
                         is_right_key_down = true;
                         break;
                     case VK_UP: // up
-                        is_up_key_down = true;
+                            is_up_key_down = true;
                         break;
                     case VK_DOWN: // up
                         is_down_key_down = true;
@@ -104,27 +105,40 @@ void Knight::on_input(const ExMessage& msg) {
                         is_jump = true;
                         break;
                     case 0x58: // X
-                        if(!is_attack && !is_damage){
-                            if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){
+                        if(!is_attack && !is_damage  && attack > FRAME / 6){
+                            if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){ // 上劈
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y-160;
+                                effect_position.x = position_hurt_box.x - 80;
                                 animation_attack_left_effect_up.reset();
                                 animation_attack_right_effect_up.reset();
+                                mciSendString(_T("play sword_up from 0"), NULL, 0, NULL);
+                                up_attack = true;
                             }
-                            else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){
+                            else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){ // 普通攻击
                                 effect_facing_right = is_facing_right;
                                 effect_position.y = position.y;
+                                effect_position.x = position_hurt_box.x - 75;
                                 animation_attack_left_effect_1.reset();
                                 animation_attack_right_effect_1.reset();
+
+                                mciSendString(_T("play sword_1 from 0"), NULL, 0, NULL);
                             }
-                            else{
+                            else{ // 下劈
                                 effect_facing_right = is_facing_right;
+                                if(is_facing_right)
+                                    effect_position.x = position_hurt_box.x - 10;
+                                else
+                                    effect_position.x = position_hurt_box.x - 150;
                                 effect_position.y = position.y+100;
                                 animation_attack_left_effect_down.reset();
                                 animation_attack_right_effect_down.reset();
+                                attack_down = 0;
+                                mciSendString(_T("play sword_2 from 0"), NULL, 0, NULL);
                             }
+                            is_attack = true;
                         }
-                        is_attack = true;
+
                         break;
                 }
                 break;
@@ -150,7 +164,85 @@ void Knight::on_input(const ExMessage& msg) {
         }
 }
 
+//void Knight::on_input(const ExMessage& msg) {
+//    if(hp > 0)
+//        switch (msg.message) {
+//            case WM_KEYDOWN:
+//                switch (msg.vkcode) {
+//                    case 0x41: // A
+//                        is_left_key_down = true;
+//                        break;
+//                    case 0x44: // D
+//                        is_right_key_down = true;
+//                        break;
+//                    case 0x57: // W
+//                        is_up_key_down = true;
+//                        break;
+//                    case 0x53: // S
+//                        is_down_key_down = true;
+//                        break;
+//                    case 0x4B: // K
+//                        is_jump = true;
+//                        break;
+//                    case 0x4A: // J
+//                        if(!is_attack && !is_damage  && attack > FRAME / 6){
+//                            if(is_up_key_down && !is_down_key_down && !normal_attack && !down_attack){
+//                                effect_facing_right = is_facing_right;
+//                                effect_position.y = position.y-160;
+//                                effect_position.x = position_hurt_box.x - 80;
+//                                animation_attack_left_effect_up.reset();
+//                                animation_attack_right_effect_up.reset();
+//                            }
+//                            else if(!is_up_key_down && !is_down_key_down && !up_attack && !down_attack){
+//                                effect_facing_right = is_facing_right;
+//                                effect_position.y = position.y;
+//                                effect_position.x = position_hurt_box.x - 75;
+//                                animation_attack_left_effect_1.reset();
+//                                animation_attack_right_effect_1.reset();
+//                            }
+//                            else{
+//                                effect_facing_right = is_facing_right;
+//                                if(is_facing_right)
+//                                    effect_position.x = position_hurt_box.x - 10;
+//                                else
+//                                    effect_position.x = position_hurt_box.x - 150;
+//                                effect_position.y = position.y+100;
+//                                animation_attack_left_effect_down.reset();
+//                                animation_attack_right_effect_down.reset();
+//                                attack_down = 0;
+//                            }
+//                            is_attack = true;
+//                        }
+//
+//                        break;
+//                }
+//
+//                break;
+//            case WM_KEYUP:
+//                switch (msg.vkcode) {
+//                    case 0x41: // <-
+//                        is_left_key_down = false;
+//                        break;
+//                    case 0x44: // ->
+//                        is_right_key_down = false;
+//                    case 0x57: // ->
+//                        is_up_key_down = false;
+//                        break;
+//                    case 0x53: // ->
+//                        is_down_key_down = false;
+//                        break;
+//                    case 0x4B: // Z
+//                        is_jump = false;
+//                        break;
+//                }
+//                break;
+//            default:break;
+//        }
+//}
+
+
 void Knight::on_update(int delta) {
+    hit_box->set_size(Vector2(0,0));
     int direction = is_right_key_down - is_left_key_down;
     position_hurt_box.x = position.x + 15;
     position_hurt_box.y = position.y + 20;
@@ -204,7 +296,7 @@ void Knight::on_update(int delta) {
         animation_knight_start_run_right.reset();
     }
 
-    if(is_attack && !is_damage && attack > FRAME / 6){
+    if(is_attack && !is_damage){
         if((is_up_key_down || up_attack) && !normal_attack && !down_attack){
             up_attack = true;
             normal_attack = false;
@@ -217,11 +309,11 @@ void Knight::on_update(int delta) {
                 up_attack = false;
                 attack = 0;
             }
-            hit_box->set_enabled(true);
             effect_position.y = position.y - 160;
             position_hit_box.x = effect_position.x+20;
             position_hit_box.y = effect_position.y+50;
             hit_box->set_size(Vector2(150,166));
+            hit_box->set_enabled(true);
             effect_animation = effect_facing_right ? &animation_attack_right_effect_up : &animation_attack_left_effect_up;
             if(animation_attack_right_effect_up.get_idx_frame() == 2 || animation_attack_left_effect_up.get_idx_frame() == 2){
                 effect_animation = nullptr;
@@ -239,16 +331,18 @@ void Knight::on_update(int delta) {
                 down_attack = false;
                 attack = 0;
             }
-            hit_box->set_enabled(true);
+
             effect_position.y = position.y + 100;
             position_hit_box.x = effect_position.x+5;
             position_hit_box.y = effect_position.y+30;
-            if(position_hit_box.y > 450){
-                velocity.y += jump_velocity/7;
+            if(position_hit_box.y > 450 && attack_down < 5 && velocity.y > jump_velocity / 4){
+                velocity.y += jump_velocity/5;
+                attack_down++;
             }
             hit_box->set_size(Vector2(160,166));
+            hit_box->set_enabled(true);
             effect_animation = effect_facing_right ? &animation_attack_right_effect_down : &animation_attack_left_effect_down;
-            if(animation_attack_right_effect_up.get_idx_frame() == 2 || animation_attack_left_effect_up.get_idx_frame() == 2){
+            if(animation_attack_right_effect_down.get_idx_frame() == 2 || animation_attack_left_effect_down.get_idx_frame() == 2){
                 effect_animation = nullptr;
             }
         }
@@ -264,11 +358,11 @@ void Knight::on_update(int delta) {
                 normal_attack = false;
                 attack = 0;
             }
-            hit_box->set_enabled(true);
             effect_position.y = position.y;
             position_hit_box.x = effect_position.x+15;
             position_hit_box.y = effect_position.y+10;
             hit_box->set_size(Vector2(170,116));
+            hit_box->set_enabled(true);
             effect_animation = effect_facing_right ? &animation_attack_right_effect_1 : &animation_attack_left_effect_1;
             if(animation_attack_right_effect_1.get_idx_frame() == 2 || animation_attack_left_effect_1.get_idx_frame() == 2){
                 effect_animation = nullptr;
@@ -341,23 +435,49 @@ void Knight::on_update(int delta) {
     if(damage < 1000){
         damage++;
     }
+    if(!is_attack){
+        up_attack = false;
+        down_attack = false;
+        normal_attack = false;
+    }
     move_and_collide(delta);
     if(hp <= 0){
         static int n = 0;
         if(n == 0){
-            dead_position= position;
+            dead_position = position;
             n++;
         }
         position = dead_position;
         current_animation = &animation_death;
-        if(current_animation->get_idx_frame() == 10)
+        if(current_animation->get_idx_frame() == 10){
             is_dead = true;
+            n = 0;
+        }
+
+    }
+    if(is_damage){
+        effect_position.x = position.x - 490;
+        effect_position.y = position.y - 10;
+        up_attack = false;
+        down_attack = false;
+        normal_attack = false;
     }
     if(!is_dead)
         current_animation->on_update(delta);
+    if(effect_animation != nullptr && effect_animation->get_idx_frame() == 2)
+        effect_animation = nullptr;
     if(effect_animation != nullptr)
         effect_animation->on_update(delta);
     Player::on_update(delta);
+    if(hit_box->get_size().x == 0){
+        position_hit_box = position;
+    }
+    for (int i = 0; i < hp; i++) {
+        animation_blood_normal[i].on_update(60);
+    }
+    for  (int i = hp; i < 10; i++) {
+        animation_blood_decrease[i].on_update(60);
+    }
 }
 
 void Knight::on_draw(const Camera& camera) {
@@ -372,7 +492,12 @@ void Knight::on_draw(const Camera& camera) {
     if(effect_animation != nullptr)
         effect_animation->on_draw((int) effect_position.x, (int) effect_position.y);
     Player::on_draw(camera);
-
+    for (int i = 0; i < 10; i++) {
+        animation_blood_normal[i].on_draw(50 * i + 50, 50);
+    }
+    for (int i = hp; i < 10; i++) {
+        animation_blood_decrease[i].on_draw(50 * i + 50, 50);
+    }
 //    int width = current_animation->get_frame()->getwidth();
 //    line(position.x + width, position.y, position.x + width, position.y+200);
 
@@ -381,6 +506,8 @@ void Knight::on_draw(const Camera& camera) {
 
 void Knight::move_and_collide(int delta){
     velocity.y += gravity * delta;
+    if(velocity.y < jump_velocity)
+        velocity.y = jump_velocity / 10;
     position += velocity * (float)delta;
     if(velocity.y > 0){
         if(position.y > 520){

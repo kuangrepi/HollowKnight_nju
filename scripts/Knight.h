@@ -69,8 +69,6 @@ public:
     bool game_over(){
         return is_dead;
     }
-
-private:
     Vector2 effect_position;
     Vector2 position_hurt_box; // 角色碰撞箱位置
     Vector2 position_hit_box; // 角色攻击箱位置
@@ -131,6 +129,7 @@ private:
     int start_jump = 1;
     int damage = 1000;
     int attack = 1000;
+    int attack_down = 10;
 
     const float gravity = 0.010f / FRAME;
     const float run_velocity = 8.0f / FRAME;

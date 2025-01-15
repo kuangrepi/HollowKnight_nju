@@ -21,7 +21,7 @@ public:
     void on_update(int delta);
     void on_draw(const Camera& camera);
 private:
-    const float speed = 12.0f / FRAME;
+    const float speed = 18.0f / FRAME;
     Vector2 position;
     Vector2 velocity;
     bool is_valid = true;

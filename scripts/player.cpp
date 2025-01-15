@@ -1,5 +1,6 @@
 #include "player.h"
 #include "collision_manager.h"
+#include "define.h"
 
 Player::Player() {
     hit_box = CollisionManager::instance()->create_collision_box();
@@ -16,6 +17,18 @@ Player::Player() {
     timer_invulnerable_blink.set_callback([&]() {
         is_blink_invisible = !is_blink_invisible;
     });
+
+    for (int i = 0; i < 10; i++) {
+        animation_blood_normal[i].set_atlas(&atlas_blood_normal);
+        animation_blood_normal[i].set_interval(FRAME * 3);
+        animation_blood_normal[i].set_loop(true);
+    }
+    for (int i = 0; i < 10; i++) {
+        animation_blood_decrease[i].set_atlas(&atlas_blood_decrease);
+        animation_blood_decrease[i].set_interval(FRAME * 3);
+        animation_blood_decrease[i].set_loop(false);
+    }
+
 }
 
 Player::~Player() {
@@ -28,16 +41,10 @@ void Player::decrease_hp() {
 }
 
 void Player::on_update(int delta) {
-    if (position.x < 0) position.x = 0;
-    if (position.x > getwidth() - 100) position.x = (float) getwidth() - 100;
+    if (position.x < 125) position.x = 125;
+    if (position.x > 1280 - 175) position.x = (float) 1280 - 175;
     if (position.y < 0) position.y = 0;
-    if (position.y > getheight() - 100) position.y = (float) getheight() - 100;
-
-    timer_invulnerable_status.on_update(delta);
-
-    if (is_invulnerable) {
-        timer_invulnerable_blink.on_update(delta);
-    }
+    if (position.y > 720 - 100) position.y = (float) 720 - 100;
 
 }
 
